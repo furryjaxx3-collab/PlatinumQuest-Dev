@@ -1130,6 +1130,12 @@ function EditorMenuBar::onCreateMenuItemSelect(%this, %itemId, %item) {
 				rotate = 1;
 				static = 1;
 			};
+		case "Ultra":
+			%obj = new Item() {
+				dataBlock = "SuperBounceItem_MBU";
+				rotate = 1;
+				static = 1;
+			};
 		default:
 			%obj = new Item() {
 				dataBlock = "SuperBounceItem";
@@ -1199,6 +1205,12 @@ function EditorMenuBar::onCreateMenuItemSelect(%this, %itemId, %item) {
 		case "PlatinumQuest":
 			%obj = new Item() {
 				dataBlock = "ShockAbsorberItem_PQ";
+				rotate = 1;
+				static = 1;
+			};
+		case "Ultra":
+			%obj = new Item() {
+				dataBlock = "ShockAbsorberItem_MBU";
 				rotate = 1;
 				static = 1;
 			};
