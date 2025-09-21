@@ -64,6 +64,12 @@ datablock StaticShapeData(StartPad_MBG : StartPad) {
 	playAnimation = true;
 };
 
+datablock StaticShapeData(StartPad_MBF : StartPad) {
+	shapeFile = "~/data/shapes_mbf/pads/startArea.dts";
+
+	playAnimation = true;
+};
+
 datablock StaticShapeData(StartPad_PQ_Construction : StartPad) {
 	shapeFile = "~/data/shapes_pq/Gameplay/pads/startpadconst.dts";
 
@@ -159,6 +165,12 @@ datablock StaticShapeData(EndPad_PQ : EndPad) {
 
 datablock StaticShapeData(EndPad_MBG : EndPad) {
 	shapeFile = "~/data/shapes/pads/MBGPads/endarea.dts";
+
+	playAnimation = true;
+};
+
+datablock StaticShapeData(EndPad_MBF : EndPad) {
+	shapeFile = "~/data/shapes_mbf/pads/endarea.dts";
 
 	playAnimation = true;
 };

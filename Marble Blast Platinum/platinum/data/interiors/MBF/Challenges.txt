@@ -1,0 +1,57 @@
+C:/Program Files/Marble Blast Gold/marble/data/interiors/MBF/Normal/Challenges.dif
+
+
+
+Constructor Version: 1.0.6
+
+
+
+Date: 2011/02/23 01:01:44
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        1536
+
+  Surfaces:      1101
+
+  Null Surfaces: 0
+
+  BSP Nodes:     781
+
+
+
+  Textures From Brushes:
+
+
+
+    BOUNCE1
+
+    BOUNCE3
+
+    CUSTOM_DIRT
+
+    NEW21
+
+    SUPER_FRICTION
+
+    BOUNCE2
+
+    FRICTION_NONE
+
+    EDGE7
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+

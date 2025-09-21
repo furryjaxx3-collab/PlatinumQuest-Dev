@@ -1,0 +1,633 @@
+new MaterialProperty(mudFrictionMaterial) {
+    friction = 0.4;
+    restitution = 0.1;
+};
+
+new MaterialProperty(rampFrictionMaterial) {
+    friction = 3;
+    restitution = 0.3;
+};
+
+new MaterialProperty(grassFrictionMaterial) {
+    friction = 2.5;
+    restitution = 0.12;
+};
+
+new MaterialProperty(sandFrictionMaterial) {
+    friction = 4;
+    restitution = 0;
+};
+
+new MaterialProperty(waterFrictionMaterial) {
+    friction = 5;
+    restitution = 0;
+};
+new MaterialProperty(NoFrictionMaterial) {
+    friction = 0;
+    restitution = 0;
+};
+
+new MaterialProperty(SuperHighFrictionMaterial) {
+    friction = 1000;
+    restitution = 0;
+};
+new MaterialProperty(IceMaterial) {
+    friction = 0.2;
+    restitution = 1;
+};
+addMaterialMapping("friction_none" , NoFrictionMaterial);
+addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
+addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
+addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
+addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
+addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
+addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
+addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
+addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Arnie Gape";
+         customRadarRule = "0";
+         desc = "Collect the planets quikly ro the time will beat you";
+         gameMode = "null";
+         level = "8";
+         music = "trance01.ogg";
+         name = "Agility race";
+         Time = "120000";
+         type = "advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/MBF Pro/sky_day.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 -1.73483e+09 -1.73483e+09";
+      fogVolume2 = "-1 -1.73483e+09 -1.73483e+09";
+      fogVolume3 = "-1 -1.73483e+09 -1.73483e+09";
+      fogVolumeColor1 = "128 128 128 -1.73483e+09";
+      fogVolumeColor2 = "128 128 128 -1.73483e+09";
+      fogVolumeColor3 = "128 128 128 -1.73483e+09";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "1 1 0.4 1";
+      ambient = "0.4 0.4 0.3 1";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+   };
+   new SimGroup(CheckPoints) {
+   };
+   new Trigger(Bounds) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-35.098 43.1286 108.2";
+      rotation = "1 0 0 0";
+      scale = "80 80 80";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "43.4875 46.539 115.545";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/playground.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new SimGroup(Platform1_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform2_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform3_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform3_0_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform4_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform4_0_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform4_1_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new SimGroup(Platform4_2_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2087";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2281";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape(StartPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.47216 24.5407 119.547";
+      rotation = "0 0 1 180";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "StartPad_MBF";
+   };
+   new StaticShape(EndPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.4675 -23.467 119.542";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "EndPad_MBF";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.49338 24.5032 110.547";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "10.4815 8.55955 116.543";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "2.5136 8.53382 116.537";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "14.4867 0.571463 113.543";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-1.51465 0.559039 113.539";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-7.49543 4.54967 120.041";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-7.50342 -3.4747 120.042";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "20.466 -3.47458 120.04";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "20.4739 4.54979 120.039";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "20.517 4.52467 130.202";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "20.4877 -3.37436 130.228";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-7.57197 -3.47544 130.155";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-7.54267 4.42359 130.179";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "2.48875 -7.40138 116.54";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "10.4566 -7.37565 116.546";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.52083 -23.569 110.52";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "4.32188 -3.24893 131.409";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.50168 28.5246 110.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.46911 -27.4422 110.255";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-5.49098 0.550183 113.234";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperSpeedItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "18.4719 0.520057 113.24";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperSpeedItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "8.70372 4.78572 131.35";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "8.67442 -3.11331 131.376";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "4.35118 4.6501 131.383";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "22.2242 20.4697 135.804";
+         rotation = "-0.141757 -0.335974 0.931143 222.897";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "7145";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+};
+//--- OBJECT WRITE END ---

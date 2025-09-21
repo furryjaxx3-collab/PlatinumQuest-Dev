@@ -1,0 +1,49 @@
+C:/Program Files/Marble Blast Future/marble/data/interiors/MBF/Extras/FuturisticPole.dif
+
+
+
+Constructor Version: 1.0.6
+
+
+
+Date: 2011/03/27 16:14:03
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        2893
+
+  Surfaces:      1210
+
+  Null Surfaces: 0
+
+  BSP Nodes:     2209
+
+
+
+  Textures From Brushes:
+
+
+
+    NEW1
+
+    PATTERN_COOL2
+
+    EDGE7
+
+    SOLID_WHITE
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+

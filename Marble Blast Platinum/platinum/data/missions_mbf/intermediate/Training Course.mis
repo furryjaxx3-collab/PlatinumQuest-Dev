@@ -1,0 +1,1062 @@
+new MaterialProperty(LowBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 5;
+};
+
+new MaterialProperty(MedBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 10;
+};
+new MaterialProperty(HighBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 15;
+};
+addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
+addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
+addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+
+
+
+new MaterialProperty(mudFrictionMaterial) {
+    friction = 0.4;
+    restitution = 0.1;
+};
+
+new MaterialProperty(rampFrictionMaterial) {
+    friction = 3;
+    restitution = 0.3;
+};
+
+new MaterialProperty(grassFrictionMaterial) {
+    friction = 2.5;
+    restitution = 0.12;
+};
+
+new MaterialProperty(sandFrictionMaterial) {
+    friction = 4;
+    restitution = 0;
+};
+
+new MaterialProperty(waterFrictionMaterial) {
+    friction = 5;
+    restitution = 0;
+};
+new MaterialProperty(NoFrictionMaterial) {
+    friction = 0;
+    restitution = 0;
+};
+
+new MaterialProperty(SuperHighFrictionMaterial) {
+    friction = 1000;
+    restitution = 0;
+};
+new MaterialProperty(IceMaterial) {
+    friction = 0.2;
+    restitution = 1;
+};
+addMaterialMapping("friction_none" , NoFrictionMaterial);
+addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
+addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
+addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
+addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
+addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
+addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
+addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
+addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
+addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "?";
+         customRadarRule = "0";
+         desc = "Pass the challeneges ahead and get the diamonds!";
+         gameMode = "null";
+         level = "7";
+         music = "trance02.ogg";
+         name = "Training Course";
+         type = "Intermediate";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/MBF Normal/sky_day.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-0.00672793 -0.00556183 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/TrainingCourse.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+         timeBonus = "-10000";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-4 94 0.25";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "4000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-4 128 0.25";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "4000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-4 94 0.25";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBF/TrainingCourse.dif";
+         interiorIndex = "0";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1,0,1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 93 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "2000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-21 93 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "2000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 93 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBF/TrainingCourse.dif";
+         interiorIndex = "1";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1,0,1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 105 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "1800";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-21 105 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1800";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 105 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBF/TrainingCourse.dif";
+         interiorIndex = "2";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1,0,1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 117 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "1600";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-21 117 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1600";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 117 3.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBF/TrainingCourse.dif";
+         interiorIndex = "3";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1,0,1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 129 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "1400";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "-21 129 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1400";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            _moving = "0";
+            _pathSyncId = "-1";
+            _pathRngStart = "0";
+            _pathPosition = "0";
+            trail = "0";
+            attachId = "-1";
+            position = "13 129 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBF/TrainingCourse.dif";
+         interiorIndex = "4";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1,0,1";
+      };
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-5.01179 155.996 -0.0010785";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/TrainingCourse_smallpart.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "0.96175 12.967 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(StartPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-3.99624 -8.01762 0.492837";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBF";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-9.70489 -4.00342 4.98968";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "1.68511 4.12658 4.98968";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "1.69511 -4.00342 4.98968";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-9.70489 4.02658 4.98968";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-4.00825 12.967 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-0.99825 16.977 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-6.98825 17.007 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-0.99825 8.98703 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-6.98825 8.97703 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-8.95825 12.967 10.9987";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2050";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-11.5248 -10.2839 1.01968";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimePenaltyItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         skin = "mbgpenalty";
+         timePenalty = "10000";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-0.509002 24.486 1.01466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-8.49957 26.4683 1.00542";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-8.54333 55.521 0.997606";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-0.496097 53.4765 1.00534";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-3.99265 14.4986 0.704104";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-3.99399 218.987 9.48965";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "EndPad_MBF";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1800";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-14.3075 235.047 -4.27382";
+      rotation = "1 0 0 0";
+      scale = "20 250 50";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-8.26807 239.421 7.44484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 3.15684 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-6.94364 -13.5508 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 232.157 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 176.957 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 119.957 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 76.3568 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "7.4098 37.5568 7.65062";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 232.929 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 177.729 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 120.729 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 77.1284 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 38.3284 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-22.8947 3.92847 8.81192";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1741";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "-31.4694 80.8067 24.0124";
+         rotation = "0.542762 -0.216964 0.811379 52.4561";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

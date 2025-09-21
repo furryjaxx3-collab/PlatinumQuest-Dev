@@ -1,0 +1,302 @@
+new MaterialProperty(LowBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 5;
+};
+
+new MaterialProperty(MedBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 10;
+};
+new MaterialProperty(HighBounceFloorMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 15;
+};
+addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
+addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
+addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "?";
+         customRadarRule = "0";
+         desc = "An advanced challenge, not for novice players";
+         gameMode = "null";
+         level = "8";
+         music = "trance02.ogg";
+         name = "Pro Challenge";
+         type = "Advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/MBF Pro/sky_day.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+   };
+   new InteriorInstance() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/ProMaster.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "0 4 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ShockAbsorberItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(StartPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "0 -1 0.25";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "StartPad_MBF";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "10 -36 12";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         skin = "mbg";
+         timeBonus = "5000";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "16 -40 -0.0599999";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "16 -38 3.96";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "10 -50 -0.25";
+      rotation = "0 0 1 180";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "EndPad_MBF";
+   };
+   new Trigger(Bounds) {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-13 25 -0.4";
+      rotation = "1 0 0 0";
+      scale = "42 90 53";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "11.9965 -33.0152 2.24639";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemBlack_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "0.0346 -15.5042 7.49409";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemBlack_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "6.16109 3.61628 15.8358";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemBlack_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1690";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1692";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         _moving = "0";
+         _pathSyncId = "-1";
+         _pathRngStart = "0";
+         _pathPosition = "0";
+         trail = "0";
+         attachId = "-1";
+         position = "18.34 -34.2757 19.1581";
+         rotation = "0.581463 0.221672 -0.782791 51.9337";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+   new TSStatic() {
+      _moving = "0";
+      _pathSyncId = "-1";
+      _pathRngStart = "0";
+      _pathPosition = "0";
+      trail = "0";
+      attachId = "-1";
+      position = "-7.77341 12.0211 -3.72493";
+      rotation = "1 0 0 0";
+      scale = "10 10 1";
+      shapeName = "~/data/shapes_mbf/water/water100x100.dts";
+      computeConvexHulls = "0";
+   };
+};
+//--- OBJECT WRITE END ---

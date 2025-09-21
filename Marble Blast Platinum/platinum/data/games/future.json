@@ -1,0 +1,32 @@
+{
+	"name": "Future",
+	"display": "Future",
+	"order": 6,
+	"difficulties":
+	[
+		{
+			"name": "Beginner",
+			"display": "Beginner",
+			"missionDirectory": "platinum/data/missions_mbf/beginner",
+			"bitmapDirectory": "platinum/data/missions_mbf/beginner"
+		},
+		{
+			"name": "Intermediate",
+			"display": "Intermediate",
+			"missionDirectory": "platinum/data/missions_mbf/intermediate",
+			"bitmapDirectory": "platinum/data/missions_mbf/intermediate"
+		},
+		{
+			"name": "Advanced",
+			"display": "Advanced",
+			"missionDirectory": "platinum/data/missions_mbf/advanced",
+			"bitmapDirectory": "platinum/data/missions_mbf/advanced"
+		},
+		{
+			"name": "Bonus",
+			"display": "Bonus",
+			"missionDirectory": "platinum/data/missions_mbf/bonus",
+			"bitmapDirectory": "platinum/data/missions_mbf/bonus"
+		}
+	]
+}

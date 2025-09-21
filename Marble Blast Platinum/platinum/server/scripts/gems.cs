@@ -288,6 +288,140 @@ datablock ItemData(GemItemRainbow: GemItem) {
 	customField[0, "field"] = "";
 };
 
+// Marble Blast Future gems
+
+datablock ItemData(GemItem_MBF) {
+	// Mission editor category
+	superCategory = "gems";
+	category = "Marble Blast Future";
+
+	className = "Gem";
+
+	// Basic Item properties
+	shapeFile = "~/data/shapes_mbf/items/gem.dts";
+	mass = 1;
+	friction = 1;
+	elasticity = 0.3;
+
+	emap = false;
+
+	// Dynamic properties defined by the scripts
+	pickupName = "a diamond!";
+	maxInventory = 1;
+	noRespawn = true;
+	gemType = 1;
+	noPickupMessage = true;
+	pickUpCheckpoint = "0";
+	huntPointValue = 0;
+
+	checkpointRespawn = 1;
+
+	customField[0, "field"  ] = "skin";
+	customField[0, "type"   ] = "string";
+	customField[0, "name"   ] = "Skin Name";
+	customField[0, "desc"   ] = "Which skin to use (see skin selector).";
+	customField[0, "default"] = "";
+};
+
+datablock ItemData(GemItemBlue_MBF: GemItem_MBF) {
+	skin = "blue";
+	huntExtraValue = 4; //1 less because you get 1 point for collecting it
+	spawnChance = 0.35;
+	messageColor = "6666ff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemRed_MBF: GemItem_MBF) {
+	skin = "red";
+	huntExtraValue = 0; //1 pt
+	spawnChance = 0.90;
+	messageColor = "ff6666";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemYellow_MBF: GemItem_MBF) {
+	skin = "yellow";
+	huntExtraValue = 1; //2 pts
+	spawnChance = 0.65;
+	messageColor = "ffff66";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemPink_MBF: GemItem_MBF) {
+	skin = "base";
+	huntExtraValue = 0;
+	spawnChance = 0.1;
+	messageColor = "ff66ff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemPurple_MBF: GemItem_MBF) {
+	skin = "purple";
+	huntExtraValue = 5; //6 pts
+	spawnChance = 0.1;
+	messageColor = "cc44ff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemGreen_MBF: GemItem_MBF) {
+	skin = "Green";
+	huntExtraValue = 3; //4 pts
+	spawnChance = 0.3;
+	messageColor = "66ff66";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemTurquoise_MBF: GemItem_MBF) {
+	skin = "Turquoise";
+	huntExtraValue = 6; //7
+	spawnChance = 0.1;
+	messageColor = "55ffff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemOrange_MBF: GemItem_MBF) {
+	skin = "orange";
+	huntExtraValue = 2; //3 pts
+	spawnChance = 0.45;
+	messageColor = "ffaa33";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemBlack_MBF: GemItem_MBF) {
+	skin = "black";
+	huntExtraValue = -2; //-1 pts
+	spawnChance = 0.45;
+	messageColor = "000000";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemPlatinum_MBF: GemItem_MBF) {
+	skin = "platinum";
+	huntExtraValue = 9; //10 pts
+	spawnChance = 0.18;
+	messageColor = "dddddd";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemWhite_MBF: GemItem_MBF) {
+	skin = "white";
+	huntExtraValue = -1; //0 pts
+	spawnChance = 0.80;
+	messageColor = "ffffff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemRainbow_MBF: GemItem_MBF) {
+	skin = "rainbow";
+	huntExtraValue = 19; //20 pts
+	spawnChance = 0.24;
+	messageColor = "4b0082";
+	customField[0, "field"] = "";
+};
+
+// PQ gems
+
+
 datablock ItemData(GemItem_PQ : GemItem) {
 	superCategory = "gems";
 	category = "PlatinumQuest";

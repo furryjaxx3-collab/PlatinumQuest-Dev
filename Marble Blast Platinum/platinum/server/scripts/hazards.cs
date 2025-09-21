@@ -256,6 +256,20 @@ datablock StaticShapeData(SmallDuctFan_MBU : SmallDuctFan) {
 	compile = "pls";
 	shapeFile = "~/data/shapes_mbu/mbu-hitboxes/hazards/ductfan.dts";
 };
+datablock StaticShapeData(DuctFan_MBF : DuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Future";
+
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbf/hazards/ductfan.dts";
+};
+datablock StaticShapeData(SmallDuctFan_MBF : SmallDuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Future";
+
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbf/hazards/ductfan.dts";
+};
 
 datablock StaticShapeData(NomeshDuctFan_PQ : DuctFan) {
 	superCategory = "Hazards";
@@ -312,6 +326,15 @@ datablock StaticShapeData(Tornado) {
 	shapeFile = "~/data/shapes/hazards/tornado.dts";
 	scopeAlways = true;
 
+	customField[1, "field"  ] = "skin";
+	customField[1, "type"   ] = "string";
+	customField[1, "name"   ] = "Skin Name";
+	customField[1, "desc"   ] = "Which skin to use (see skin selector).";
+	customField[1, "default"] = "skin0";
+
+	skin[0] = "base";
+	skin[1] = "mbf";
+
 	// Pull the marble in
 	forceType[0] = Spherical;  // Force type {Spherical, Field, Cone}
 	forceStrength[0] = -60;     // Force to apply
@@ -328,6 +351,22 @@ datablock StaticShapeData(Tornado) {
 	forceStrength[2] = 250;
 	forceRadius[2] = 3;
 };
+
+function Tornado::onAdd(%this,%obj) {
+	if (%obj.skin $= "")
+		%obj.skin = "base";
+
+	// Skin takes effect upon mission reset or reload
+	if (%obj.skinName !$= "") { //clean up old skinname field
+		%obj.skin = %obj.skinName;
+		%obj.skinName = "";
+	}
+
+	if (%obj.skin $= "")
+		%obj.skin = %obj.getSkinName();
+	else
+		%obj.setSkinName(%obj.skin);
+}
 
 function Tornado::onAdd(%this,%obj) {
 	%obj.playThread(0,"ambient");
@@ -577,6 +616,14 @@ datablock StaticShapeData(LandMine_MBM : LandMine) {
 	category = "Marble_Blast_Ultra/Mobile";
 
 	shapeFile = "~/data/shapes_mbu/hazards/landmine.dts";
+	skin = "base";
+};
+
+datablock StaticShapeData(LandMine_MBF : LandMine) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Future";
+
+	shapeFile = "~/data/shapes_mbf/hazards/landmine.dts";
 	skin = "base";
 };
 

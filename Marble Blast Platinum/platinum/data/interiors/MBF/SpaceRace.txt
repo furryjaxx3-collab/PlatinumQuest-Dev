@@ -1,0 +1,61 @@
+C:/Program Files/Marble Blast Future/marble/data/interiors/MBF/Normal/SpaceRace.dif
+
+
+
+Constructor Version: 1.0.6
+
+
+
+Date: 2011/03/27 22:08:19
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        14994
+
+  Surfaces:      6297
+
+  Null Surfaces: 0
+
+  BSP Nodes:     11580
+
+
+
+  Textures From Brushes:
+
+
+
+    EDGE7
+
+    GRID_WARM3
+
+    PATTERN_COOL2
+
+    SUPER_FRICTION
+
+    SOLID_WHITE
+
+    STRIPE_CAUTION
+
+    BOUNCE1
+
+    FRICTION_NONE
+
+    CHEVRON_WARM2
+
+    GRID_NEUTRAL
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+
