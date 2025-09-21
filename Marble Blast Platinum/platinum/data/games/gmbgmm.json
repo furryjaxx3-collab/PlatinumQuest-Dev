@@ -1,0 +1,32 @@
+{
+	"name": "G3orge's Mini Mod",
+	"display": "G3orge's Mini Mod",
+	"order": 7,
+	"difficulties":
+	[
+		{
+			"name": "Beginner",
+			"display": "Beginner",
+			"missionDirectory": "platinum/data/missions_gmbgmm/beginner",
+			"bitmapDirectory": "platinum/data/missions_gmbgmm/beginner"
+		},
+		{
+			"name": "Intermediate",
+			"display": "Intermediate",
+			"missionDirectory": "platinum/data/missions_gmbgmm/intermediate",
+			"bitmapDirectory": "platinum/data/missions_gmbgmm/intermediate"
+		},
+		{
+			"name": "Advanced",
+			"display": "Advanced",
+			"missionDirectory": "platinum/data/missions_gmbgmm/advanced",
+			"bitmapDirectory": "platinum/data/missions_gmbgmm/advanced"
+		},
+		{
+			"name": "Bonus",
+			"display": "Bonus",
+			"missionDirectory": "platinum/data/missions_gmbgmm/bonus",
+			"bitmapDirectory": "platinum/data/missions_gmbgmm/bonus"
+		}
+	]
+}
