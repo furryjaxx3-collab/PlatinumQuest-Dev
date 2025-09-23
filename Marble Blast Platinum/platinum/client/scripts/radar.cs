@@ -538,6 +538,8 @@ $RadarColor["green"]     = "51 255 51 255";
 $RadarColor["turquoise"] = "51 255 255 255";
 $RadarColor["black"]     = "0 0 0 255";
 $RadarColor["platinum"]  = "128 128 128 255";
+$RadarColor["white"]     = "255 255 255 255";
+$RadarColor["rainbow"]  = "75 0 130 255";
 
 function RadarSetDotColor(%dot, %skin, %angle) {
 	%dot.setBitmap("platinum/client/ui/mp/radar/Pointer.png");

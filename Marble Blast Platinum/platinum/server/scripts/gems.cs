@@ -41,6 +41,8 @@ $GemSkinColors[7] = "green";
 $GemSkinColors[8] = "turquoise";
 $GemSkinColors[9] = "black";
 $GemSkinColors[10] = "platinum";
+$GemSkinColors[11] = "white";
+$GemSkinColors[12] = "rainbow";
 
 function Gem::onAdd(%this,%obj) {
 	if (%this.skin !$= "") {
@@ -49,7 +51,7 @@ function Gem::onAdd(%this,%obj) {
 		%obj.setSkinName(%obj.skin);
 	} else {
 		// Random skin if none assigned
-		%obj.setSkinName($GemSkinColors[getRandom(10)]);
+		%obj.setSkinName($GemSkinColors[getRandom(1, 10)]);
 	}
 
 	if (%obj.getSkinName() $= "base") {
@@ -270,6 +272,22 @@ datablock ItemData(GemItemPlatinum: GemItem) {
 	customField[0, "field"] = "";
 };
 
+datablock ItemData(GemItemWhite: GemItem) {
+	skin = "white";
+	huntExtraValue = -1; //0 pts
+	spawnChance = 0.80;
+	messageColor = "ffffff";
+	customField[0, "field"] = "";
+};
+
+datablock ItemData(GemItemRainbow: GemItem) {
+	skin = "rainbow";
+	huntExtraValue = 19; //20 pts
+	spawnChance = 0.24;
+	messageColor = "4b0082";
+	customField[0, "field"] = "";
+};
+
 datablock ItemData(GemItem_PQ : GemItem) {
 	superCategory = "gems";
 	category = "PlatinumQuest";
@@ -386,6 +404,28 @@ datablock ItemData(GemItemPlatinum_PQ: GemItem_PQ) {
 	customField[1, "disable"] = 1;
 };
 
+datablock ItemData(GemItemWhite_PQ: GemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
+
+	skin = "white";
+	huntExtraValue = -1; //0 pts
+	spawnChance = 0.80;
+	messageColor = "ffffff";
+	customField[1, "disable"] = 1;
+};
+
+datablock ItemData(GemItemRainbow_PQ: GemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
+
+	skin = "rainbow";
+	huntExtraValue = 19; //20 pts
+	spawnChance = 0.24;
+	messageColor = "4b0082";
+	customField[1, "disable"] = 1;
+};
+
 datablock ItemData(FancyGemItem_PQ : GemItem) {
 	superCategory = "gems";
 	category = "PlatinumQuest";
@@ -403,6 +443,7 @@ datablock ItemData(FancyGemItem_PQ : GemItem) {
 	skin[9] = "black";
 	skin[10] = "platinum";
 	skin[11] = "white";
+	skin[12] = "rainbow";
 
 	pickupName = "a gem!";
 	pq = true; // for GemFX
@@ -455,53 +496,53 @@ datablock ItemData(FancyGemItemYellow_PQ: FancyGemItem_PQ) {
 	customField[1, "disable"] = 1;
 };
 
-// datablock ItemData(FancyGemItemPink_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+datablock ItemData(FancyGemItemPink_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "base";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "base";
+	customField[1, "disable"] = 1;
+};
 
-// datablock ItemData(FancyGemItemPurple_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+ datablock ItemData(FancyGemItemPurple_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "purple";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "purple";
+	customField[1, "disable"] = 1;
+};
 
-// datablock ItemData(FancyGemItemGreen_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+datablock ItemData(FancyGemItemGreen_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "Green";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "Green";
+	customField[1, "disable"] = 1;
+};
 
-// datablock ItemData(FancyGemItemTurquoise_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+datablock ItemData(FancyGemItemTurquoise_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "Turquoise";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "Turquoise";
+	customField[1, "disable"] = 1;
+};
 
-// datablock ItemData(FancyGemItemOrange_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+datablock ItemData(FancyGemItemOrange_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "orange";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "orange";
+	customField[1, "disable"] = 1;
+};
 
-// datablock ItemData(FancyGemItemBlack_PQ: FancyGemItem_PQ) {
-// 	superCategory = "gems";
-// 	category = "PlatinumQuest";
+datablock ItemData(FancyGemItemBlack_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
 
-// 	skin = "black";
-// 	customField[1, "disable"] = 1;
-// };
+	skin = "black";
+	customField[1, "disable"] = 1;
+};
 
 datablock ItemData(FancyGemItemPlatinum_PQ: FancyGemItem_PQ) {
 	superCategory = "gems";
@@ -511,6 +552,28 @@ datablock ItemData(FancyGemItemPlatinum_PQ: FancyGemItem_PQ) {
 	huntExtraValue = 9; //10 pts
 	spawnChance = 0.18;
 	messageColor = "cccccc";
+	customField[1, "disable"] = 1;
+};
+
+datablock ItemData(FancyGemItemWhite_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
+
+	skin = "white";
+	huntExtraValue = -1; //0 pts
+	spawnChance = 0.80;
+	messageColor = "ffffff";
+	customField[1, "disable"] = 1;
+};
+
+datablock ItemData(FancyGemItemRainbow_PQ: FancyGemItem_PQ) {
+	superCategory = "gems";
+	category = "PlatinumQuest";
+
+	skin = "rainbow";
+	huntExtraValue = 19; //20 pts
+	spawnChance = 0.24;
+	messageColor = "4b0082";
 	customField[1, "disable"] = 1;
 };
 
@@ -717,6 +780,26 @@ datablock ParticleEmitterData(GemEmitterTurquoise : GemEmitterBase) {
 	particles = "GemParticleTurquoise";
 };
 
+datablock ParticleData(GemParticleWhite : GemParticleBase) {
+	colors[0]     = "1.0 1.0 1.0 1.0";
+	colors[1]     = "1.0 1.0 1.0 1.0";
+	colors[2]     = "1.0 1.0 1.0 0.0";
+};
+
+datablock ParticleEmitterData(GemEmitterWhite : GemEmitterBase) {
+	particles = "GemParticleWhite";
+};
+
+datablock ParticleData(GemParticleRainbow : GemParticleBase) {
+	colors[0]     = "0.3 0.0 0.5 1.0";
+	colors[1]     = "0.5 0.0 0.8 1.0";
+	colors[2]     = "0.5 0.0 0.8 0.0";
+};
+
+datablock ParticleEmitterData(GemEmitterRainbow : GemEmitterBase) {
+	particles = "GemParticleRainbow";
+};
+
 //MBU Datablocks down below.
 
 if (!$pref::LegacyItems) {
@@ -739,6 +822,7 @@ if (!$pref::LegacyItems) {
 		skin[9] = "black";
 		skin[10] = "platinum";
 		skin[11] = "white";
+		skin[12] = "rainbow";
 
 		customField[0, "field"  ] = "skin";
 		customField[0, "type"   ] = "string";
@@ -784,6 +868,62 @@ if (!$pref::LegacyItems) {
 		huntExtraValue = 9; //10 pts
 		spawnChance = 0.18;
 		messageColor = "cccccc";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemPink_MBU: GemItem_MBU) {
+		skin = "base";
+		huntExtraValue = 0;
+		spawnChance = 0.1;
+		messageColor = "ff66ff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemPurple_MBU: GemItem_MBU) {
+		skin = "purple";
+		huntExtraValue = 5; //6 pts
+		spawnChance = 0.1;
+		messageColor = "cc44ff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemGreen_MBU: GemItem_MBU) {
+		skin = "Green";
+		huntExtraValue = 3; //4 pts
+		spawnChance = 0.3;
+		messageColor = "66ff66";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemTurquoise_MBU: GemItem_MBU) {
+		skin = "Turquoise";
+		huntExtraValue = 6; //7
+		spawnChance = 0.1;
+		messageColor = "55ffff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemOrange_MBU: GemItem_MBU) {
+		skin = "orange";
+		huntExtraValue = 2; //3 pts
+		spawnChance = 0.45;
+		messageColor = "ffaa33";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemBlack_MBU: GemItem_MBU) {
+		skin = "black";
+		huntExtraValue = -2; //-1 pts
+		spawnChance = 0.45;
+		messageColor = "000000";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemWhite_MBU: GemItem_MBU) {
+		skin = "white";
+		huntExtraValue = -1; //0 pts
+		spawnChance = 0.80;
+		messageColor = "ffffff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemRainbow_MBU: GemItem_MBU) {
+		skin = "rainbow";
+		huntExtraValue = -2; //-1 pts
+		spawnChance = 0.24;
+		messageColor = "4b0082";
 		customField[0, "field"] = "";
 	};
 } else {
@@ -806,6 +946,7 @@ if (!$pref::LegacyItems) {
 		skin[9] = "black";
 		skin[10] = "platinum";
 		skin[11] = "white";
+		skin[12] = "rainbow";
 
 		customField[0, "field"  ] = "skin";
 		customField[0, "type"   ] = "string";
@@ -851,6 +992,62 @@ if (!$pref::LegacyItems) {
 		huntExtraValue = 9; //10 pts
 		spawnChance = 0.18;
 		messageColor = "cccccc";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemPink_MBU: GemItem_MBU) {
+		skin = "base";
+		huntExtraValue = 0;
+		spawnChance = 0.1;
+		messageColor = "ff66ff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemPurple_MBU: GemItem_MBU) {
+		skin = "purple";
+		huntExtraValue = 5; //6 pts
+		spawnChance = 0.1;
+		messageColor = "cc44ff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemGreen_MBU: GemItem_MBU) {
+		skin = "Green";
+		huntExtraValue = 3; //4 pts
+		spawnChance = 0.3;
+		messageColor = "66ff66";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemTurquoise_MBU: GemItem_MBU) {
+		skin = "Turquoise";
+		huntExtraValue = 6; //7
+		spawnChance = 0.1;
+		messageColor = "55ffff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemOrange_MBU: GemItem_MBU) {
+		skin = "orange";
+		huntExtraValue = 2; //3 pts
+		spawnChance = 0.45;
+		messageColor = "ffaa33";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemBlack_MBU: GemItem_MBU) {
+		skin = "black";
+		huntExtraValue = -2; //-1 pts
+		spawnChance = 0.45;
+		messageColor = "000000";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemWhite_MBU: GemItem_MBU) {
+		skin = "white";
+		huntExtraValue = -1; //0 pts
+		spawnChance = 0.80;
+		messageColor = "ffffff";
+		customField[0, "field"] = "";
+	};
+	datablock ItemData(GemItemRainbow_MBU: GemItem_MBU) {
+		skin = "rainbow";
+		huntExtraValue = -2; //-1 pts
+		spawnChance = 0.24;
+		messageColor = "4b0082";
 		customField[0, "field"] = "";
 	};
 }
