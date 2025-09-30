@@ -1,0 +1,244 @@
+new MaterialProperty(WaterFrictionMaterial) {
+   friction = 5;
+   restitution = 0;
+};
+
+addMaterialMapping( "MBGWater" ,    WaterFrictionMaterial);
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Make sure the building is in good standing!";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "50000";
+         level = "7";
+         music = "!beepbeep.ogg";
+         name = "Community Construction";
+         radar = "1";
+         startHelpText = "Don\'t fall off!";
+         type = "Advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new StaticShape(StartPoint) {
+      position = "0.316162 -20.3643 0.505302";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-73.0303 72.7993 -37.2";
+      rotation = "1 0 0 0";
+      scale = "150 150 150";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/construction.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "-2.1847 46.2031 29.0042";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1925";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      position = "-5.25017 6.78522 4.00139";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "15000";
+   };
+   new Item() {
+      position = "-2.58898 7.71811 23.6442";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "25000";
+   };
+   new Item() {
+      position = "-5.25683 37.7104 3.50251";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "12.6992 8.23837 3.68888";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperSpeedItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "5.24834 13.8534 0.721809";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "-3.86465 46.1955 18.4989";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new Item() {
+      position = "-15.2412 47.7026 15.5728";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new StaticShape() {
+      position = "12.7719 16.9937 3.49903";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+         disableOOB = "0";
+         gravity = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "7.46517 48.2551 29.9808";
+         rotation = "-0.0741997 -0.343327 0.93628 202.879";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

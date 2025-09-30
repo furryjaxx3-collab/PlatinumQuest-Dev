@@ -1,0 +1,569 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Marble Boddy, has been captured again. Find him, Marble Holmes!";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "60000";
+         level = "34";
+         music = "!3GentleStab.ogg";
+         name = "Graveyard Mansion";
+         radar = "1";
+         startHelpText = "Look for clues to unlock areas of the level.";
+         type = "Advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "50";
+      fogDistance = "50";
+      fogColor = "0 0 0 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0 0 0 1";
+      useSkyTextures = "0";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "0.597177 0 -0.80211";
+      color = "0 0 1 0";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new SimGroup(CheckPoints) {
+   };
+   new StaticShape() {
+      position = "-38.1789 109.401 25.6329";
+      rotation = "0 0 -1 98.5487";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "3455";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1988";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1628";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1443";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1908";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "-7.42723 -20.8133 0.49357";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-2 140.5 -26.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            position = "-2 180 -26.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new Trigger(MustChange) {
+         position = "-37 142 -34";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TriggerGotoTarget";
+         polyhedron = "1.0000000 1.0000000 -0.5000000 -2.0000000 0.0000000 0.0000000 0.0000000 -2.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            IContinueToTTime = "0";
+            instant = "0";
+            targetTime = "8000";
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroAdvanced/Mansion.dif";
+         interiorIndex = "0";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "0";
+      };
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/Mansion.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Trigger(E) {
+      position = "-93.0522 286.919 -83.4144";
+      rotation = "1 0 0 0";
+      scale = "161.304 400 400";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "-7.66219 103.148 3.25863";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "5000";
+   };
+   new StaticShape(EndPoint) {
+      position = "-38.2266 107.682 16.4851";
+      rotation = "0 0 -1 105";
+      scale = "0.75 0.75 0.75";
+      dataBlock = "EndPad_MBS";
+   };
+   new InteriorInstance() {
+      position = "7.6436 34.7073 0.500844";
+      rotation = "0 0 -1 36.0963";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/Winter/house0.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "9.85717 71.3411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-9.12885 7.18254 0.420959";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "15.4847 19.6471 0.266085";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-13.5428 71.3411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "9.85717 89.7411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-13.5428 89.7411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "9.85717 52.7411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-13.5428 52.9411 1.8652";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/tree_snow.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-1.30545 30.4894 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.5055 30.4894 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-11.1055 30.4894 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.5055 0.689352 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.5055 10.0894 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.5055 19.2894 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0.567475 36.294 0.48229";
+      rotation = "0 0 1 54.431";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-15.6773 36.2881 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-11.5604 -2.84326 0.482289";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "11.782 -2.72369 0.482289";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "2.31562 2.7367 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "7.4814 9.73157 0.482289";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-4.28336 9.67543 0.482291";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0.376764 17.6078 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-10.6241 16.8209 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-5.64308 23.681 0.48229";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-16.1683 23.8162 0.482289";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/headstone.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "24.3266 108.072 14.257";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "-36.58 141.362 -34.1248";
+      rotation = "0 0 1 140.375";
+      scale = "1 1 1";
+      dataBlock = "PushButton";
+         activated = "0";
+         resetTime = "Default";
+         triggerMesg = "true";
+         TriggerOnce = "0";
+   };
+   new Item() {
+      position = "-32.7364 137.902 12.5154";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-21.7949 129.318 -1.01134";
+      rotation = "-0.741363 -0.123447 -0.659653 28.3341";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.1813 132.744 1.15181";
+      rotation = "0.0896728 0.194586 -0.976778 71.2435";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.7694 139.149 3.03489";
+      rotation = "-0.741363 -0.123447 -0.659653 28.3341";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.1558 142.575 5.19804";
+      rotation = "0.0896728 0.194586 -0.976778 71.2435";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "22.3168 121.264 10.5799";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "20.7088 119.923 11.1738";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "22.3478 117.393 11.7808";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "21.0148 115.242 12.2513";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "22.4534 113.039 12.6705";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "23.2486 110.189 13.0592";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "21.5537 108.815 13.6644";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      interiorFile = "~/data/interiors/MBS1/levels/diamond5x5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "12.7413 145.439 6.10763";
+      rotation = "0 -1 0 90";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "13.3146 145.717 -34.0974";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "24.7241 145.165 3.48765";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6.75987 37.0339 0.755899";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-6.6418 65.8718 3.08837";
+         rotation = "-0.999994 0.00062249 0.00344673 20.475";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

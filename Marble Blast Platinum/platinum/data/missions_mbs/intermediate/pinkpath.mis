@@ -1,0 +1,352 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Can you speed to the finish?";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "15000";
+         level = "16";
+         music = "!hSolarCoaster.ogg";
+         name = "The Perilous Pink Path";
+         radar = "1";
+         startHelpText = "Keep an eye out for the Time Modifiers!";
+         Time = "30000";
+         type = "Intermediate";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new Trigger(E) {
+      position = "-19.4614 71.9252 16.6";
+      rotation = "1 0 0 0";
+      scale = "200 200 45";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1590";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1682";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2040";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2005";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1625";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "4595";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1612";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "70.8801 -54.7533 20.4758";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new InteriorInstance() {
+      position = "73.4119 -47.0408 19.9784";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/pathqualify.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "78.6863 -59.8112 20.498";
+      rotation = "1 0 0 0";
+      scale = "0.05 0.05 0.05";
+      dataBlock = "SuperSpeedItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+   };
+   new Item() {
+      position = "71.0564 -34.3256 30.6239";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "6500";
+   };
+   new TSStatic() {
+      position = "38.3649 -31.0671 35.0693";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/items/frozen_tt/timetravel.dts";
+      computeConvexHulls = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2879";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      position = "122.361 -9.48099 42.8784";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "1000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "3127";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      position = "63.4398 -59.6365 21.0727";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimePenaltyItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbgpenalty";
+         timePenalty = "3500";
+   };
+   new Item() {
+      position = "57.2724 -9.68035 35.099";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "4000";
+   };
+   new TSStatic() {
+      position = "53.0244 -41.1449 45.0784";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/items/frozen_tt/timetravel.dts";
+      computeConvexHulls = "0";
+   };
+   new StaticShape(EndPoint) {
+      position = "128.102 -9.77215 37.9766";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new StaticShape() {
+      position = "128.185 -11.7176 44.7989";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new Item() {
+      position = "58.8084 -9.70495 33.0528";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "133.258 -9.47073 35.0339";
+      rotation = "0 1 0 90";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "32.4551 -20.4498 46.7784";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "4000";
+   };
+   new Item() {
+      position = "94.109 -6.48728 35.3265";
+      rotation = "-0.0335782 -0.98861 0.146709 19.1215";
+      scale = "1 1 1";
+      dataBlock = "TimePenaltyItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbgpenalty";
+         timePenalty = "4000";
+   };
+   new Item() {
+      position = "73.393 -8.00254 40.9169";
+      rotation = "0 -1 0 16.0429";
+      scale = "1 1 1";
+      dataBlock = "TimePenaltyItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbgpenalty";
+         timePenalty = "3500";
+   };
+   new Item() {
+      position = "61.8666 -13.5217 44.0737";
+      rotation = "-0.0335781 -0.98861 0.146709 19.1215";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+         skin = "mbg";
+         timeBonus = "4000";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "97.0199 -49.9685 45.3888";
+         rotation = "0.285794 0.122121 -0.950478 48.4144";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

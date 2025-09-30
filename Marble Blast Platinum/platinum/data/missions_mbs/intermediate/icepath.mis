@@ -1,0 +1,352 @@
+new MaterialProperty(ZeroFrictionMaterial) {
+   friction = 0.00;
+   restitution = 0.4;
+};
+
+addMaterialMapping( "MBGIce" ,    ZeroFrictionMaterial);
+addMaterialMapping( "MBGGrass" ,    HighFrictionMaterial);
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Frozen to death, the marble cannot control itself.";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "30000";
+         level = "18";
+         music = "!jtAchillea.ogg";
+         name = "Ice Circuit";
+         radar = "1";
+         startHelpText = "Complete one lap without falling off!";
+         type = "Intermediate";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new Trigger(E) {
+      position = "-26.4948 182.132 -25.864";
+      rotation = "1 0 0 0";
+      scale = "100 250 100";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1590";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1620";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0.8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/icepath.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "14.5 -30.5 -2.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14.5 -30.5 4";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "2000";
+            smoothingType = "Linear";
+         };
+      };
+      new Trigger(MustChange) {
+         position = "-4.5 128.75 6.5";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TriggerGotoTarget";
+         polyhedron = "-1.5000000 -1.7500000 1.5000000 0.0000000 3.5000000 0.0000000 3.0000000 0.0000000 0.0000000 0.0000000 0.0000000 -3.0000000";
+            IContinueToTTime = "0";
+            instant = "0";
+            targetTime = "2000";
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/icepath.dif";
+         interiorIndex = "0";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            IntitialTargetPosition = "0";
+            trigger0 = "MyTrigger0";
+            trigger1 = "MyTrigger1";
+            trigger2 = "MyTrigger2";
+            trigger3 = "MyTrigger3";
+            trigger4 = "MyTrigger4";
+      };
+   };
+   new StaticShape(StartPoint) {
+      position = "-2.55379 -17.64 5.79213";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new Item() {
+      position = "45.5513 66.3823 13.3233";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "21.4252 115.206 6.82184";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "19.3491 117.785 6.18657";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "21.9714 125.879 7.01053";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "23.5089 121.216 7.4893";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "25.0246 116.43 7.93272";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "25.4622 123.977 8.07191";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "28.088 118.936 8.89211";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "28.6453 123.034 9.00752";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "33.7313 127.266 10.5758";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "27.3485 126.137 8.61717";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "28.3873 114.49 8.9548";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "31.514 119.181 9.96014";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "33.1042 116.609 10.3801";
+      rotation = "0 1 0 20";
+      scale = "4 4 4";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-3.80049 127.814 6.03714";
+      rotation = "0 0 -1 40";
+      scale = "1 1 1";
+      dataBlock = "PushButton";
+         activated = "0";
+         resetTime = "Default";
+         triggerMesg = "true";
+         TriggerOnce = "0";
+   };
+   new StaticShape(EndPoint) {
+      position = "-2.50181 -21.447 3.54495";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new Trigger(oob) {
+      position = "-16.8446 -19.3537 -4.5833";
+      rotation = "1 0 0 0";
+      scale = "30 0.1 20";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "-0.896786 -21.6583 10.462";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new Item() {
+      position = "-2.49999 -20.4985 1.42726";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "3.31743 -22.3831 16.398";
+         rotation = "0.513243 -0.0881196 0.853707 22.7425";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

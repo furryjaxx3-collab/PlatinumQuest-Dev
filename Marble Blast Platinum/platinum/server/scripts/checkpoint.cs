@@ -81,6 +81,10 @@ datablock StaticShapeData(Checkpoint_MBXP : checkPoint) {
 	shapeFile = "~/data/shapes/pads/checkpoint.dts";
 };
 
+datablock StaticShapeData(Checkpoint_MBS : checkPoint) {
+	shapeFile = "~/data/shapes_mbs/pads/checkpoint.dts";
+};
+
 function Checkpoint_MBU::onMissionReset(%this, %obj) {
 	if (!$Game::Menu) {
 		%obj.setThreadDir(0,false);

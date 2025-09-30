@@ -62,6 +62,7 @@ datablock StaticShapeData(TrapDoor) {
 	skin[0] = "base";
 	skin[1] = "skin0";
 	skin[2] = "skin1";
+	skin[3] = "stop";
 
 	customField[0, "field"  ] = "resetTime";
 	customField[0, "type"   ] = "time";
@@ -270,7 +271,20 @@ datablock StaticShapeData(SmallDuctFan_MBF : SmallDuctFan) {
 	compile = "pls";
 	shapeFile = "~/data/shapes_mbf/hazards/ductfan.dts";
 };
+datablock StaticShapeData(DuctFan_MBS : DuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Stop";
 
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbs/hazards/ductfan.dts";
+};
+datablock StaticShapeData(SmallDuctFan_MBS : SmallDuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Stop";
+
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbs/hazards/ductfan.dts";
+};
 datablock StaticShapeData(NomeshDuctFan_PQ : DuctFan) {
 	superCategory = "Hazards";
 	category = "PlatinumQuest";
@@ -310,8 +324,8 @@ function Ductfan_MBM::onAdd(%this,%obj) {
 		%obj.setDataBlock("Ductfan_MBU");
 	return Fan::onAdd(%this, %obj);
 }
-//-----------------------------------------------------------------------------
 
+//-----------------------------------------------------------------------------
 
 datablock AudioProfile(TornadoSfx) {
 	filename    = "~/data/sound/Tornado.wav";
@@ -325,15 +339,6 @@ datablock StaticShapeData(Tornado) {
 
 	shapeFile = "~/data/shapes/hazards/tornado.dts";
 	scopeAlways = true;
-
-	customField[1, "field"  ] = "skin";
-	customField[1, "type"   ] = "string";
-	customField[1, "name"   ] = "Skin Name";
-	customField[1, "desc"   ] = "Which skin to use (see skin selector).";
-	customField[1, "default"] = "skin0";
-
-	skin[0] = "base";
-	skin[1] = "mbf";
 
 	// Pull the marble in
 	forceType[0] = Spherical;  // Force type {Spherical, Field, Cone}
@@ -351,22 +356,6 @@ datablock StaticShapeData(Tornado) {
 	forceStrength[2] = 250;
 	forceRadius[2] = 3;
 };
-
-function Tornado::onAdd(%this,%obj) {
-	if (%obj.skin $= "")
-		%obj.skin = "base";
-
-	// Skin takes effect upon mission reset or reload
-	if (%obj.skinName !$= "") { //clean up old skinname field
-		%obj.skin = %obj.skinName;
-		%obj.skinName = "";
-	}
-
-	if (%obj.skin $= "")
-		%obj.skin = %obj.getSkinName();
-	else
-		%obj.setSkinName(%obj.skin);
-}
 
 function Tornado::onAdd(%this,%obj) {
 	%obj.playThread(0,"ambient");
@@ -393,6 +382,11 @@ datablock StaticShapeData(Tornado_MBM : Tornado) {
 	forceStrength[2] = 350;
 	forceRadius[2] = 3;
 };
+datablock StaticShapeData(Tornado_MBF : Tornado) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Future";
+	shapeFile = "~/data/shapes_mbf/hazards/tornado.dts";
+};
 
 //-----------------------------------------------------------------------------
 datablock StaticShapeData(OilSlick) {
@@ -409,6 +403,7 @@ datablock StaticShapeData(OilSlick) {
 
 	skin[0] = "base";
 	skin[1] = "ice";
+	skin[2] = "stop";
 };
 
 function OilSlick::onAdd(%this,%obj) {
@@ -1058,11 +1053,19 @@ function Tornado_MBM::onAdd(%this, %obj) {
 	Tornado::onAdd(%this, %obj);
 }
 
+function Tornado_MBF::onAdd(%this, %obj) {
+	Tornado::onAdd(%this, %obj);
+}
+
 function Tornado_PQ::onMissionReset(%this, %obj) {
 	Tornado::onMissionReset(%this, %obj);
 }
 
 function Tornado_MBM::onMissionReset(%this, %obj) {
+	Tornado::onMissionReset(%this, %obj);
+}
+
+function Tornado_MBF::onMissionReset(%this, %obj) {
 	Tornado::onMissionReset(%this, %obj);
 }
 

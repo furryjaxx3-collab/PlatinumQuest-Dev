@@ -1,0 +1,572 @@
+new MaterialProperty(LavaMaterial) {
+   friction = 0.5;
+   restitution = 0.5;
+};
+
+addMaterialMapping( "Pattern1" ,    LavaMaterial);
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Just enter. There\'s no need to be afraid.";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "25000";
+         level = "26";
+         music = "!hMotion.ogg";
+         name = "The Fiery Pit";
+         radar = "1";
+         startHelpText = "Don\'t forget the Diamonds!";
+         type = "Intermediate";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2652";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-67.934 119.326 -16.264";
+      rotation = "1 0 0 0";
+      scale = "150 250 75";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2102";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new TSStatic() {
+      position = "-2.7652 -62.7621 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new InteriorInstance() {
+      position = "75.4306 57.3876 13.1624";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/firepit.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "47.9774 64.7923 33.1493";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new Item() {
+      position = "45.4257 -6.73557 32.6635";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemGreen";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "37.1315 -53.032 32.6454";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Tornado";
+   };
+   new TSStatic() {
+      position = "-2.88641 -69.1863 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-5.52958 -66.6351 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-4.9181 -71.8375 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-1.63619 -71.9871 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "0.445821 -69.0376 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-2.0094 -66.2671 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "10.1818 -59.8995 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "3.49502 -60.3918 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "0.821219 -62.7385 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "2.1636 -71.866 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-15.714 -60.4295 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-14.9537 -72.9095 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "6.07984 -72.797 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "13.0889 -66.0126 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "1.44843 -66.061 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "3.4793 -63.4772 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "3.32779 -69.0075 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "15.9459 -72.5504 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "13.6515 -69.4743 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "6.52306 -62.5249 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "6.09933 -66.1709 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "6.66272 -70.1405 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "13.2791 -62.7073 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "9.7021 -64.1236 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "9.64272 -67.2861 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "10.3928 -70.7171 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-14.7053 -67.1804 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-11.1435 -67.0407 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-8.17285 -69.1685 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-8.70922 -64.2851 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-5.98818 -61.2224 24.934";
+      rotation = "1 0 0 0";
+      scale = "2 2 4";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new Item() {
+      position = "1.50985 -66.1471 33.124";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "-35.6172 -66.146 32.6959";
+      rotation = "0 0 -1 90";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new StaticShape() {
+      position = "-35.7106 -67.9683 38.1067";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new StaticShape() {
+      position = "14.2763 -69.967 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-9.22473 -63.5185 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7.45067 -69.4042 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "5.99109 -73.2187 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "1.47295 -71.9665 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0.698463 -67.1277 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "2.25072 -65.0853 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0.14008 -63.4333 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "13.1892 -66.035 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "11.0677 -59.2198 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "10.3101 -71.2831 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "9.72553 -63.553 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "3.6716 -63.53 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "0.525449 -69.9986 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-2.12691 -65.5876 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-6.42784 -60.4248 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-14.9025 -72.9093 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-10.7821 -67.7845 33.347";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-3.19539 -69.285 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-7.63084 -69.7799 33.195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new Trigger(E) {
+      position = "-27.4139 -44.3558 17.9121";
+      rotation = "1 0 0 0";
+      scale = "50 50 1";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "36.7864 -55.2945 32.8129";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new StaticShape() {
+      position = "25.4259 -66.6938 32.6515";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+         disableOOB = "0";
+         gravity = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-1.17691 -58.5842 39.7171";
+         rotation = "0.034786 -0.475654 0.878944 172.644";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

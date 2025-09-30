@@ -90,8 +90,7 @@ new SimGroup(MissionGroup) {
       position = "5.12697 73.704 13.2138";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "Tornado";
-         skin = "mbf";
+      dataBlock = "Tornado_MBF";
    };
    new InteriorInstance() {
       _moving = "0";
@@ -125,8 +124,7 @@ new SimGroup(MissionGroup) {
       position = "5.17742 14.2796 7.22394";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "Tornado";
-         skin = "mbf";
+      dataBlock = "Tornado_MBF";
    };
    new Item() {
       _moving = "0";

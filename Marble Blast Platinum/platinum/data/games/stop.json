@@ -1,0 +1,32 @@
+{
+	"name": "Stop",
+	"display": "Stop",
+	"order": 13,
+	"difficulties":
+	[
+		{
+			"name": "Beginner",
+			"display": "Beginner",
+			"missionDirectory": "platinum/data/missions_mbs/beginner",
+			"bitmapDirectory": "platinum/data/missions_mbs/beginner"
+		},
+		{
+			"name": "Intermediate",
+			"display": "Intermediate",
+			"missionDirectory": "platinum/data/missions_mbs/intermediate",
+			"bitmapDirectory": "platinum/data/missions_mbs/intermediate"
+		},
+		{
+			"name": "Advanced",
+			"display": "Advanced",
+			"missionDirectory": "platinum/data/missions_mbs/advanced",
+			"bitmapDirectory": "platinum/data/missions_mbs/advanced"
+		},
+		{
+			"name": "Expert",
+			"display": "Expert",
+			"missionDirectory": "platinum/data/missions_mbs/expert",
+			"bitmapDirectory": "platinum/data/missions_mbs/expert"
+		}
+	]
+}

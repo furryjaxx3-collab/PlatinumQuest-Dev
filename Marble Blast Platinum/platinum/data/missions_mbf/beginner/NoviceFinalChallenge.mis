@@ -831,8 +831,7 @@ new SimGroup(MissionGroup) {
       position = "-5.30723 -21.8307 -0.833962";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "Tornado";
-         skin = "mbf";
+      dataBlock = "Tornado_MBF";
    };
    new StaticShape() {
       _moving = "0";

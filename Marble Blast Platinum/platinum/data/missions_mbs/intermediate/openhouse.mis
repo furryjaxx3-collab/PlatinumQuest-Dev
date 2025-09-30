@@ -1,0 +1,1154 @@
+new MaterialProperty(LavaMaterial) {
+   friction = 0.5;
+   restitution = 0.5;
+};
+
+new MaterialProperty(DarknessMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 101;
+};
+
+addMaterialMapping( "Pattern1" ,    LavaMaterial);
+addMaterialMapping( "blackplate" ,    DarknessMaterial);
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Step inside and see the home!";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "160000";
+         level = "41";
+         music = "!trMainHouse.ogg";
+         name = "Open House Revision";
+         radar = "1";
+         startHelpText = "Take a tour.";
+         type = "Intermediate";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      position = "-8.09161 -9.03033 60.7418";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/openhouses.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Trigger(E) {
+      position = "-87.4641 22.9312 27.536";
+      rotation = "1 0 0 0";
+      scale = "150 150 150";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1671";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape() {
+      position = "-22.2732 -35.033 70.705";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new SimGroup(mw2_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-0.5 -66 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-9.5 -66 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "3 -66 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-0.5 -66 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(mw2) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "9";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-44.5 -29 67";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-44.5 -33 67";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-40.5 -33 67";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-40.5 -29 67";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-47.5 -31 67";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "0";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialPosition = "0";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-36.5 -32.5 66.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-34.3 -32.5 66.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-33.9 -29 66.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-36.5 -29 66.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-40.5 -31.5 66.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "800";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "1";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialPosition = "0";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-3.5 -65.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -63 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -60.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -58 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -65.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "6000";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "2";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-3.5 -50.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -53 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -55 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -57.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-3.5 -50.5 50";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "6000";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "3";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-3.5 -43 49.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            position = "-3.5 -43 57.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            position = "-3.5 -43 63.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            position = "-3.5 -43 57.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+         new Marker() {
+            position = "-3.5 -43 49.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "3000";
+            smoothingType = "Accelerate";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "4";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(mw2_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-6.5 -54 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "2.5 -54 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-10 -54 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-6.5 -54 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(mw2) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "5";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(mw2_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-0.5 -66 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-10 -66 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "2.5 -66 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-0.5 -66 58.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(mw2) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "6";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(mw2_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-0.5 -50 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-10 -50 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "2.5 -50 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-0.5 -50 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(mw2) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "7";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(mw2_g) {
+
+      new Path() {
+         isLooping = "0";
+
+         new Marker() {
+            position = "-6.5 -56 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "3 -56 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-10.5 -56 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "-6.5 -56 64.5";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "200";
+            smoothingType = "Spline";
+         };
+      };
+      new PathedInterior(mw2) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/MBS1/ZeroIntermediate/openhouseMP.dif";
+         interiorIndex = "8";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new StaticShape(StartPoint) {
+      position = "-7.94746 -5.01872 60.5098";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new Item() {
+      position = "-7.97381 -19.9524 69.0176";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-12.0006 -22.9358 70.8887";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-22.2335 -30.9788 70.683";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-3.33602 -74.1871 53.4837";
+      rotation = "0 0 1 90.0002";
+      scale = "5 5 0.5";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-19.7645 -37.5779 70.486";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-9.77081 -34.9365 70.5508";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "8.00178 -33.4438 70.9663";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-1.97451 -33.5495 70.9622";
+      rotation = "0 -1 0 90.0002";
+      scale = "2 1.1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new TSStatic() {
+      position = "13.0471 -30.7434 70.5637";
+      rotation = "1 0 0 0";
+      scale = "1 5 1";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-8.00683 -83.0115 66.997";
+      rotation = "1 0 0 0";
+      scale = "1 5 1";
+      shapeName = "~/data/shapes/quicksand.dts";
+      computeConvexHulls = "0";
+   };
+   new StaticShape() {
+      position = "-5.68069 -72.9364 65.2889";
+      rotation = "0 0.707107 0.707107 90";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "SignFinish";
+   };
+   new Item() {
+      position = "-24.2599 -33.0727 69.0007";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-46.7659 -29.7708 65.0027";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-17.021 -37.6185 69.0182";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6.9268 -35.0986 69.0455";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.00174 -39.5892 69.0789";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-2.93954 -33.5363 69.0491";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-8.55577 -40.1356 69.0135";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-3.53685 -82.9883 65.0453";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-3.49026 -57.8139 50.5007";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-3.52502 -73.8429 59.741";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "-3.51289 -73.8342 64.0013";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new Item() {
+      position = "-3.49926 -56.0615 64";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.493803 -42.0187 64";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemRed";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger(E) {
+      position = "-23.0199 -33.9753 69.0276";
+      rotation = "1 0 0 0";
+      scale = "0.5 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Please wipe your feet!";
+   };
+   new Trigger(E) {
+      position = "-8.5661 -19.4151 68.8381";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Please leave your shoes by the door!";
+   };
+   new Trigger(E) {
+      position = "-22.0788 -29.9289 68.931";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Enjoy the Patio!";
+   };
+   new Trigger(E) {
+      position = "-7.47967 -49.4817 49.114";
+      rotation = "1 0 0 0";
+      scale = "8 17 1";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger(E) {
+      position = "-12.504 -33.9955 69.0392";
+      rotation = "1 0 0 0";
+      scale = "0.5 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Hang up your jacket!";
+   };
+   new Trigger(E) {
+      position = "8.00515 -39.9851 68.4065";
+      rotation = "1 0 0 0";
+      scale = "2 0.5 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Check out the rooms to your left!";
+   };
+   new Trigger(E) {
+      position = "9.99841 -26.5007 69.0951";
+      rotation = "1 0 0 0";
+      scale = "0.5 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Enjoy the view!";
+   };
+   new Trigger(E) {
+      position = "0.0620235 -51.0007 68.8364";
+      rotation = "1 0 0 0";
+      scale = "0.5 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Go straight through the hallway first! When coming back, go right!";
+   };
+   new Trigger(E) {
+      position = "-3.49254 -86.9859 64.7959";
+      rotation = "1 0 0 0";
+      scale = "4 0.5 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Watch your step!";
+   };
+   new Trigger(E) {
+      position = "-3.49356 -54.5082 68.9382";
+      rotation = "1 0 0 0";
+      scale = "2 0.5 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Did you get your Diamond in the hallway?";
+   };
+   new Trigger(E) {
+      position = "-7.50251 -88.0166 53.2669";
+      rotation = "1 0 0 0";
+      scale = "4 0.5 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Welcome to the Basement! Don\'t go out of bounds!";
+   };
+   new Trigger(E) {
+      position = "-5.4808 -40.9876 63";
+      rotation = "1 0 0 0";
+      scale = "4 4 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Last stop, the Attic!";
+   };
+   new Trigger(E) {
+      position = "-22.4571 -17.0009 73.4";
+      rotation = "1 0 0 0";
+      scale = "49 80 1";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "-7.99209 -2.98728 65.1201";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new InteriorInstance() {
+      position = "-22.196 -146.714 68.1383";
+      rotation = "1 0 0 0";
+      scale = "0.1 10.73 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/blackplate 4x4.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-3.53725 -57.9965 49.6049";
+      rotation = "1 0 0 0";
+      scale = "0.201798 0.429164 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/lava.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-3.21214 -77.5376 65.6251";
+         rotation = "0.999918 -0.00182675 0.0126977 16.3746";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

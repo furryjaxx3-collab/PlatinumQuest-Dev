@@ -1,0 +1,491 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Can you sweep all of those 3D Mines and get out of the game alive?";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "45000";
+         level = "61";
+         music = "!hLimbo.ogg";
+         name = "Advanced Mineball";
+         radar = "1";
+         startHelpText = "A pen and paper might help remind you to what mines are the false ones...";
+         type = "Advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new StaticShape() {
+      position = "13.2336 -14.7302 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-73.0303 72.7993 -37.2";
+      rotation = "1 0 0 0";
+      scale = "150 150 150";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroIntermediate/Minesweeper.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "-3.93455 3.9247 0.9944";
+      rotation = "0 0 1 174.889";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new StaticShape(EndPoint) {
+      position = "11.3221 -41.4055 0.983536";
+      rotation = "0 0 1 155.844";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new TSStatic() {
+      position = "14.183 -29.0328 0.985681";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "17.0053 -16.8933 0.985682";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "0.814441 -7.85508 0.985681";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-11.1289 -12.9576 0.98568";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-11.2798 -22.5779 0.985682";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "10.1004 -6.01219 0.985681";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-2.16051 -17.0833 0.985681";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "4.11235 -25.6926 0.985682";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "2.71617 -37.1691 0.985681";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-4.82337 -30.0674 0.985682";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      shapeName = "~/data/shapes/hazards/landmine.dts";
+      computeConvexHulls = "0";
+   };
+   new StaticShape() {
+      position = "7.94048 -13.5106 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-4.36228 -13.6485 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-3.19251 -6.61834 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-16.3818 -16.3869 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-13.6157 -7.65512 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-9.16731 -4.36199 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "6.05082 -3.18044 0.978359";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "16.9064 -22.9057 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "14.8526 -10.1581 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "11.7943 -20.4055 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-17.6387 -24.0869 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-8.03035 -35.6945 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-11.3532 -28.9311 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-2.22016 -35.5983 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-0.819099 -24.2693 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "2.90623 -31.2178 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "9.57012 -32.654 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "10.2769 -25.5872 0.97836";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "4.28346 -19.2001 0.978361";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new Item() {
+      position = "0.839484 -7.82007 1.24649";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "10.1149 -5.98172 1.24008";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-11.1131 -12.9264 1.26035";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-11.2654 -22.533 1.23904";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "17.0046 -16.851 1.26636";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-2.13776 -17.0639 1.25064";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-4.81101 -30.0539 1.24897";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.7301 -37.1345 1.2421";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14.1923 -29 1.24023";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.16257 -25.6655 1.2365";
+      rotation = "1 0 0 0";
+      scale = "0.3 0.3 0.3";
+      dataBlock = "GemItemBlack";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger(hint) {
+      position = "-7.88349 -0.0389721 0.583161";
+      rotation = "0 0 -1 8.02147";
+      scale = "8.80314 1 4.42996";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "hint: Use the CheckPoint wisely...";
+   };
+   new StaticShape() {
+      position = "0.694361 -21.2569 0.990139";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+   };
+   new Item() {
+      position = "-8.73653 7.58472 0.948887";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "HelicopterItem";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+   };
+   new Item() {
+      position = "0.0233129 -18.1411 45.8843";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "1.82664 -10.127 40.5011";
+         rotation = "-0.0259021 -0.640637 0.767407 183.554";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

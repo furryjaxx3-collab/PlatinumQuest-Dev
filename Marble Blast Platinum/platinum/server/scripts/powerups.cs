@@ -1131,6 +1131,26 @@ datablock ItemData(EasterEgg_MBG) {
 	noPickupMessage = true;
 };
 
+datablock ItemData(Octagon) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Stop";	// This should be put in a new category
+	className = "PowerUp";	// Ditto
+
+	// Basic Item properties
+	shapeFile = "~/data/shapes_mbs/items/easteregg.dts";
+	mass = 1;
+	friction = 1;
+	elasticity = 0.3;
+	emap = false;
+
+	displayName = "Octagon";
+
+	// Dynamic properties defined by the scripts
+	noRespawn = true;
+	maxInventory = 1;
+	noPickupMessage = true;
+};
+
 //-----------------------------------------------------------------------------
 
 datablock AudioProfile(NestEggSfx) {
@@ -1219,6 +1239,9 @@ function EasterEgg_MBG::onPickup(%this,%obj,%user,%amount) {
 	return EasterEgg::onPickup(%this, %obj, %user, %amount);
 }
 
+function Octagon::onPickup(%this,%obj,%user,%amount) {
+	return EasterEgg::onPickup(%this, %obj, %user, %amount);
+}
 
 //-----------------------------------------------------------------------------
 

@@ -1,0 +1,506 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "It was only the beginning...";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "60000";
+         level = "24";
+         music = "!3thefinalreduxbattle.ogg";
+         name = "The End.";
+         radar = "1";
+         startHelpText = "Hahahaha... I\'ve trapped you now...";
+         type = "Expert";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new StaticShape(StartPoint) {
+      position = "-17.2093 -17.2835 0.478602";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-42.3896 71.2105 -37.2";
+      rotation = "1 0 0 0";
+      scale = "246.922 150 150";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroExpert/TheEnd.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "128.853 20.899 25.8654";
+      rotation = "0 0 -1 99.1217";
+      scale = "2 2 2";
+      dataBlock = "SignFinish";
+   };
+   new StaticShape() {
+      position = "-7.60643 19.5117 1.48114";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "DuctFan_MBS";
+   };
+   new StaticShape() {
+      position = "-15.8468 -3.52683 0.492641";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-18.2998 10.724 0.492641";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-17.9674 -5.42404 0.492641";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-16.1322 6.33593 0.492641";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-18.3674 -0.0901375 0.492641";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-5.38504 -16.9692 0.69121";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "18.4224 5.40317 0.696582";
+      rotation = "0 0 -1 61.8794";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "17.6828 0.422098 0.696582";
+      rotation = "0 0 1 120.894";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "14.0434 1.46066 0.696582";
+      rotation = "0 0 -1 8.5942";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "15.564 7.5092 0.696582";
+      rotation = "0 0 1 181.81";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "40.0501 0.0233857 0.510051";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Tornado";
+   };
+   new Item() {
+      position = "62.4956 17.4823 0.866623";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "129.489 17.4768 8.99647";
+      rotation = "0 0 1 62.4524";
+      scale = "4 4 4";
+      dataBlock = "EndPad_MBS";
+   };
+   new StaticShape() {
+      position = "6.21061 8.43672 0.52459";
+      rotation = "0 0 1 57.8687";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new StaticShape() {
+      position = "4.82413 1.47405 0.524589";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new StaticShape() {
+      position = "6.66568 -11.1639 0.52459";
+      rotation = "0 0 -1 119.175";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new StaticShape() {
+      position = "2.70238 -3.43915 0.52459";
+      rotation = "0 0 1 233.376";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new StaticShape() {
+      position = "8.47666 -3.195 0.52459";
+      rotation = "0 0 1 133.499";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new StaticShape() {
+      position = "1.38038 15.7424 0.52459";
+      rotation = "0 0 -1 32.0856";
+      scale = "1 1 1";
+      dataBlock = "oilslick";
+         skin = "stop";
+   };
+   new Item() {
+      position = "129.335 17.8725 28.0803";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-8.22382 12.3928 0.545934";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "27.8527 8.2986 0.510731";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "54.847 -14.399 0.510731";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "30.1904 -14.3396 0.510731";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "52.9056 16.2225 0.510731";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "37.068 27.8011 2.22252";
+      rotation = "0 0 -1 36.0963";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "153.081 18.3318 17.3613";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "119.903 -31.7438 22.5568";
+      rotation = "0 0 1 124.332";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "75.7203 36.0743 15.6549";
+      rotation = "0 0 1 40.68";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "58.3692 -12.8437 13.5865";
+      rotation = "0 0 1 124.905";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "7.74018 6.9129 12.2001";
+      rotation = "0 0 1 225.172";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-50.7521 -2.87348 -21.0741";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroExpert/UFOMarblaxia.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "129.261 17.1737 46.9894";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Trigger(E) {
+      position = "136.666 24.7879 8.74649";
+      rotation = "0 0 1 90";
+      scale = "15 15 2.05101";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "TIME TO CLIMB IN MY UFO!!! MWAHAHAHAHA!!!!";
+   };
+   new Trigger(E) {
+      position = "-19.4444 -6.45836 0.520186";
+      rotation = "1 0 0 0";
+      scale = "4.41257 0.1 4.4339";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This time, I will catch Marblaxia. I am not afraid anymore.";
+   };
+   new Trigger(E) {
+      position = "-1.41305 -13.923 0.511591";
+      rotation = "0 0 1 90";
+      scale = "4.41257 0.1 4.4339";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Mwhahahaha!";
+   };
+   new Trigger(E) {
+      position = "19.9067 -15.03 0.573805";
+      rotation = "0 0 1 90";
+      scale = "4.41257 0.1 4.4339";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This Cyclone is sure to throw you off the course!";
+   };
+   new Trigger(E) {
+      position = "60.4378 19.6459 0.704913";
+      rotation = "0 0 1 90";
+      scale = "4.41257 0.1 4.4339";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "WE COULD RULE TOGETHER, STOP MARBLE...";
+   };
+   new Trigger(E) {
+      position = "72.5672 19.7078 9.06216";
+      rotation = "0 0 1 90";
+      scale = "4.41257 0.1 13.5877";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "I decline. I will accept your final challenge, however...";
+   };
+   new Trigger(E) {
+      position = "105.078 19.7106 9.06295";
+      rotation = "0 0 1 90";
+      scale = "4.41257 0.1 13.5877";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Prepare to lose... Mwhahaha!!";
+   };
+   new InteriorInstance() {
+      position = "90.913 8.55954 24.8226";
+      rotation = "0 0 1 53.2851";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/MarblaxiaShip2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "60.144 -11.0432 19.0872";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "74.0464 37.9963 20.8369";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "138.062 13.3275 42.9943";
+      rotation = "0.627765 0.763754 0.150302 14.2229";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "67.8248 17.2306 12.63";
+         rotation = "0.0404736 -0.0403997 0.998364 89.9894";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

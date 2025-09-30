@@ -1,0 +1,458 @@
+new MaterialProperty(WaterFrictionMaterial) {
+   friction = 5;
+   restitution = 0;
+};
+
+new MaterialProperty(ZeroFrictionMaterial) {
+   friction = 0.00;
+   restitution = 0.4;
+};
+
+new MaterialProperty(DarknessMaterial) {
+   friction = 1;
+   restitution = 1;
+   force = 101;
+};
+
+addMaterialMapping( "MBGIce" ,    ZeroFrictionMaterial);
+addMaterialMapping( "MBGWater" ,    WaterFrictionMaterial);
+addMaterialMapping( "blackplate" ,    DarknessMaterial);
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "You won\'t skate better than Tony Hawk!";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "120000";
+         level = "52";
+         music = "!trDanceOff.ogg";
+         name = "The Frustrating Ultimate Half Pipe Course";
+         radar = "1";
+         startHelpText = "Welcome. You will not survive.";
+         type = "Advanced";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new SimGroup(MustChange_g) {
+
+      new Path() {
+         isLooping = "0";
+      };
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2285";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2019";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-190.613 324.758 -49.6242";
+      rotation = "1 0 0 0";
+      scale = "333.165 454.279 317.272";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroAdvanced/HalfPipeChallenge.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+         locked = "1";
+   };
+   new StaticShape(StartPoint) {
+      position = "4.99711 4.99634 0.495144";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new StaticShape() {
+      position = "-83.1253 211.294 26.3693";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SignFinish";
+   };
+   new StaticShape(EndPoint) {
+      position = "-85.0092 211.316 15.4969";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBS";
+   };
+   new InteriorInstance() {
+      position = "-14.0872 -15.5601 -25.5045";
+      rotation = "1 0 0 0";
+      scale = "1.1169 0.851039 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/halfgreen.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "42.7386 -45.8549 -59.9213";
+      rotation = "0 0 1 90";
+      scale = "1.1169 1.30312 2.32355";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/halfgreen.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-50.0418 -35.4954 15.4726";
+      rotation = "1 0 0 0";
+      scale = "1.99094 0.1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/blackplate 4x4.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "32.1748 9.08645 -10.507";
+      rotation = "0 0 1 90";
+      scale = "1.1169 1.29458 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/halfgreen.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-33.9261 -37.6794 3.96703";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/blackplate 4x4.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-134.083 159.967 7.99486";
+      rotation = "1 0 0 0";
+      scale = "1.11679 1.25001 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/icepipe.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-54.083 129.134 2.66798";
+      rotation = "1 0 0 0";
+      scale = "1.11678 1.47927 1.70992";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/waterpipe.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-83.9537 35.9363 6.93719";
+      rotation = "0 0 -1 90";
+      scale = "1.11594 1 1.141";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/mudpipe.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-23.4266 114.079 7.99524";
+      rotation = "0 0 1 90";
+      scale = "1.11664 1 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/spacepipe.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-104.145 194.021 -10.5052";
+      rotation = "1 0 0 0";
+      scale = "1.1169 0.851039 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/halfgreen.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-134.359 174.442 -10.5048";
+      rotation = "1 0 0 0";
+      scale = "1.12373 0.851039 1";
+      interiorFile = "~/data/interiors/MBS1/ZeroPipes/halfgreen.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "-78.4527 140.224 32.5153";
+      rotation = "1 0 0 0";
+      scale = "4 4 4";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "25.085 -60.1644 -10.9665";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-25.046 -85.0216 24.4982";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "GemItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-24.7871 -85.0306 38.9863";
+      rotation = "1 0 0 0";
+      scale = "5 5 0.1";
+      dataBlock = "RoundBumper";
+   };
+   new Item() {
+      position = "-24.9653 -85.0937 39.0242";
+      rotation = "1 0 0 0";
+      scale = "0.321513 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "0";
+   };
+   new Trigger(challenge3) {
+      position = "-90.7103 193.078 15.4748";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 36.8332";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "DARN IT! NOT AGAIN! You\'ve completed another Challenge... IF YOU HAVE ALL THE DIAMONDS?!!?!?!?!??!!";
+   };
+   new Trigger(challenge3) {
+      position = "-0.271424 -17.7371 0.525064";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Okay, you might, but welcome to the Half-Pipe-Challenge!";
+   };
+   new Trigger(challenge3) {
+      position = "16.0596 -29.5823 0.514207";
+      rotation = "0 0 1 90";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Along the way, collect the Diamonds.";
+   };
+   new Trigger(challenge3) {
+      position = "19.5461 -42.7754 0.509477";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Challenge #1: Simple Half Pipe";
+   };
+   new Trigger(challenge3) {
+      position = "19.9008 -76.5669 0.561743";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Want a medal?";
+   };
+   new Trigger(challenge3) {
+      position = "3.91028 -79.7169 0.665991";
+      rotation = "0 0 1 90";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Challenge #2: Half-Pipe Platform Landing";
+   };
+   new Trigger(challenge3) {
+      position = "-48.7995 -79.6815 0.520025";
+      rotation = "0 0 1 90";
+      scale = "10.6319 2.22686 33.5681";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Dangnabbit! You passed, as long as you have the Diamond from above you.";
+   };
+   new Trigger(challenge3) {
+      position = "-57.5746 -23.1996 15.4765";
+      rotation = "0 0 1 90";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Challenge #3: Half Pipe Dodge";
+   };
+   new Trigger(challenge3) {
+      position = "-20.3133 30.5605 15.5136";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Challenge #4: Frictional Half-Pipes";
+   };
+   new Trigger(challenge3) {
+      position = "-20.3874 -16.6966 15.5324";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 5";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Easier than you thought, wasn\'t it?";
+   };
+   new Trigger(challenge3) {
+      position = "-100.13 115.911 15.2774";
+      rotation = "1 0 0 0";
+      scale = "10.6319 2.22686 36.8332";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "GOSH DARN IT! Challenge #5: Diamond Catching";
+   };
+   new StaticShape() {
+      position = "24.9972 -74.8863 0.48376";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+   };
+   new StaticShape() {
+      position = "-47.5234 -85.0109 0.504457";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+   };
+   new StaticShape() {
+      position = "-15.018 -29.9932 15.5104";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+   };
+   new StaticShape() {
+      position = "-94.9996 114.998 15.5103";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Checkpoint_MBS";
+         chkcollide = "1";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-15.7945 -60.6231 44.8101";
+         rotation = "0.864633 0.110892 -0.490013 29.3346";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

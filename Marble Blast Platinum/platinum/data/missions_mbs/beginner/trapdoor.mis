@@ -1,0 +1,542 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "telamon";
+         CustomRadarRule = "0";
+         desc = "Don\'t be on the Trap Doors for too long!";
+         game = "Stop";
+         gameMode = "null";
+         goldTime = "20000";
+         level = "10";
+         music = "!mBox.ogg";
+         name = "It\'s a Trap!";
+         radar = "1";
+         startHelpText = "Foil Marblaxia\'s Trap Doors through this learning course!";
+         type = "Beginner";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbs/mbstop1/mbstop1.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "-1 7.45949e-31 1.3684e-38";
+      fogVolume2 = "-1 1.07208e-14 8.756e-14";
+      fogVolume3 = "-1 5.1012e-10 2.05098e-08";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 4e-06";
+      fogVolumeColor3 = "128 128 128 1.44355e+07";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+   };
+   new Sun() {
+      direction = "-0.68704 0.433247 -0.583329";
+      color = "1 1 0.4 1";
+      ambient = "0.3 0.3 0.4 1";
+   };
+   new InteriorInstance() {
+      position = "-52.4532 -30.8343 166.872";
+      rotation = "1 0 0 0";
+      scale = "0.8 0.8 0.8";
+      interiorFile = "~/data/interiors/MBS1/ZeroBeginner/trapdoor.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1764";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1660";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2529";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1788";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(E) {
+      position = "-78.3053 55.806 157.136";
+      rotation = "1 0 0 0";
+      scale = "50 150 50";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1712";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "-53.3921 -38.9913 174.458";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBS";
+   };
+   new StaticShape() {
+      position = "-53.4783 -23.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-59.4329 6.16822 177.699";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new Item() {
+      position = "-63.254 -2.8356 174.544";
+      rotation = "1 0 0 0";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "SuperJumpItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-51.4782 -27.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new TSStatic() {
+      position = "-50.0326 -2.27796 174.425";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/signs/signup.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-56.6721 -2.48291 174.486";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/signs/signup.dts";
+      computeConvexHulls = "0";
+   };
+   new Trigger(hit) {
+      position = "-61.8545 1.66311 177.669";
+      rotation = "1 0 0 0";
+      scale = "18 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Getting up trap-stairs is really hard to do. Hold Space Bar and move the marble across the trap doors CAREFULLY.";
+   };
+   new StaticShape() {
+      position = "-52.1096 18.0219 184.347";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "SignFinish";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "4472";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape() {
+      position = "-46.6521 6.14903 177.744";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new Item() {
+      position = "-53.5933 -4.41019 174.526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemTurquoise";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-59.433 14.9682 180.099";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-59.433 12.7682 179.499";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-59.433 10.5682 178.899";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-59.433 8.36822 178.299";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new Trigger(hit) {
+      position = "-63.8465 4.98506 174.169";
+      rotation = "1 0 0 0";
+      scale = "21 9 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Use your wall hit skills to get on top!";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "6851";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape() {
+      position = "-46.6522 14.949 180.144";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-46.6522 12.749 179.544";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-46.6522 10.549 178.944";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-46.6522 8.34903 178.344";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new Trigger(E) {
+      position = "-63.0025 -6.27958 166.86";
+      rotation = "1 0 0 0";
+      scale = "20 35 0.2";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "-53.4783 -21.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-53.4783 -19.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-53.4783 -29.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -27.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -25.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -23.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -21.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -19.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-55.4783 -29.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-51.4782 -25.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-51.4782 -23.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-51.4782 -21.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-51.4782 -19.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-51.4783 -29.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-53.4783 -27.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape() {
+      position = "-53.4783 -25.0147 174.454";
+      rotation = "0 0 -1 90.0002";
+      scale = "1 1 1";
+      dataBlock = "TrapDoor";
+         mbuanim = "0";
+         open = "0";
+         resetTime = "Default";
+         skin = "stop";
+         timeout = "200";
+   };
+   new StaticShape(EndPoint) {
+      position = "-53.0345 17.1926 180.862";
+      rotation = "0 0 1 180";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "EndPad_MBS";
+   };
+   new Item() {
+      position = "-44.7222 -54.065 173.205";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-53.3937 -25.0047 175.879";
+         rotation = "-0.998785 0.000671657 0.0492681 1.56419";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
