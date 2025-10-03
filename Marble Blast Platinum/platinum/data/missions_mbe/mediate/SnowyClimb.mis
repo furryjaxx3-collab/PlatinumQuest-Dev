@@ -185,8 +185,16 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "-90";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "pork";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(pork) {
       position = "33.9703 -24.0223 54.1083";

@@ -372,8 +372,16 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-         delay = "0010";
+         cameraYaw = "180";
+         centerDestPoint = "1";
+         delay = "10";
          destination = "supbro";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(supbro) {
       position = "-3.84623 14.7536 30.7435";
@@ -494,8 +502,16 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "90";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "bill";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(bill) {
       position = "13.4821 -18.545 46.0638";
@@ -545,8 +561,15 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "bob";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(InvertTrigger) {
       position = "-19.5124 -18.9461 40.4662";
@@ -621,14 +644,21 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "joe";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(joe) {
       position = "35.6845 -13.6899 58.6592";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "TeleportTrigger";
+      dataBlock = "DestinationTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new Trigger(InvertTrigger) {

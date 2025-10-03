@@ -380,7 +380,15 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
+         delay = "2000";
          destination = "hyt";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(hyt) {
       position = "-5.76852 -3.75418 34.4";

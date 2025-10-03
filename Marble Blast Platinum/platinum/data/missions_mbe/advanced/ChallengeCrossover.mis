@@ -378,8 +378,16 @@ new SimGroup(MissionGroup) {
       scale = "2 0.5 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "180";
+         centerDestPoint = "1";
          delay = "1";
          destination = "pickle";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new StaticShape() {
       position = "28.7461 10.9908 16.3705";

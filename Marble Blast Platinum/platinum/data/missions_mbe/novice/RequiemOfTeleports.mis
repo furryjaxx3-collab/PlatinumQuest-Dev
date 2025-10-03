@@ -109,8 +109,16 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "180";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "left";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(right) {
       position = "0.196776 33.7555 87.1837";
@@ -125,8 +133,16 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "90";
+         centerDestPoint = "1";
          delay = "2000";
          destination = "right";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger() {
       position = "8.134 -22.775 94.478";
@@ -134,8 +150,15 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
          delay = "1";
          destination = "downthere";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(downthere) {
       position = "34.001 -4.43097 72.3924";
@@ -150,8 +173,15 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
          delay = "1";
          destination = "upthere";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(upthere) {
       position = "33.9898 -4.46411 72.3884";
@@ -173,8 +203,15 @@ new SimGroup(MissionGroup) {
       scale = "24 6 0.5";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         centerDestPoint = "1";
          delay = "1";
          destination = "muhahaha";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new ScriptObject() {
          bonusTime = "0";
@@ -190,8 +227,16 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         cameraYaw = "90";
+         centerDestPoint = "1";
          delay = "1500";
          destination = "finale";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Item() {
       position = "22.6277 7.23248 71.9971";

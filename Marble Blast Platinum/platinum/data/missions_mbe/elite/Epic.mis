@@ -754,8 +754,16 @@ new SimGroup(MissionGroup) {
       scale = "2 4 2";
       dataBlock = "TeleportTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-         delay = "0002";
+         cameraYaw = "180";
+         centerDestPoint = "1";
+         delay = "2";
          destination = "dora";
+         DisplayGemsMessage = "0";
+         inverseVelocity = "0";
+         keepAngular = "0";
+         keepCamera = "0";
+         keepVelocity = "0";
+         silent = "0";
    };
    new Trigger(dora) {
       position = "-148.493 -38.9777 79.2209";
