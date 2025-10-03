@@ -1,0 +1,431 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Nihahhat";
+         CustomRadarRule = "0";
+         desc = "Follow the pathway in the sky. <---typical description based off the title";
+         game = "Elite";
+         gameMode = "null";
+         level = "12";
+         music = "Disco Light.ogg";
+         name = "Sky Path";
+         platinumTime = "15000";
+         radar = "1";
+         startHelpText = "Just roll forward... don\'t be afraid...";
+         type = "Novice";
+         ultimateTime = "9000";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbe/Jade Peaks/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+38";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+38";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.9 0.9 0.9 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      direction = "0.544508 0.439467 -0.714409";
+      color = "1 1 1 1";
+      ambient = "0.3 0.3 0.4 1";
+         locked = "true";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/Spsplit.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/Spsplit3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/Spsplit4.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/Spslit5.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "-0.981863 21.4837 0.498702";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBE";
+   };
+   new StaticShape(EndPoint) {
+      position = "-2.50468 -43.0174 13.1278";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBE";
+   };
+   new Trigger(Bounds) {
+      position = "-27.25 37.125 -26.1";
+      rotation = "1 0 0 0";
+      scale = "57.125 103.5 72";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new TSStatic() {
+      position = "-1.05 9.5 0";
+      rotation = "1 0 0 0";
+      scale = "2 9.52 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "9.54012 -8.35455 1.84307";
+      rotation = "0 1 0 25.7832";
+      scale = "4.25 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "15.6121 -23.253 3.62264";
+      rotation = "1 0 0 0";
+      scale = "2 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "15.6305 -15.7542 3.62295";
+      rotation = "1 0 0 0";
+      scale = "2 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-13.9444 -30.7831 0.876391";
+      rotation = "1 0 0 0";
+      scale = "0.25 2 5";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/Spsplit2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new TSStatic() {
+      position = "-2.3367 -30.6748 3.625";
+      rotation = "1 0 0 0";
+      scale = "11.5 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2009";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new TSStatic() {
+      position = "-7.22937 -44.7585 8.36548";
+      rotation = "0 -1 0 25.2102";
+      scale = "2.75 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-11.5 -44.75 9.5";
+      rotation = "1 0 0 0";
+      scale = "2 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-6.80764 -51.0116 11.5354";
+      rotation = "0 1 0 24.0643";
+      scale = "2.75 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new TSStatic() {
+      position = "-11.5221 -50.9892 10.3859";
+      rotation = "1 0 0 0";
+      scale = "2 2 0.25";
+      shapeName = "~/data/shapes/colmesh.dts";
+      computeConvexHulls = "0";
+   };
+   new InteriorInstance() {
+      position = "-22.0243 -42.0504 -9.2755";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "3.90487 20.1558 -15.3439";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "7.91959 20.1589 0.147982";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "1.30047 35.3801 -0.454865";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-2.71425 35.377 -15.9467";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-10.1035 21.9491 -0.604053";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.1182 21.946 -16.0959";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-10.7381 1.05809 -1.60407";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.7528 1.05499 -17.0959";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-3.73773 -23.3125 -0.0040791";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-7.75243 -23.3156 -15.4959";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "12.9147 2.71537 -7.20408";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "8.89998 2.71227 -22.6959";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "28.2561 -16.0385 -4.71785";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "24.2413 -16.0415 -20.2097";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "22.8711 -35.4125 2.16262";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "18.8563 -35.4156 -13.3292";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "7.00678 -47.4033 6.66516";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "2.99198 -47.4064 -8.82665";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-5.41319 -55.9088 6.3387";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-9.42799 -55.9119 -9.15311";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-18.0095 -42.0473 6.21631";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "1.26421 18.7924 -3.467";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "SuperJumpItem_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-13.9772 -31.1164 11.9407";
+      rotation = "1 0 0 0";
+      scale = "1.2 1.2 1.35";
+      dataBlock = "EasterEgg_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger() {
+      position = "10.6031 -28.7469 4.11708";
+      rotation = "1 0 0 0";
+      scale = "1 4 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "To pass this challenge, gain speed, and wall-hit the invisible wall!";
+   };
+   new InteriorInstance() {
+      position = "6.60298 7.45177 -2.7504";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SignLeftLowCon.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-2.87587 -50.3775 19.7759";
+         rotation = "0.898534 -0.116994 0.423025 34.2165";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

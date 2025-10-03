@@ -2,7 +2,7 @@
   "identifier": "mbsui",
   "name": "MBStop Timer",
   "author": "Jiquor",
-  "description": "Classic HUD style from MBS.",
+  "description": "The HUD from Marble Blast Stop.",
   "timer_color": {
     "normal": "255 255 255 255",
     "stopped": "255 255 255 255",

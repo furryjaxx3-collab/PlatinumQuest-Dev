@@ -108,6 +108,7 @@ function onServerCreated() {
 	exec("./physMod.cs");
 	exec("./fireball.cs");
 	exec("./replay.cs");
+	exec("./MovingItems.cs");
 	helpBubbleInit();
 
 	exec("./scenery.cs");

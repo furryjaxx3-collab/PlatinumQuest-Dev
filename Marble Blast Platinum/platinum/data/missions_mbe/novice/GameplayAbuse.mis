@@ -1,0 +1,453 @@
+new MaterialProperty(BouncyMaterial)
+{
+	friction = 1;
+	restitution = 1;
+	force = 13;
+};
+new MaterialProperty(HighBouncyMaterial)
+{
+	friction = 1;
+	restitution = 1;
+	force = 18;
+};
+new MaterialProperty(LowBouncyMaterial)
+{
+	friction = 1;
+	restitution = 1;
+	force = 6;
+};
+addMaterialMapping("mbe_floorbounce_medium", BouncyMaterial);
+addMaterialMapping("mbe_floorbounce_high", HighBouncyMaterial);
+addMaterialMapping("mbe_floorbounce_low", LowBouncyMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Nihahhat";
+         CustomRadarRule = "0";
+         desc = "Try out a bunch of crazy floors that will afect your gameplay!";
+         game = "Elite";
+         gameMode = "null";
+         level = "13";
+         music = "Commando.ogg";
+         name = "Gameplay Abuse";
+         platinumTime = "48000";
+         radar = "1";
+         startHelpText = "This is the pink bouncy floor. It will give you a small bump upwards.";
+         type = "Novice";
+         ultimateTime = "40000";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbe/Atrocious Gleam/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+38";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+38";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.9 0.9 0.9 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      direction = "0.544508 0.439467 -0.714409";
+      color = "1 1 1 1";
+      ambient = "0.3 0.3 0.4 1";
+         locked = "true";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new InteriorInstance() {
+      position = "0.000453949 0.00679731 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/GameplayAbuse.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "5.53076 -7.97824 3";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBE";
+   };
+   new StaticShape(EndPoint) {
+      position = "5.52077 9.98634 43";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBE";
+   };
+   new Trigger(Bounds) {
+      position = "-18 22.5 -14";
+      rotation = "1 0 0 0";
+      scale = "39 36.5 74";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger(HighjumpTrigger) {
+      position = "13.4876 0.000451684 26.9717";
+      rotation = "1 0 0 0";
+      scale = "4 2 1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "jumpImpulse";
+         noEmitters = "1";
+         value0 = "16";
+   };
+   new Trigger(InvertTrigger) {
+      position = "7.17634 5.99105 16.9704";
+      rotation = "1 0 0 0";
+      scale = "6.25 2 2.1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "maxRollVelocity";
+         marbleAttribute1 = "airAcceleration";
+         noEmitters = "1";
+         value0 = "-15";
+         value1 = "-5";
+   };
+   new Trigger(InvertTrigger) {
+      position = "5.48961 6.00564 18.983";
+      rotation = "1 0 0 0";
+      scale = "2 8 2.1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "maxRollVelocity";
+         marbleAttribute1 = "airAcceleration";
+         noEmitters = "1";
+         value0 = "-15";
+         value1 = "-5";
+   };
+   new Trigger(InvertTrigger) {
+      position = "5.50599 -6.4965 18.9075";
+      rotation = "1 0 0 0";
+      scale = "2 4 2.1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "maxRollVelocity";
+         marbleAttribute1 = "airAcceleration";
+         noEmitters = "1";
+         value0 = "-15";
+         value1 = "-5";
+   };
+   new Trigger(InvertTrigger) {
+      position = "-0.478879 -8.52754 18.9741";
+      rotation = "1 0 0 0";
+      scale = "6 2 2.1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "maxRollVelocity";
+         marbleAttribute1 = "airAcceleration";
+         noEmitters = "1";
+         value0 = "-15";
+         value1 = "-5";
+   };
+   new Trigger(LowGravityTrigger) {
+      position = "-4.49378 7.46754 20.3671";
+      rotation = "1 0 0 0";
+      scale = "2 4 4";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "gravity";
+         noEmitters = "1";
+         value0 = "8";
+   };
+   new Trigger(LowGravityTrigger) {
+      position = "-8.51967 7.51182 18.9406";
+      rotation = "1 0 0 0";
+      scale = "4 16 5";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "gravity";
+         noEmitters = "1";
+         value0 = "8";
+   };
+   new Trigger(DoubleJumpTrigger) {
+      position = "3.52211 8.00542 20.9598";
+      rotation = "1 0 0 0";
+      scale = "2 2 1";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "jumpImpulse";
+         noEmitters = "1";
+         value0 = "11";
+   };
+   new Trigger() {
+      position = "-10.3553 -4.00081 38.9944";
+      rotation = "0 1 0 8.59475";
+      scale = "4.1 4 2";
+      dataBlock = "InvisibleTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-6.48733 5.99251 36.969";
+      rotation = "1 0 0 0";
+      scale = "2 8 2";
+      dataBlock = "InvisibleTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-10.5315 -0.0418444 38.9668";
+      rotation = "0 -1 0 26.9291";
+      scale = "4.5 4 2";
+      dataBlock = "InvisibleTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1786";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Item() {
+      position = "0.489563 3.05304 36.1465";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ShockAbsorberItem_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "1552";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new Trigger(green) {
+      position = "-6.99231 14.5262 6.78984";
+      rotation = "1 0 0 0";
+      scale = "4.5 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "The green bouncy floor is much like the pink one, except it gives you a higher bounce.";
+   };
+   new Trigger(blue) {
+      position = "10.5201 17.9957 11.9704";
+      rotation = "0 0 1 90";
+      scale = "4.5 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "The blue bouncy force has an even higher bounce force.";
+   };
+   new Trigger(inver) {
+      position = "14.4999 6.02036 16.9992";
+      rotation = "0 0 1 90";
+      scale = "2 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Caution! The inversion floor will invert your controls!  Press backward to go forward.";
+   };
+   new InteriorInstance() {
+      position = "-17.5992 9.86712 8.55051";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0.207344 -14.3662 8.68161";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "4.21266 -14.3969 40.2105";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "30.7015 7.48703 41.477";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "26.6962 7.51773 9.94814";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "5.3289 31.6862 40.4632";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "1.32359 31.7169 8.93438";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-13.5939 9.83642 40.0793";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Trigger(grav) {
+      position = "-8.2375 -7.49804 18.9909";
+      rotation = "1 0 0 0";
+      scale = "4 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This is the low gravity floor that makes your marble float!";
+   };
+   new Trigger(dub) {
+      position = "3.5 10 21";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "When you roll on this high jump floor, you can jump higher than normal!";
+   };
+   new Trigger(High) {
+      position = "13.4869 1.97062 26.9628";
+      rotation = "1 0 0 0";
+      scale = "4 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This green floor works like the blue one, but makes your marble jump 3x higher!";
+   };
+   new Trigger(noo) {
+      position = "3.48732 -1.98339 34.9817";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "You may not jump when traveling on this no jumping floor!";
+   };
+   new Trigger(invisi) {
+      position = "-6.49104 8.63214 36.7445";
+      rotation = "1 0 0 0";
+      scale = "4 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "The invisifloor will make your marble disappear!";
+   };
+   new Trigger() {
+      position = "3.49683 -1.99686 38.9563";
+      rotation = "1 0 0 0";
+      scale = "4 1 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Those are all the unique floors that make up MBElite.";
+   };
+   new Trigger(NoJumpTrigger) {
+      position = "0.160358 13.7778 34.9782";
+      rotation = "1 0 0 0";
+      scale = "12 16 4";
+      dataBlock = "MarblePhysModTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         marbleAttribute0 = "jumpImpulse";
+         noEmitters = "1";
+         value0 = "0";
+   };
+   new Trigger() {
+      position = "-0.511442 6.02375 15.1208";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "TeleportTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         delay = "2000";
+         destination = "ds";
+   };
+   new Trigger(ds) {
+      position = "8.48736 2.95429 36.0325";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "DestinationTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "5.73739 8.24143 41.2408";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-5.97552 4.2385 56.3731";
+         rotation = "0.362023 -0.594523 0.71797 132.771";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

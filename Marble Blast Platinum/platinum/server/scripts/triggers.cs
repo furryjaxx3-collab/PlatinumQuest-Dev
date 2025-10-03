@@ -1503,3 +1503,25 @@ function noteEnvironment(%onlysky) {
 		}
 	}
 }
+
+//-----------------------------------------------------------------------------
+// Trigger that makes the marble invisible
+
+datablock TriggerData(InvisibleTrigger)
+{
+   tickPeriodMS = 100;
+};
+
+function InvisibleTrigger::onEnterTrigger(%this, %trigger, %obj)
+{
+
+localclientconnection.player.setCloaked(true);
+
+}
+
+function InvisibleTrigger::onLeaveTrigger(%this, %trigger, %obj)
+{
+
+localclientconnection.player.setCloaked(false);
+
+}

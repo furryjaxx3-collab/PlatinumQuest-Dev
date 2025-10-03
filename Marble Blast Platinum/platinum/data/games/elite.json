@@ -1,0 +1,38 @@
+{
+	"name": "Elite",
+	"display": "Elite",
+	"order": 11,
+	"difficulties":
+	[
+		{
+			"name": "Beginner",
+			"display": "Novice",
+			"missionDirectory": "platinum/data/missions_mbe/novice",
+			"bitmapDirectory": "platinum/data/missions_mbe/novice"
+		},
+		{
+			"name": "Intermediate",
+			"display": "Mediate",
+			"missionDirectory": "platinum/data/missions_mbe/mediate",
+			"bitmapDirectory": "platinum/data/missions_mbe/mediate"
+		},
+		{
+			"name": "Advanced",
+			"display": "Advanced",
+			"missionDirectory": "platinum/data/missions_mbe/advanced",
+			"bitmapDirectory": "platinum/data/missions_mbe/advanced"
+		},
+		{
+			"name": "Expert",
+			"display": "Elite",
+			"missionDirectory": "platinum/data/missions_mbe/elite",
+			"bitmapDirectory": "platinum/data/missions_mbe/elite"
+		},
+		{
+			"name": "Bonus",
+			"display": "Bonus",
+			"missionDirectory": "platinum/data/missions_mbe/bonus",
+			"bitmapDirectory": "platinum/data/missions_mbe/bonus"
+		}
+	]
+}

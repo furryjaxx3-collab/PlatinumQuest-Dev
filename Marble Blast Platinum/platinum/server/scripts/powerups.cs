@@ -164,6 +164,13 @@ datablock ItemData(SuperJumpItem_PQ : SuperJumpItem) {
 	shapeFile = "~/data/shapes_pq/Gameplay/Powerups/superjump.dts";
 };
 
+datablock ItemData(SuperJumpItem_MBE : SuperJumpItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/superjump.dts";
+};
+
 // datablock ItemData(SuperJumpItem_MBU : SuperJumpItem) {
 // 	shapeFile = "~/data/shapes_mbu/items/superjump.dts";
 // };
@@ -250,6 +257,18 @@ datablock ShapeBaseImageData(SuperBounceImage_MBU : SuperBounceImage) {
 	shapeFile = "~/data/shapes_mbu/images/glow_bounce.dts";
 };
 
+datablock ItemData(SuperBounceItem_MBE : SuperBounceItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/superbounce.dts";
+	image = SuperBounceImage_MBE;
+};
+
+datablock ShapeBaseImageData(SuperBounceImage_MBE : SuperBounceImage) {
+	shapeFile = "~/data/shapes_mbe/images/glow_bounce.dts";
+};
+
 //-----------------------------------------------------------------------------
 
 datablock AudioProfile(DoSuperSpeedSfx) {
@@ -300,6 +319,13 @@ datablock ItemData(SuperSpeedItem_PQ : SuperSpeedItem) {
 	category = "PlatinumQuest";
 
 	shapeFile = "~/data/shapes_pq/Gameplay/Powerups/superspeed.dts";
+};
+
+datablock ItemData(SuperSpeedItem_MBE : SuperSpeedItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/superspeed.dts";
 };
 
 //-----------------------------------------------------------------------------
@@ -383,6 +409,18 @@ datablock ItemData(ShockAbsorberItem_MBU : ShockAbsorberItem) {
 
 datablock ShapeBaseImageData(ShockAbsorberImage_MBU : ShockAbsorberImage) {
 	shapeFile = "~/data/shapes_mbu/images/glow_bounce.dts";
+};
+
+datablock ItemData(ShockAbsorberItem_MBE : ShockAbsorberItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/shockabsorber.dts";
+	image = ShockAbsorberImage_MBE;
+};
+
+datablock ShapeBaseImageData(ShockAbsorberImage_MBE : ShockAbsorberImage) {
+	shapeFile = "~/data/shapes_mbe/images/glow_bounce.dts";
 };
 
 //-----------------------------------------------------------------------------
@@ -480,6 +518,8 @@ datablock ShapeBaseImageData(HelicopterImage_PQ : ActualHelicopterImage) {
 
 	shapeFile = "~/data/shapes_pq/Gameplay/Powerups/gyrocopter.dts";
 };
+
+// MBE's helicopter is the exact same texture as the normal one, so it is not here
 
 // datablock ShapeBaseImageData(HelicopterImage_MBU : ActualHelicopterImage) {
 // 	shapeFile = "~/data/shapes_mbu/images/helicopter_image.dts";
@@ -591,6 +631,7 @@ datablock ItemData(TimeTravelItem) {
 	emap = false;
 	skin[0] = "base";
 	skin[1] = "mbg";
+	skin[2] = "mbe";
 
 	// Dynamic properties defined by the scripts
 	noRespawn = true;
@@ -739,6 +780,7 @@ datablock ItemData(TimePenaltyItem : TimeTravelItem) {
 
 	skin[0] = "penalty";
 	skin[1] = "mbgpenalty";
+	skin[2] = "mbepenalty";
 };
 
 datablock ItemData(TimePenaltyItem_PQ : TimeTravelItem) {
@@ -1011,6 +1053,15 @@ datablock ItemData(AntiGravityItem_PQ : AntiGravityItem) {
 	pickupName = "a Gravity Modifier!";
 };
 
+datablock ItemData(AntiGravityItem_MBE : AntiGravityItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/antiGravity.dts";
+
+	pickupName = "a Gravity Modifier!";
+};
+
 // datablock ItemData(AntiGravityItem_MBU : AntiGravityItem) {
 // 	shapeFile = "~/data/shapes_mbu/items/antiGravity.dts";
 
@@ -1052,6 +1103,13 @@ function AntiGravityItem_MBU::onAdd(%this, %obj) {
 }
 
 function AntiGravityItem_MBU::onPickup(%this, %obj, %user, %amount) {
+	return AntiGravityItem::onPickup(%this, %obj, %user, %amount);
+}
+function AntiGravityItem_MBE::onAdd(%this, %obj) {
+	AntiGravityItem::onAdd(%this, %obj);
+}
+
+function AntiGravityItem_MBE::onPickup(%this, %obj, %user, %amount) {
 	return AntiGravityItem::onPickup(%this, %obj, %user, %amount);
 }
 
@@ -1151,6 +1209,26 @@ datablock ItemData(Octagon) {
 	noPickupMessage = true;
 };
 
+datablock ItemData(EasterEgg_MBE) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";	// This should be put in a new category
+	className = "PowerUp";	// Ditto
+
+	// Basic Item properties
+	shapeFile = "~/data/shapes_mbe/items/easteregg.dts";
+	mass = 1;
+	friction = 1;
+	elasticity = 0.3;
+	emap = false;
+
+	displayName = "EasterEgg_MBE";
+
+	// Dynamic properties defined by the scripts
+	noRespawn = true;
+	maxInventory = 1;
+	noPickupMessage = true;
+};
+
 //-----------------------------------------------------------------------------
 
 datablock AudioProfile(NestEggSfx) {
@@ -1243,6 +1321,10 @@ function Octagon::onPickup(%this,%obj,%user,%amount) {
 	return EasterEgg::onPickup(%this, %obj, %user, %amount);
 }
 
+function EasterEgg_MBE::onPickup(%this,%obj,%user,%amount) {
+	return EasterEgg::onPickup(%this, %obj, %user, %amount);
+}
+
 //-----------------------------------------------------------------------------
 
 datablock ItemData(NoRespawnAntiGravityItem) {
@@ -1290,6 +1372,15 @@ datablock ItemData(NoRespawnAntiGravityItem_PQ : NoRespawnAntiGravityItem) {
 	category = "PlatinumQuest";
 
 	shapeFile = "~/data/shapes_pq/Gameplay/Powerups/GravMod.dts";
+
+	pickupName = "a Gravity Modifier!";
+};
+
+datablock ItemData(NoRespawnAntiGravityItem_MBE : NoRespawnAntiGravityItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/items/antiGravity.dts";
 
 	pickupName = "a Gravity Modifier!";
 };
@@ -1524,6 +1615,25 @@ function serverCmdMegaMarbleUse(%client, %obj) {
 	}
 }
 
+datablock ItemData(MegaMarbleItem_MBE : MegaMarbleItem) {
+	superCategory = "PowerUps";
+	category = "Marble Blast Elite";
+
+	shapeFile = "~/data/shapes_mbe/balls/Big Marble.dts";
+};
+
+function MegaMarbleItem_MBE::onAdd(%this, %obj) {
+	return MegaMarbleItem::onAdd(%this, %obj);
+}
+function MegaMarbleItem_MBE::onPickup(%this,%obj,%user,%amount) {
+	return MegaMarbleItem::onPickup(%this, %obj, %user, %amount);
+}
+function MegaMarbleItem_MBE::onUse(%this,%obj,%user,%amount) {
+	return MegaMarbleItem::onUse(%this, %obj, %user, %amount);
+}
+function MegaMarbleItem_MBE::onUnuse(%this,%obj,%user,%amount) {
+	return MegaMarbleItem::onUnuse(%this, %obj, %user, %amount);
+}
 //-----------------------------------------------------------------------------
 
 datablock AudioProfile(PuTeleportItemVoiceSfx) {

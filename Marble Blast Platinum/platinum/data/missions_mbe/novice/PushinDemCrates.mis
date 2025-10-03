@@ -1,0 +1,429 @@
+new MaterialProperty(SandMaterial)
+{
+	friction = 2.3;
+	restitution = 0.3;
+};
+addMaterialMapping("mbe_friction_sand", SandMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Nihahhat";
+         CustomRadarRule = "0";
+         desc = "Your marble is so powerful, it can make square crates-like shapes move.";
+         game = "Elite";
+         gameMode = "null";
+         level = "10";
+         music = "Radical Precision.ogg";
+         name = "Pushin Dem Crates";
+         platinumTime = "20500";
+         radar = "1";
+         startHelpText = "Just touch whatever side of the crate you want to move.";
+         type = "Novice";
+         ultimateTime = "18000";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbe/Nocturne/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+38";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+38";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.9 0.9 0.9 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      direction = "0.544508 0.439467 -0.714409";
+      color = "1 1 1 1";
+      ambient = "0.3 0.3 0.4 1";
+         locked = "true";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/PushinDemCrates.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "4.98739 -1.97284 1.00558";
+      rotation = "0 0 -1 90";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBE";
+   };
+   new StaticShape(EndPoint) {
+      position = "-10.9685 -11.972 18.9993";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBE";
+   };
+   new Trigger(Bounds) {
+      position = "-32.8365 25.1466 -5.3076";
+      rotation = "1 0 0 0";
+      scale = "50 50 60";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         pad = "2195";
+         penaltyTime = "0";
+         powerup = "0";
+         Time = "0";
+   };
+   new StaticShape() {
+      position = "-6.00627 -0.988875 1.99911";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-6.00627 -0.988875 1.99911";
+   };
+   new StaticShape() {
+      position = "-6.21207 -2.78742 1.38028";
+      rotation = "0 0 1 12.605";
+      scale = "1.25 1.25 1.25";
+      dataBlock = "SmallCrateItem";
+   };
+   new StaticShape() {
+      position = "-6.06352 1.1914 3.37563";
+      rotation = "0 0 1 9.74027";
+      scale = "1.25 1.25 1.25";
+      dataBlock = "SmallCrateItem";
+   };
+   new StaticShape() {
+      position = "-13.9972 -2.00018 5.99384";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-13.9972 -2.00018 5.99384";
+   };
+   new Trigger(qwertyuiop) {
+      position = "-11.4469 11.3198 16.78";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "DestinationTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-27.5301 -1.52746 1.17082";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TeleportTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         delay = "1000";
+         destination = "qwertyuiop";
+   };
+   new StaticShape() {
+      position = "-11.0941 3.50708 16.003";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-11.0941 3.50708 16.003";
+   };
+   new StaticShape() {
+      position = "-9.09341 3.45403 15.9997";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-9.09341 3.45403 15.9997";
+   };
+   new StaticShape() {
+      position = "-13.1048 3.53312 16.0048";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-13.1048 3.53312 16.0048";
+   };
+   new StaticShape() {
+      position = "-9.99171 -6.9927 15.9956";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-9.99171 -6.9927 15.9956";
+   };
+   new StaticShape() {
+      position = "-11.9051 -6.65556 15.4646";
+      rotation = "0 0 1 16.0428";
+      scale = "1.5 1.5 1.5";
+      dataBlock = "SmallCrateItem";
+   };
+   new StaticShape() {
+      position = "-12.0097 -9.00267 17.9943";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-12.0097 -9.00267 17.9943";
+   };
+   new StaticShape() {
+      position = "-9.90476 -9.28413 17.4495";
+      rotation = "0 0 1 7.44841";
+      scale = "1.5 1.5 1.5";
+      dataBlock = "SmallCrateItem";
+   };
+   new StaticShape() {
+      position = "-11.9886 -9.0085 15.9993";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrateItem";
+         goodPos = "-11.9886 -9.0085 15.9993";
+   };
+   new Item() {
+      position = "-28.1706 2.99454 21.2917";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         skin = "mbe";
+         timeBonus = "5000";
+   };
+   new StaticShape() {
+      position = "-27.069 -1.96564 5.33272";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SmallCrateItem";
+   };
+   new InteriorInstance() {
+      position = "8.68636 14.4565 12.4511";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0.802252 -9.84196 12.526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "4.76088 -9.8546 14.009";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-10.7845 -19.58 15.4533";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.7432 -19.5674 13.9703";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-34.4123 -13.183 12.6085";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-30.4536 -13.1956 14.0915";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-38.517 2.97892 12.0512";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-34.5583 2.96632 13.5342";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-28.0243 13.2566 8.60851";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-24.0656 13.244 10.0915";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-8.04464 20.5079 9.40131";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-4.08594 20.4953 10.8843";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "13.5489 1.06681 12.031";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "17.5076 1.05421 13.514";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "4.72766 14.4691 10.9681";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "-29.2987 2.77956 1.44545";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SmallCrateItem";
+   };
+   new Item() {
+      position = "-21.8765 2.73207 1.99539";
+      rotation = "1 0 0 0";
+      scale = "0.8 0.8 1";
+      dataBlock = "EasterEgg_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger() {
+      position = "-1.02756 2.02226 0.998936";
+      rotation = "1 0 0 0";
+      scale = "1 8 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Hop up the crates, but try not to move them.";
+   };
+   new Trigger() {
+      position = "-11.1 2 4.268";
+      rotation = "1 0 0 0";
+      scale = "1 8 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Push this crate out of the way to reveal the tunnel.";
+   };
+   new Trigger() {
+      position = "-24.9827 2.02109 4.89965";
+      rotation = "1 0 0 0";
+      scale = "1 8 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Move this small crate out of the way, and fall through the hole beneath it.";
+   };
+   new Trigger() {
+      position = "-13 -4 15";
+      rotation = "1 0 0 0";
+      scale = "4 1 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Climb up the crates to the finish!";
+   };
+   new Trigger() {
+      position = "-13.0026 7.00061 14.9934";
+      rotation = "1 0 0 0";
+      scale = "4 1 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Stupid crate wall be in your way.";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "10.6509 -1.89369 5.22883";
+         rotation = "0.111692 0.110521 -0.987578 90.1125";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

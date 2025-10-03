@@ -83,6 +83,12 @@ datablock StaticShapeData(Checkpoint_MBXP : checkPoint) {
 
 datablock StaticShapeData(Checkpoint_MBS : checkPoint) {
 	shapeFile = "~/data/shapes_mbs/pads/checkpoint.dts";
+
+	playAnimation = true;
+};
+
+datablock StaticShapeData(Checkpoint_MBE : checkPoint) {
+	shapeFile = "~/data/shapes_mbe/pads/checkpoint.dts";
 };
 
 function Checkpoint_MBU::onMissionReset(%this, %obj) {

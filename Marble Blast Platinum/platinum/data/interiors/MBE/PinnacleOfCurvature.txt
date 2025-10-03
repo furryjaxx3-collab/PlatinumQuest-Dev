@@ -1,0 +1,55 @@
+C:/Documents and Settings/kids/Desktop/PinnacleOfCurvature.dif
+
+
+
+Constructor Version: 1.0.3
+
+
+
+Date: 2011/04/24 09:45:46
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        6894
+
+  Surfaces:      3798
+
+  Null Surfaces: 0
+
+  BSP Nodes:     4168
+
+
+
+  Textures From Brushes:
+
+
+
+    MARBLE
+
+    30K4MYQ[9]
+
+    MBE_WALLY2
+
+    MBE_FRICTION_ICE
+
+    MBE_FLOORBOUNCE_HIGH
+
+    MBE_FRICTION_SAND
+
+    MBE_FLOORBOUNCE_LOW
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+

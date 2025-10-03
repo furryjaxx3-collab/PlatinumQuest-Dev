@@ -285,6 +285,20 @@ datablock StaticShapeData(SmallDuctFan_MBS : SmallDuctFan) {
 	compile = "pls";
 	shapeFile = "~/data/shapes_mbs/hazards/ductfan.dts";
 };
+datablock StaticShapeData(DuctFan_MBE : DuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Elite";
+
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbe/hazards/ductfan.dts";
+};
+datablock StaticShapeData(SmallDuctFan_MBE : SmallDuctFan) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Elite";
+
+	compile = "pls";
+	shapeFile = "~/data/shapes_mbe/hazards/ductfan.dts";
+};
 datablock StaticShapeData(NomeshDuctFan_PQ : DuctFan) {
 	superCategory = "Hazards";
 	category = "PlatinumQuest";
@@ -386,6 +400,11 @@ datablock StaticShapeData(Tornado_MBF : Tornado) {
 	superCategory = "Hazards";
 	category = "Marble_Blast_Future";
 	shapeFile = "~/data/shapes_mbf/hazards/tornado.dts";
+};
+datablock StaticShapeData(Tornado_MBE : Tornado) {
+	superCategory = "Hazards";
+	category = "Marble_Blast_Elite";
+	shapeFile = "~/data/shapes_mbe/hazards/tornado.dts";
 };
 
 //-----------------------------------------------------------------------------
@@ -1057,6 +1076,10 @@ function Tornado_MBF::onAdd(%this, %obj) {
 	Tornado::onAdd(%this, %obj);
 }
 
+function Tornado_MBE::onAdd(%this, %obj) {
+	Tornado::onAdd(%this, %obj);
+}
+
 function Tornado_PQ::onMissionReset(%this, %obj) {
 	Tornado::onMissionReset(%this, %obj);
 }
@@ -1066,6 +1089,10 @@ function Tornado_MBM::onMissionReset(%this, %obj) {
 }
 
 function Tornado_MBF::onMissionReset(%this, %obj) {
+	Tornado::onMissionReset(%this, %obj);
+}
+
+function Tornado_MBE::onMissionReset(%this, %obj) {
 	Tornado::onMissionReset(%this, %obj);
 }
 

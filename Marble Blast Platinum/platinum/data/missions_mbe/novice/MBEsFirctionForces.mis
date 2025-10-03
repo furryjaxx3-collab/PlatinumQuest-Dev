@@ -1,0 +1,632 @@
+new MaterialProperty(GrassMaterial)
+{
+	friction = 1.8;
+	restitution = 0.5;
+};
+new MaterialProperty(SandMaterial)
+{
+	friction = 2.3;
+	restitution = 0.3;
+};
+new MaterialProperty(WaterMaterial)
+{
+	friction = 1.5;
+	restitution = 0;
+};
+new MaterialProperty(SnowMaterial)
+{
+	friction = 0.5;
+	restitution = 0.3;
+};
+new MaterialProperty(CrystalMaterial)
+{
+	friction = 0.25;
+	restitution = 0.8;
+};
+new MaterialProperty(SuperMaterial)
+{
+	friction = 5;
+	restitution = 0.5;
+};
+new MaterialProperty(IceMaterial)
+{
+	friction = 0.05;
+	restitution = 0.5;
+};
+addMaterialMapping("mbe_friction_ice", IceMaterial);
+addMaterialMapping("mbe_friction_sand", SandMaterial);
+addMaterialMapping("mbe_friction_super", SuperMaterial);
+addMaterialMapping("mbe_friction_crystal", CrystalMaterial);
+addMaterialMapping("mbe_friction_grass", GrassMaterial);
+addMaterialMapping("mbe_friction_water", WaterMaterial);
+addMaterialMapping("mbe_friction_snow", SnowMaterial);
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Nihahhat";
+         CustomRadarRule = "0";
+         desc = "Discover all of the frictions you will encounter in this game!";
+         game = "Elite";
+         gameMode = "null";
+         level = "5";
+         music = "Commando.ogg";
+         name = "MBE\'s Friction Forces";
+         platinumTime = "30000";
+         radar = "1";
+         type = "Novice";
+         ultimateTime = "25000";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies_mbe/Jade Peaks/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+38";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+38";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.9 0.9 0.9 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      direction = "0.544508 0.439467 -0.714409";
+      color = "1 1 1 1";
+      ambient = "0.3 0.3 0.4 1";
+         locked = "true";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new InteriorInstance() {
+      position = "-1.90735e-06 -0.00473785 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/MBEsFrictionForces.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "4.5319 -2.03871 -0.498803";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad_MBE";
+   };
+   new StaticShape(EndPoint) {
+      position = "-23.5 -12.0625 16.875";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad_MBE";
+   };
+   new Trigger(Bounds) {
+      position = "-30 80.5 -28";
+      rotation = "1 0 0 0";
+      scale = "81 99 96.5";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new InteriorInstance() {
+      position = "27.7148 82.8512 -5.04993";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "13.4587 8.9 -7.24379";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0.459621 7.90866 58.777";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "14.5005 3.04369 -5.91961";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "1.52694 -11.8417 -6.03564";
+      rotation = "0 0 -1 90.0457";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "7.38241 -10.7952 -7.35982";
+      rotation = "0 0 1 89.9543";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "6.3807 2.20302 58.661";
+      rotation = "0 0 1 89.9543";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-13.6657 -11.0071 5.95712";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.7075 -5.15079 -6.76706";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-27.7065 -6.14214 59.2538";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "33.9263 27.7643 -4.48055";
+      rotation = "0 0 1 91.7645";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "28.0407 26.9033 -5.80472";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "28.6313 13.8799 60.2161";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "54.5109 54.795 -2.02705";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "53.4691 60.6513 -6.15123";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "40.47 59.66 59.8696";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "34.6125 46.9006 -2.04832";
+      rotation = "0 0 -1 0.664405";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "35.7221 41.0568 -6.1725";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "48.7088 42.1987 59.8484";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-15.4339 32.9369 3.97581";
+      rotation = "0 0 -1 0.664405";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-14.3243 27.0931 -4.94837";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-1.33755 28.235 61.0725";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-26.5639 -21.791 3.93834";
+      rotation = "0 0 -1 90.0457";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-20.7084 -20.7445 -4.38584";
+      rotation = "0 0 1 89.9543";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-21.7101 -7.7463 61.635";
+      rotation = "0 0 1 89.9543";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-32.3535 -6.73131 -5.14837";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-19.3668 -5.58941 60.8726";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-33.4631 -0.887511 3.97581";
+      rotation = "0 0 -1 0.664405";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "2.60376 72.8913 3.97583";
+      rotation = "0 0 -1 0.664405";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "3.71336 67.0475 -4.94835";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "16.7001 68.1894 61.0725";
+      rotation = "0 0 1 179.336";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "27.078 8.25446 -3.99256";
+      rotation = "0 0 -1 87.1809";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "32.9785 9.00699 -5.31673";
+      rotation = "0 0 1 92.8191";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "32.6277 22.039 60.7041";
+      rotation = "0 0 1 92.8191";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "53.4691 38.8696 -8.0367";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "54.5109 33.0133 -3.91252";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "40.47 37.8783 57.9842";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "9.14111 34.2627 -0.0799454";
+      rotation = "0 0 -1 87.1809";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "15.0416 35.0152 -1.40411";
+      rotation = "0 0 1 92.8191";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "14.6907 48.0474 64.5915";
+      rotation = "0 0 1 92.8919";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "28.3054 69.8278 60.9709";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "33.6004 83.7122 -3.72576";
+      rotation = "0 0 1 91.7645";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "17.6439 55.5753 -8.29081";
+      rotation = "0 0 1 91.7645";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "11.7568 69.8369 60.7453";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "11.1662 82.8603 -5.27549";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "17.0518 83.7213 -3.95132";
+      rotation = "0 0 1 91.7645";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/ScenertConnect1.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "12.3489 41.6909 56.4058";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/SceneryTop2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "11.7583 54.7143 -9.61498";
+      rotation = "0 0 -1 88.2355";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBE/SceneryParts/pole3.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Trigger(crystal) {
+      position = "1.47938 8.0473 -0.503467";
+      rotation = "1 0 0 0";
+      scale = "6 1 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Crystal has little friction! Be careful!";
+   };
+   new Trigger() {
+      position = "19.5201 21.0033 -0.540422";
+      rotation = "1 0 0 0";
+      scale = "1 6 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Grass has higher friction and can help you climb steep slopes.";
+   };
+   new Trigger() {
+      position = "34.1287 20.9992 5.1494";
+      rotation = "1 0 0 0";
+      scale = "1 6 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This is snow. It has a little bit of a slip to it, but it\'s not as slippery as crystal.";
+   };
+   new Trigger() {
+      position = "41.5093 42.175 9.34538";
+      rotation = "1 0 0 0";
+      scale = "6 1 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This is sand. It has a high friction and can stop you quickly.";
+   };
+   new Trigger() {
+      position = "31.3141 76.9982 9.4471";
+      rotation = "1 0 0 0";
+      scale = "1 6 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This is the super friction. It has the greatest friction of all! Climb up the slopes to test the amazing friction!";
+   };
+   new Trigger() {
+      position = "16.7424 65.0208 15.9487";
+      rotation = "1 0 0 0";
+      scale = "1 4 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "To cross the gap, roll up the ramp, jump, gain lots of spin, and watch your marble get launched.";
+   };
+   new Trigger(water) {
+      position = "17.9954 54.0136 24.5833";
+      rotation = "1 0 0 0";
+      scale = "1 7 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "Down below is water. It makes your marble not rebound, just like a Rebound Prevention powerup.";
+   };
+   new Trigger() {
+      position = "-11.4991 22.9797 23.3402";
+      rotation = "1 0 0 0";
+      scale = "1 6 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         displayonce = "0";
+         persistTime = "5000";
+         text = "This is ice, the slipperiest force of them all! Move slowly and keep jumping to gain control!";
+   };
+   new Item() {
+      position = "19.4379 68.0148 51.7086";
+      rotation = "1 0 0 0";
+      scale = "1.2 1.2 1.35";
+      dataBlock = "EasterEgg_MBE";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "32.6135 58.8409 26.1215";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new SimGroup(PathNodeGroup) {
+
+      new StaticShape(CameraPath1) {
+         position = "-7.83913 13.8201 37.722";
+         rotation = "0.543713 -0.279621 0.791321 66.0397";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            nextNode = "CameraPath1";
+            placed = "1";
+            reverseRotation = "0";
+            timeToNext = "3000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
