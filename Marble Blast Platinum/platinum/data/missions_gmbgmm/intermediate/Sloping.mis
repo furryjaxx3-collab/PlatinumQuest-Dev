@@ -94,7 +94,7 @@ new SimGroup(MissionGroup) {
       position = "-0.2 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors_mbg/G3orge/Sloping_fix.dif";
+      interiorFile = "~/data/interiors_mbg/G3orge/Sloping_fix0.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
    };
