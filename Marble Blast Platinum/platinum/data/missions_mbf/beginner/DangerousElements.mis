@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn about the dangerous elements of marble blast, and learn how to pass them!";
          gameMode = "null";
          goldTime = "30000";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -65,86 +53,50 @@ new SimGroup(MissionGroup) {
       direction = "0.465861 0.62724 -0.624134";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.3904 -50.3944 46.3599";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.1919 -78.3964 40.3623";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1804 -30.3984 46.3704";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.1912 -118.399 34.8651";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.2415 -34.3964 46.3694";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new ScriptObject() {
@@ -156,37 +108,25 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.215 -40.3681 46.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.2115 -32.3944 46.3694";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new ScriptObject() {
@@ -198,46 +138,28 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.2415 -30.3964 46.3694";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.245 -38.3701 46.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "37.1825 -101.388 34.3624";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -246,274 +168,172 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.215 -36.3681 46.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.1553 -60.3777 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.1853 -60.3797 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.1853 -62.3927 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.1553 -62.3907 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.1553 -64.3777 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.1853 -64.3797 46.3789";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1242 -64.3817 46.3798";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1242 -62.3947 46.3798";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1242 -60.3817 46.3798";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.4204 -50.3964 46.3599";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.3593 -50.3984 46.3609";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1804 -34.3984 46.3704";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "55.1839 -38.3721 46.3715";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "61.1886 80.1021 46.3634";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.1907 -84.4016 34.8642";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "39.9743 -75.4 46.3705";
       rotation = "0 0 1 33.2316";
       scale = "1 1 1";
@@ -521,12 +341,6 @@ new SimGroup(MissionGroup) {
          skin = "ice";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "44.726 -76.2634 46.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -534,12 +348,6 @@ new SimGroup(MissionGroup) {
          skin = "ice";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "42.8287 -72.6678 46.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -547,12 +355,6 @@ new SimGroup(MissionGroup) {
          skin = "ice";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "47.3058 -74.4817 46.3705";
       rotation = "0 0 1 209.703";
       scale = "1 1 1";
@@ -560,12 +362,6 @@ new SimGroup(MissionGroup) {
          skin = "ice";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "32.2074 -83.3978 34.9065";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -576,12 +372,6 @@ new SimGroup(MissionGroup) {
          text = "Use the Duct Fans to fly!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "32.181 -71.3728 46.3783";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -592,12 +382,6 @@ new SimGroup(MissionGroup) {
          text = "The Oil have little low traction!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "50.2081 -65.391 46.3856";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -608,12 +392,6 @@ new SimGroup(MissionGroup) {
          text = "Don\'t stay much time on the trapdoors!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "50.176 -9.39251 46.3586";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -624,12 +402,6 @@ new SimGroup(MissionGroup) {
          text = "Don\'t fall in the Gaps!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "50.1741 30.6155 46.3655";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -640,12 +412,6 @@ new SimGroup(MissionGroup) {
          text = "Balance yourself in the Tightrope section!";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "48.1819 -104.887 34.8624";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -654,12 +420,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19.9525 106.563 34.4475";
       rotation = "1 0 0 0";
       scale = "60 250 60";
@@ -675,24 +435,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "28.6838 -98.3958 35.857";
       rotation = "0 -1 0 90";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "48.1819 -96.8888 34.8625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -701,12 +449,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "41.6836 -100.885 34.8616";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -715,12 +457,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "41.6796 -92.887 34.8614";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -729,36 +465,18 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "41.6819 -102.38 35.8568";
       rotation = "0 1 0 90";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "41.6818 -94.3937 35.8602";
       rotation = "0 1 0 90";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "28.6825 -106.393 35.8624";
       rotation = "0 -1 0 90";
       scale = "1 1 1";
@@ -775,12 +493,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "62.2872 -85.3131 58.4778";
          rotation = "0.567883 0.219369 -0.793339 51.9249";
          scale = "1 1 1";
@@ -795,12 +507,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "40.7824 -17.568 33.9201";
       rotation = "1 0 0 0";
       scale = "5 5 1";

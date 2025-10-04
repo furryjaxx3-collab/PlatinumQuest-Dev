@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Don\'t let the clock beat you!";
          gameMode = "null";
          goldTime = "1100";
@@ -18,21 +18,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -67,12 +55,6 @@ new SimGroup(MissionGroup) {
       direction = "0.481726 0.481726 -0.732038";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
@@ -81,12 +63,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(CheckPoints) {
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6711 31.422 410.809";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -109,12 +85,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16.6533 39.4204 410.315";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -123,12 +93,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6663 39.4077 411.316";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -140,12 +104,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6655 48.4052 411.317";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -157,12 +115,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6799 58.4615 411.317";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -174,12 +126,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6543 69.3908 411.329";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -191,12 +137,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "5.64879 73.4165 414.333";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -208,12 +148,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-2.33057 73.4885 414.815";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -225,12 +159,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-2.35499 81.4001 415.333";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -242,12 +170,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "5.623 81.3931 415.82";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -259,12 +181,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6592 81.3923 416.319";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -276,12 +192,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13.6536 89.3985 416.825";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -293,12 +203,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "5.61417 89.4114 417.323";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -310,12 +214,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "2000";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "5.66887 105.408 416.813";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -332,12 +230,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "21.4926 64.5879 423.797";
          rotation = "0.637169 0.227533 -0.736373 51.7417";
          scale = "1 1 1";
@@ -352,12 +244,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-200.773 333.721 409.809";
       rotation = "1 0 0 0";
       scale = "500 500 1";

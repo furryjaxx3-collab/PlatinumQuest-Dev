@@ -86,21 +86,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -134,20 +122,8 @@ new SimGroup(MissionGroup) {
       direction = "0.57735 0.57735 -0.57735";
       color = "0.6 0.6 0.6 1";
       ambient = "0.4 0.4 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -156,216 +132,138 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "4 20 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "6 18 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "8 18 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "8 20 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "10 20 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 20 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14 18 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "12 18 8.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "26.5 48.5 6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "26.5 46.5 6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "22.5 46.5 6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "22.5 48.5 6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "TrapDoor";
-         skin = "skin1";
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
+         skin = "skin1";
          timeout = "200";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17 41 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -373,12 +271,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "18 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -386,12 +278,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19 41 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -399,12 +285,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -412,12 +292,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -425,12 +299,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17 37 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -438,12 +306,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19 37 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -451,12 +313,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "18 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -464,12 +320,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -477,12 +327,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -490,12 +334,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15 41 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -503,12 +341,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -516,12 +348,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15 37 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -529,12 +355,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -542,12 +362,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -555,12 +369,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13 41 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -568,12 +376,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -581,12 +383,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13 37 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -594,12 +390,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "12 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -607,12 +397,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "12 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -620,12 +404,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11 41 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -633,12 +411,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -646,12 +418,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11 37 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -659,168 +425,84 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "13 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11 40 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11 38 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "12 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
    new StaticShape() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "18 39 16.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -832,12 +514,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 36 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -847,12 +523,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 51 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -862,12 +532,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 36 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -878,12 +542,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -902,12 +560,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 72 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -917,12 +569,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 57.25 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -932,12 +578,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "-9 72 21.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -948,12 +588,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -972,12 +606,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "28.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -987,12 +615,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "28.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1002,12 +624,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "28.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1018,12 +634,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -1042,12 +652,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "24.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1057,12 +661,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "24.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1072,12 +670,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "24.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1088,12 +680,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -1112,12 +698,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "20.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1127,12 +707,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "20.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1142,12 +716,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "20.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1158,12 +726,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -1182,12 +744,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "18.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1197,12 +753,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "18.5 43.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1212,12 +762,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "18.5 51.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1228,12 +772,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -1252,12 +790,6 @@ new SimGroup(MissionGroup) {
          isLooping = "0";
 
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "11.5 40.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1267,12 +799,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "11.5 26 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1282,12 +808,6 @@ new SimGroup(MissionGroup) {
             smoothingType = "Accelerate";
          };
          new Marker() {
-            _moving = "0";
-            _pathSyncId = "-1";
-            _pathRngStart = "0";
-            _pathPosition = "0";
-            trail = "0";
-            attachId = "-1";
             position = "11.5 40.5 5.75";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -1298,12 +818,6 @@ new SimGroup(MissionGroup) {
          };
       };
       new PathedInterior(MustChange) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -1317,36 +831,18 @@ new SimGroup(MissionGroup) {
       };
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-3.00802 -6.98613 0.497805";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0 5 100";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "EndPad_MBF";
    };
    new Trigger(Bounds) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-23 93 0.9";
       rotation = "1 0 0 0";
       scale = "79 146 72";
@@ -1364,12 +860,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "21.0608 11.0607 30.0899";
          rotation = "0.605322 0.21541 -0.766279 49.8203";
          scale = "1 1 1";

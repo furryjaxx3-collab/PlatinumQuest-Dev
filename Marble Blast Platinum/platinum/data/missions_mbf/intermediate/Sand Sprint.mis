@@ -76,7 +76,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "The sand is a really weird surface, you need control your spins here!";
          gameMode = "null";
          goldTime = "10000";
@@ -91,21 +91,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -139,20 +127,8 @@ new SimGroup(MissionGroup) {
       direction = "0.442343 0.475025 -0.760713";
       color = "1 1 0.5 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-18.9587 -48.3786 94.7837";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -169,12 +145,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "3.49302 -69.909 95.2795";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -189,12 +159,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-10.4881 -28.9344 95.5426";
       rotation = "1 0 0 0";
       scale = "46 60 40";
@@ -202,12 +166,6 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14.289 -69.4658 113.279";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -216,12 +174,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "28.9023 -73.2525 118.354";
          rotation = "0.658496 0.252813 -0.70885 56.8815";
          scale = "1 1 1";

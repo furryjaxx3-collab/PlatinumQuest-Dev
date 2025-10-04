@@ -22,7 +22,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "?";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "An advanced challenge, not for novice players";
          gameMode = "null";
          level = "8";
@@ -34,21 +34,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -82,20 +70,8 @@ new SimGroup(MissionGroup) {
       direction = "0.57735 0.57735 -0.57735";
       color = "0.6 0.6 0.6 1";
       ambient = "0.4 0.4 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -104,12 +80,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0 4 0.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -119,24 +89,12 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0 -1 0.25";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "10 -36 12";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -148,12 +106,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "5000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 -40 -0.0599999";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -163,12 +115,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16 -38 3.96";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -178,24 +124,12 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "10 -50 -0.25";
       rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Trigger(Bounds) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-13 25 -0.4";
       rotation = "1 0 0 0";
       scale = "42 90 53";
@@ -203,12 +137,6 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11.9965 -33.0152 2.24639";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -218,12 +146,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "0.0346 -15.5042 7.49409";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -233,12 +155,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "6.16109 3.61628 15.8358";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -266,12 +182,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "18.34 -34.2757 19.1581";
          rotation = "0.581463 0.221672 -0.782791 51.9337";
          scale = "1 1 1";
@@ -286,12 +196,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-7.77341 12.0211 -3.72493";
       rotation = "1 0 0 0";
       scale = "10 10 1";

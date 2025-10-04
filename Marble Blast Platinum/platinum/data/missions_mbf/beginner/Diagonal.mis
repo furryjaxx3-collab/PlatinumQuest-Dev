@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn how to roll in \"Diagonal\" and pass the trials ahead!";
          gameMode = "null";
          goldTime = "5250";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -65,12 +53,6 @@ new SimGroup(MissionGroup) {
       direction = "0.481726 0.481726 -0.732038";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new ScriptObject() {
          bonusTime = "0";
@@ -81,24 +63,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.1068 106.672 12.0567";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "28.1148 103.688 11.5562";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -107,12 +77,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "21.1209 36.6917 29.7698";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -130,12 +94,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "46.1009 149.694 29.5551";
       rotation = "1 0 0 0";
       scale = "10 2 1";
@@ -146,12 +104,6 @@ new SimGroup(MissionGroup) {
          text = "Roll fast to the ramps using Diagonal Movement!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "26.1275 129.668 12.0746";
       rotation = "1 0 0 0";
       scale = "10 2 1";
@@ -162,12 +114,6 @@ new SimGroup(MissionGroup) {
          text = "Use Diagonal Movement to clib step slopes!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16.1166 -57.3109 40.0579";
       rotation = "1 0 0 0";
       scale = "10 2 1";
@@ -178,12 +124,6 @@ new SimGroup(MissionGroup) {
          text = "With Diagonal Movement you can cross large gaps!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "16.1098 51.6976 29.5615";
       rotation = "1 0 0 0";
       scale = "10 2 1";
@@ -194,24 +134,12 @@ new SimGroup(MissionGroup) {
          text = "Diagonal Movement + Super Jump!";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "21.0956 -168.791 38.5401";
       rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.1104 154.697 20.5612";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -221,12 +149,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.1525 154.667 30.0578";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -236,12 +158,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "51.1369 56.6796 30.0575";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -251,12 +167,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "21.1198 -42.3275 30.0585";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -266,12 +176,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "21.1067 -122.327 40.5552";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -281,12 +185,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "5.8537 186.807 10.1066";
       rotation = "1 0 0 0";
       scale = "60 400 60";
@@ -304,12 +202,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "8.79799 37.3716 53.4903";
          rotation = "0.613109 -0.257269 0.746934 58.6531";
          scale = "1 1 1";

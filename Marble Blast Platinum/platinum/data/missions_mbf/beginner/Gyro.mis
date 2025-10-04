@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn to fly!";
          gameMode = "null";
          goldTime = "8000";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -65,12 +53,6 @@ new SimGroup(MissionGroup) {
       direction = "0.481726 0.481726 -0.732038";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new ScriptObject() {
          bonusTime = "0";
@@ -81,12 +63,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "11.4978 30.2398 90.5599";
       rotation = "0 0 -1 90";
       scale = "1 1 1";
@@ -95,12 +71,6 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-5.43925 28.236 104.788";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -111,24 +81,12 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "14.5038 28.2454 91.0424";
       rotation = "0 0 -1 90.5273";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "6.55756 28.2882 90.821";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -139,12 +97,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "2.56877 28.2579 92.8098";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -155,12 +107,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "2.4228 32.2535 94.8014";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -171,12 +117,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-1.53328 32.1765 96.7945";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -187,12 +127,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-1.46 28.2869 98.7944";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -203,12 +137,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-1.46034 24.2911 100.797";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -219,12 +147,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-5.56095 24.2698 102.792";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -243,12 +165,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "7.47971 31.2278 91.057";
       rotation = "1 0 0 0";
       scale = "2 6 1";
@@ -259,12 +175,6 @@ new SimGroup(MissionGroup) {
          text = "Use the Gyrocopter to get an extra boost!";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-13.4192 28.2588 106.801";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -275,12 +185,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-39.4408 28.2997 106.797";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -291,24 +195,12 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-45.4854 28.2591 107.053";
       rotation = "0 0 -1 90";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-34.5132 31.2389 107.063";
       rotation = "1 0 0 0";
       scale = "2 6 12";
@@ -319,12 +211,6 @@ new SimGroup(MissionGroup) {
          text = "Roll fast, activate the Gyrocopter and hit the wall!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-12.5012 31.2348 107.061";
       rotation = "1 0 0 0";
       scale = "2 6 1";
@@ -337,12 +223,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "6.14588 19.3979 118.466";
          rotation = "0.519379 0.23705 -0.821007 58.1409";
          scale = "1 1 1";
@@ -357,12 +237,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-58.5437 46.677 90.0143";
       rotation = "1 0 0 0";
       scale = "80 40 50";

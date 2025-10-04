@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn how to do wall hits on Marble Blast!";
          gameMode = "null";
          goldTime = "25000";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -65,20 +53,8 @@ new SimGroup(MissionGroup) {
       direction = "0.433884 0.614021 -0.659336";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-43.005 71.1392 30.6217";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -95,24 +71,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-27.991 90.1249 51.1173";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-43.005 71.1392 30.6217";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -129,24 +93,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-49.9943 64.1242 31.12";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-28.009 80.0876 44.8104";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -164,12 +116,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-53.0016 77.1227 31.1206";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -180,12 +126,6 @@ new SimGroup(MissionGroup) {
          text = "Remember jump before hit the wall and always go fast!";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-44.0041 86.1404 35.1193";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -195,12 +135,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-30.0037 80.1491 45.1179";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -210,12 +144,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-47.0042 85.1248 34.6243";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -226,12 +154,6 @@ new SimGroup(MissionGroup) {
          text = "Climb this stair doing wall hits!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-33.0217 83.1424 44.6276";
       rotation = "1 0 0 0";
       scale = "2 6 1";
@@ -250,12 +172,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-81.5021 131.298 31.0603";
       rotation = "1 0 0 0";
       scale = "100 80 60";
@@ -265,12 +181,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "-50.1976 76.6641 53.746";
          rotation = "0.558081 -0.22785 0.797891 54.1968";
          scale = "1 1 1";
@@ -285,12 +195,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-47.6158 88.8978 29.6711";
       rotation = "1 0 0 0";
       scale = "5 5 1";

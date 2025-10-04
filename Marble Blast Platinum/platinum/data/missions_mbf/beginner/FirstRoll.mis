@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Mario";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "A simple levels that show you how to roll in Marble Blast Future!";
          gameMode = "null";
          goldTime = "15000";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -66,12 +54,6 @@ new SimGroup(MissionGroup) {
       direction = "0.544508 0.439467 -0.714409";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
@@ -80,24 +62,12 @@ new SimGroup(MissionGroup) {
    new SimGroup(CheckPoints) {
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "101.671 -30.5694 504.804";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "124.637 -42.5424 502.307";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -114,24 +84,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "127.642 -39.5465 502.803";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "98.6446 6.46261 504.781";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -142,12 +100,6 @@ new SimGroup(MissionGroup) {
          text = "The blue pad is the End Pad, go there to end the mission!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "15.0518 84.1078 497.002";
       rotation = "1 0 0 0";
       scale = "150 150 40";
@@ -155,12 +107,6 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "124.637 -20.5432 499.313";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -171,12 +117,6 @@ new SimGroup(MissionGroup) {
          text = "Press A to roll left!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "80.6353 -8.5367 499.314";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -187,12 +127,6 @@ new SimGroup(MissionGroup) {
          text = "Press W to roll foward!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "68.6473 3.47178 499.306";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -203,12 +137,6 @@ new SimGroup(MissionGroup) {
          text = "Go fast to climb the slope!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "68.6267 30.4576 504.809";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -219,12 +147,6 @@ new SimGroup(MissionGroup) {
          text = "Press D to roll right!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "86.6267 42.4632 504.81";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -235,12 +157,6 @@ new SimGroup(MissionGroup) {
          text = "Press S to roll backward!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "98.6321 30.4697 504.811";
       rotation = "1 0 0 0";
       scale = "6 6 1";
@@ -253,12 +169,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "124.863 -19.4622 518.274";
          rotation = "0.465229 0.213011 -0.859179 56.107";
          scale = "1 1 1";

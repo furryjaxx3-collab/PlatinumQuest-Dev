@@ -76,7 +76,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "879m /fixed by Mario";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Get the diamonds on both sides of this level, can you survive the trials ahead?";
          gameMode = "null";
          goldTime = "14000";
@@ -90,21 +90,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -138,20 +126,8 @@ new SimGroup(MissionGroup) {
       direction = "0.433884 0.614021 -0.659336";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7446 18.5445 -9.64176";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -166,12 +142,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-7.54071 36.4587 -20.3477";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -217,24 +187,12 @@ new SimGroup(MissionGroup) {
       };
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7467 12.5362 -4.89144";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7633 36.5258 -4.34475";
       rotation = "1 0 0 180";
       scale = "1 1 1";
@@ -252,12 +210,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "25.2566 38.8076 -3.36573";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -269,12 +221,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "5000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "20.3307 38.7535 -3.39098";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -286,12 +232,6 @@ new SimGroup(MissionGroup) {
          timeBonus = "5000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "25.9835 36.7984 -5.64659";
       rotation = "1 0 0 180";
       scale = "1 1 1";
@@ -301,12 +241,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.745 15.5287 -9.38806";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -321,12 +255,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7789 0.474319 -0.245051";
       rotation = "1 0 0 180";
       scale = "1 1 1";
@@ -336,12 +264,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7815 0.621479 -12.1533";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -351,12 +273,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-7.46982 36.5055 -9.9941";
       rotation = "1 0 0 180";
       scale = "1 1 1";
@@ -366,12 +282,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.7696 3.5124 -5.57833";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -381,12 +291,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.756 0.522467 -5.39287";
       rotation = "1 0 0 180";
       scale = "1 1 1";
@@ -396,12 +300,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-7.45861 36.422 -15.4432";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -413,12 +311,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "-2.39271 4.23543 12.7325";
          rotation = "0.583776 -0.251305 0.772044 58.287";
          scale = "1 1 1";

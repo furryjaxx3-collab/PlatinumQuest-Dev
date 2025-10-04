@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Christina";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn the basics about landing skills!";
          gameMode = "null";
          goldTime = "16500";
@@ -16,21 +16,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -64,12 +52,6 @@ new SimGroup(MissionGroup) {
       direction = "0.701976 -0.52137 -0.485184";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new ScriptObject() {
          bonusTime = "0";
@@ -80,12 +62,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.6724 42.5303 33.9772";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -95,12 +71,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "45.7096 3.54855 -2.67542";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -110,12 +80,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "39.7054 49.56 46.633";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -124,24 +88,12 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "37.7202 41.5498 47.124";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "37.7084 56.5759 43.1368";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -151,12 +103,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "45.7002 56.5508 38.6224";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -166,12 +112,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.7227 56.5403 34.1416";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -181,12 +121,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.7455 35.0651 23.13";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -196,12 +130,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.7393 19.5736 32.1446";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -211,12 +139,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "45.7171 11.5116 -2.36261";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -226,12 +148,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "53.6815 11.5961 31.8184";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -249,24 +165,12 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "45.7001 -9.41786 -2.86008";
       rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "34.711 51.5613 47.1388";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -277,12 +181,6 @@ new SimGroup(MissionGroup) {
          text = "Control your spin on the way down!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "50.7018 47.5732 33.6487";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -293,12 +191,6 @@ new SimGroup(MissionGroup) {
          text = "Jump and use the Super Bounce to bounce your marble to the platform there!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "50.701 16.5734 31.6375";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -309,12 +201,6 @@ new SimGroup(MissionGroup) {
          text = "Use the Shock Absorber to fall and not bounce!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "42.7056 6.56876 -2.86123";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -325,12 +211,6 @@ new SimGroup(MissionGroup) {
          text = "Aim for the hole and activate Shock Absorber to pass!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "27.1443 75.2595 -8.4842";
       rotation = "1 0 0 0";
       scale = "50 100 150";
@@ -348,12 +228,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "62.2928 61.6061 61.5869";
          rotation = "-0.149684 -0.375027 0.914849 220.118";
          scale = "1 1 1";

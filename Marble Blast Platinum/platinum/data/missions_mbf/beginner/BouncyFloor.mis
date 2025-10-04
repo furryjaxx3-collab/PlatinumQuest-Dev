@@ -22,7 +22,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "There are 3 Bounce floor\'s forces, the blue fold is the lowest, the pink fold is the medium bounce force and the orange is the most force, learn every individual bouncy-force here!";
          gameMode = "null";
          goldTime = "7000";
@@ -36,21 +36,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -85,12 +73,6 @@ new SimGroup(MissionGroup) {
       direction = "0.481726 0.481726 -0.732038";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
@@ -99,12 +81,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(CheckPoints) {
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "-62.5851 112.962 503.111";
       rotation = "1 0 0 0";
       scale = "150 150 70";
@@ -112,12 +88,6 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2161 74.4621 522.295";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -143,12 +113,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2752 89.2787 520.4";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -163,12 +127,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "40.2581 59.2967 503.895";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -177,24 +135,12 @@ new SimGroup(MissionGroup) {
       showTerrainInside = "0";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2761 51.7698 504.384";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.23 72.8087 504.897";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -204,12 +150,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.26 76.7387 504.897";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -219,12 +159,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.28 74.8187 504.897";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -234,12 +168,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "45.2638 77.2932 512.894";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -249,12 +177,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "30.2551 69.3008 504.403";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -265,12 +187,6 @@ new SimGroup(MissionGroup) {
          text = "The Blue Fold has the lowest bouce-force!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "30.2509 72.2764 520.386";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -281,12 +197,6 @@ new SimGroup(MissionGroup) {
          text = "The Orange Fold has the highest bouce-force!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "42.2489 86.296 508.402";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -307,12 +217,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "45.4479 91.2854 523.855";
          rotation = "-0.13551 -0.31145 0.940551 224.512";
          scale = "1 1 1";

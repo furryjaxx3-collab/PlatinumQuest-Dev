@@ -3,7 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Mario";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn how to use the super jump and get unreachable places with this power up, this have many uses learn the basics here!";
          gameMode = "null";
          goldTime = "13000";
@@ -17,21 +17,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -65,12 +53,6 @@ new SimGroup(MissionGroup) {
       direction = "0.433884 0.614021 -0.659336";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
    };
    new ScriptObject() {
          bonusTime = "0";
@@ -81,12 +63,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19.9976 -0.278561 -11.3991";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -97,12 +73,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "23 -14.2642 -12.1042";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -117,12 +87,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19.9708 -12.2776 -11.6037";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
@@ -137,12 +101,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "20.0077 12.7089 -3.39625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -153,12 +111,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "20.0053 6.74462 -3.39452";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -169,12 +121,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17.9971 13.7424 -3.59859";
       rotation = "1 0 0 0";
       scale = "4 2 1";
@@ -185,12 +131,6 @@ new SimGroup(MissionGroup) {
          text = "You can cross large gaps by activating the super jump!";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19.984 42.7623 -3.40157";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -201,12 +141,6 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "22.0066 4.75095 4.89969";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -216,12 +150,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "18.0866 8.54095 4.89969";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -231,12 +159,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "18.0766 4.75095 4.89969";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -246,12 +168,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "22.0066 8.76095 4.89969";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -261,12 +177,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Item() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "19.9808 37.7396 -3.09826";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -276,24 +186,12 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "20.0095 60.7253 3.89833";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17.9827 -2.25695 -11.607";
       rotation = "1 0 0 0";
       scale = "4 2 1";
@@ -304,12 +202,6 @@ new SimGroup(MissionGroup) {
          text = "Use the Super jump to pass through the hole!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17.9918 3.74192 -3.58688";
       rotation = "1 0 0 0";
       scale = "4 2 1";
@@ -320,12 +212,6 @@ new SimGroup(MissionGroup) {
          text = "Collect the Diamonds in the four pillars!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "17.9798 43.7311 -3.59645";
       rotation = "1 0 0 0";
       scale = "4 2 1";
@@ -336,12 +222,6 @@ new SimGroup(MissionGroup) {
          text = "Jump + Super Jump!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "4.13202 72.6109 -16.4549";
       rotation = "1 0 0 0";
       scale = "30 90 80";
@@ -359,12 +239,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "16.713 -0.979568 10.745";
          rotation = "0.738989 -0.234696 0.631517 53.3957";
          scale = "1 1 1";

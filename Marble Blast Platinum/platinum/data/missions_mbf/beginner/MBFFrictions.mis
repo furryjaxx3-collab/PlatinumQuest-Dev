@@ -76,7 +76,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Mario";
-         customRadarRule = "0";
+         CustomRadarRule = "0";
          desc = "Learn the frictions of Marble Blast Future!";
          gameMode = "null";
          goldTime = "8000";
@@ -90,21 +90,9 @@ new SimGroup(MissionGroup) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
       flightCeilingRange = "20";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
    };
    new Sky(Sky) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -139,12 +127,6 @@ new SimGroup(MissionGroup) {
       direction = "0.512126 0.512126 -0.689532";
       color = "1 1 0.4 1";
       ambient = "0.3 0.3 0.4 1";
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
@@ -153,12 +135,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(CheckPoints) {
    };
    new InteriorInstance() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "34.2745 -70.1386 514.347";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -185,12 +161,6 @@ new SimGroup(MissionGroup) {
    new MessageVector(HudMessageVector) {
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.2682 -72.1354 514.849";
       rotation = "1 0 0 0";
       scale = "2 2 1";
@@ -201,12 +171,6 @@ new SimGroup(MissionGroup) {
          text = "Don\'t fall into the Space Water!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.2682 -72.1407 514.854";
       rotation = "1 0 0 0";
       scale = "2 2 1";
@@ -217,12 +181,6 @@ new SimGroup(MissionGroup) {
          text = "Don\'t fall into the Space Water!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "35.2775 -58.1346 514.848";
       rotation = "1 0 0 0";
       scale = "2 2 1";
@@ -233,12 +191,6 @@ new SimGroup(MissionGroup) {
          text = "Grass has a high traction!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.2775 -58.1293 514.843";
       rotation = "1 0 0 0";
       scale = "2 2 1";
@@ -249,12 +201,6 @@ new SimGroup(MissionGroup) {
          text = "Grass has a high traction!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "31.2578 -36.1321 519.354";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -265,12 +211,6 @@ new SimGroup(MissionGroup) {
          text = "Beware! You don\'t have traction in Deep!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "21.2759 -24.1318 519.354";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -281,12 +221,6 @@ new SimGroup(MissionGroup) {
          text = "Glass has the highest traction!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2613 -16.1447 524.846";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -297,12 +231,6 @@ new SimGroup(MissionGroup) {
          text = "Snow has low traction!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2701 9.86925 524.854";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -313,12 +241,6 @@ new SimGroup(MissionGroup) {
          text = "Grey Ramp is good for climb steep slopes!";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "33.2757 26.8658 524.855";
       rotation = "1 0 0 0";
       scale = "6 2 1";
@@ -329,24 +251,12 @@ new SimGroup(MissionGroup) {
          text = "Space Mud has a little low traction!";
    };
    new StaticShape(EndPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "36.2882 37.8447 527.845";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
    new StaticShape(StartPoint) {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "34.2997 -77.7547 514.853";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -361,12 +271,6 @@ new SimGroup(MissionGroup) {
          Time = "0";
    };
    new Trigger() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "10.856 56.4337 514.862";
       rotation = "1 0 0 0";
       scale = "50 150 70";
@@ -384,12 +288,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         _moving = "0";
-         _pathSyncId = "-1";
-         _pathRngStart = "0";
-         _pathPosition = "0";
-         trail = "0";
-         attachId = "-1";
          position = "57.9209 -38.0744 553.34";
          rotation = "0.646501 0.258073 -0.717938 58.1495";
          scale = "1 1 1";
@@ -404,12 +302,6 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      _moving = "0";
-      _pathSyncId = "-1";
-      _pathRngStart = "0";
-      _pathPosition = "0";
-      trail = "0";
-      attachId = "-1";
       position = "37.0585 -66.5928 514.173";
       rotation = "1 0 0 0";
       scale = "5 5 1";
