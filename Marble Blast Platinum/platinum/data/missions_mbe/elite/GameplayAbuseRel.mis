@@ -795,6 +795,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new Item() {
       position = "9.51952 23.1547 80.9961";
@@ -811,6 +813,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new StaticShape() {
       position = "-0.494359 5.00375 11.0013";
@@ -818,6 +822,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new StaticShape() {
       position = "-13.5713 0.00203055 23.5003";
@@ -825,6 +831,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new StaticShape() {
       position = "12.4944 -1.50392 51.4952";
@@ -832,6 +840,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new StaticShape() {
       position = "-12.5105 -19.9869 40.501";
@@ -839,6 +849,8 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "Checkpoint_MBE";
          chkcollide = "1";
+         disableOOB = "0";
+         gravity = "1";
    };
    new Item() {
       position = "-8.5296 -17.9681 42.9903";
