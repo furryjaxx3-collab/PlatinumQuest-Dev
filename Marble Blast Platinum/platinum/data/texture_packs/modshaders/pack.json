@@ -1,0 +1,214 @@
+// https://cpetry.github.io/NormalMap-Online/ very cool website
+{
+  "identifier": "modshaders",
+  "name": "Mod Shaders",
+  "author": "",
+  "description": "Adds shader textures to other mods",
+  "materials": {
+    "MBECheckeredMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBECautionstripMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_cautionstripe_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_cautionstripe_specular"
+    },
+    "MBEChevronMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_chevron_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_chevron_specular"
+    },
+    "MBEEdgeWhite3Material": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_edge_white3_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_edge_white3_specular"
+    },
+    "MBEBouncyMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_floorbounce_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_floorbounce_specular"
+    },
+    "MBECrystalMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_crystal_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_crystal_specular",
+      "shader": "SkyboxIce",
+      "reflectivity": 0.1
+    },
+    "MBEGrassMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_grass_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_grass_specular"
+    },
+    "MBEIceMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_ice_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_ice_specular",
+      "shader": "SkyboxIce",
+      "reflectivity": 0.4
+    },
+    "MBESandMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_sand_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_sand_specular"
+    },
+    "MBESnowMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_snow_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_snow_specular"
+    },
+    "MBESuperMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_super_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_super_specular"
+    },
+    "MBEWaterMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_water_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_friction_water_specular"
+    },
+    "MBEGoodlyGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_goodlygrid_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_goodlygrid_specular"
+    },
+    "MBEColdGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBECoolGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBEHotGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBENeutralGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBEWarmGridMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/tile_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/default_specular"
+    },
+    "MBEJumpMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_jumpfloor_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_jumpfloor_specular"
+    },
+    "MBEInvertMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_inversionfloor_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_inversionfloor_specular"
+    },
+    "MBEInvisibleMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_invisifloor_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_invisifloor_specular"
+    },
+    "MBELavaMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_lava_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_lava_specular"
+    },
+    "MBELowgravMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_lowgravfloor_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_lowgravfloor_specular"
+    },
+    "MBEWallMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBE/mbe_wally_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBE/mbe_wally_specular"
+    }
+  },
+  "texture_materials": {
+    "platinum/data/interiors/MBE/30k4myq[1]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[2]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[3]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[4]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[5]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[6]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[7]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[8]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[9]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[10]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[11]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[12]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[13]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[14]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/30k4myq[15]": "MBECheckeredMaterial",
+    "platinum/data/interiors/MBE/mbe_cautionstripe": "MBECautionstripMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron1": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron2": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron3": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron4": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron5": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron6": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron7": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_chevron8": "MBEChevronMaterial",
+    "platinum/data/interiors/MBE/mbe_edge_white3": "MBEEdgeWhite3Material",
+    "platinum/data/interiors/MBE/mbe_floorbounce_high": "MBEBouncyMaterial",
+    "platinum/data/interiors/MBE/mbe_floorbounce_low": "MBEBouncyMaterial",
+    "platinum/data/interiors/MBE/mbe_floorbounce_medium": "MBEBouncyMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_crystal": "MBECrystalMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_crystal2": "MBECrystalMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_grass": "MBEGrassMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_ice": "MBEIceMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_sand": "MBESandMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_snow": "MBESnowMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_super": "MBESuperMaterial",
+    "platinum/data/interiors/MBE/mbe_friction_water": "MBEWaterMaterial",
+    "platinum/data/interiors/MBE/mbe_goodgrid_blue": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_black": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_blue": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_cyan": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_green": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_orange": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_purple": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_goodlygrid_red1": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_blue": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold1": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold2": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold3": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold4": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold5": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold6": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold7": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cold8": "MBEColdGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool1": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool2": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool3": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool4": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool5": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool6": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cool7": "MBECoolGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_cyan": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_green": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot2": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot3": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot4": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot5": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot6": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot7": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot8": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_hot9": "MBEHotGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_lime": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral2": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral3": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral4": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral5": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_neutral6": "MBENeutralGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_orange": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_pink": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_purple": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_red": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm1": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm2": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm3": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm4": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm5": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm6": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm7": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_warm8": "MBEWarmGridMaterial",
+    "platinum/data/interiors/MBE/mbe_grid_yellow": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_highjumpfloor": "MBEJumpMaterial",
+    "platinum/data/interiors/MBE/mbe_highjumpfloor2": "MBEJumpMaterial",
+    "platinum/data/interiors/MBE/mbe_ice": "MBEIceMaterial",
+    "platinum/data/interiors/MBE/mbe_ice1": "MBEIceMaterial",
+    "platinum/data/interiors/MBE/mbe_inversionfloor": "MBEInvertMaterial",
+    "platinum/data/interiors/MBE/mbe_invisifloor": "MBEInvisibleMaterial",
+    "platinum/data/interiors/MBE/mbe_lava": "MBElavaMaterial",
+    "platinum/data/interiors/MBE/mbe_lowgravfloor": "MBELowgravMaterial",
+    "platinum/data/interiors/MBE/mbe_nojumpfloor": "MBEJumpMaterial",
+    "platinum/data/interiors/MBE/mbe_wallgrid": "MBEGoodlyGridMaterial",
+    "platinum/data/interiors/MBE/mbe_wally": "MBEWallMaterial",
+    "platinum/data/interiors/MBE/mbe_wally2": "MBEWallMaterial"
+  }
+}
