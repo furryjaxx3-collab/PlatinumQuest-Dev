@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "?";
          CustomRadarRule = "0";
          desc = "Pass the moving platform challenges ahead, and don\'t fall!";
+         game = "Future";
          gameMode = "null";
          level = "8";
          music = "trance01.ogg";

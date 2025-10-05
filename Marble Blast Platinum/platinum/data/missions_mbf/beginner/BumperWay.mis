@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Bumpers can be a help or a hazard, be careful in both ways to use them!";
+         game = "Elite";
          gameMode = "null";
          goldTime = "19000";
          level = "12";

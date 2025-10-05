@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Learn about Moving Platforms!";
+         game = "Future";
          gameMode = "null";
          goldTime = "7500";
          level = "4";

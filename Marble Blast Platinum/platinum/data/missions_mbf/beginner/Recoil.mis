@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Christina";
          CustomRadarRule = "0";
          desc = "Learn the basics about landing skills!";
+         game = "Future";
          gameMode = "null";
          goldTime = "16500";
          level = "9";

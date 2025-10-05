@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Look for Diamonds and visit the castle in the sky?";
+         game = "Future";
          gameMode = "null";
          goldTime = "30000";
          level = "1";

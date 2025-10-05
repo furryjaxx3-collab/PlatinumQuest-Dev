@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Reach the finnish passing a series of trials ahead!";
+         game = "Future";
          gameMode = "null";
          goldTime = "60000";
          level = "12";

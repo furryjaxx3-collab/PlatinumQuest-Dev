@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "879m /fixed by Mario";
          CustomRadarRule = "0";
          desc = "Get the diamonds on both sides of this level, can you survive the trials ahead?";
+         game = "Future";
          gameMode = "null";
          goldTime = "14000";
          level = "1";

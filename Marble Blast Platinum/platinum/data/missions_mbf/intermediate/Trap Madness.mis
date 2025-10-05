@@ -79,6 +79,7 @@ new SimGroup(MissionGroup) {
          author = "Beack";
          CustomRadarRule = "0";
          desc = "Can you survive the trials ahead without fall trough?";
+         game = "Future";
          gameMode = "null";
          goldTime = "20000";
          level = "11";

@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Mario";
          CustomRadarRule = "0";
          desc = "A simple levels that show you how to roll in Marble Blast Future!";
+         game = "Future";
          gameMode = "null";
          goldTime = "15000";
          level = "1";

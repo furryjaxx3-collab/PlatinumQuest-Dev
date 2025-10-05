@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "AJ Ferguson";
          CustomRadarRule = "0";
          desc = "The dangerous trip on the Highway.";
+         game = "Future";
          gameMode = "null";
          goldTime = "35400";
          level = "3";

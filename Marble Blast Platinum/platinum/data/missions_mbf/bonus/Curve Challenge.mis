@@ -75,11 +75,14 @@ addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
+         artist = "?";
+         CustomRadarRule = "0";
          desc = "The best name that wins in originality!";
+         game = "Future";
+         gameMode = "null";
          level = "2";
          music = "Devil Song.ogg";
          name = "Curve";
-         Time = "0";
          type = "Advanced";
    };
    new MissionArea(MissionArea) {

@@ -75,13 +75,15 @@ addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         Autor = "Mario";
+         artist = "Mario";
+         CustomRadarRule = "0";
          desc = "Welcome to the remake of my favorite MBU level, now this have more hazards and more things for have fun!";
+         game = "Future";
+         gameMode = "null";
          goldTime = "75000";
          level = "9";
          music = "mbb2.ogg";
          name = "Endurance revisited!";
-         Time = "0";
          type = "Advanced";
    };
    new MissionArea(MissionArea) {

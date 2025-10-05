@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Mario";
          CustomRadarRule = "0";
          desc = "Use the Super Speed power up to  pass the trials ahead, be careful to don\'t get much speed!";
+         game = "Future";
          gameMode = "null";
          goldTime = "7000";
          level = "6";

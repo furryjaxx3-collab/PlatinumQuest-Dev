@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Mario";
          CustomRadarRule = "0";
          desc = "Learn the frictions of Marble Blast Future!";
+         game = "Future";
          gameMode = "null";
          goldTime = "8000";
          level = "3";

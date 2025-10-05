@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Learn how to roll in \"Diagonal\" and pass the trials ahead!";
+         game = "Future";
          gameMode = "null";
          goldTime = "5250";
          level = "18";

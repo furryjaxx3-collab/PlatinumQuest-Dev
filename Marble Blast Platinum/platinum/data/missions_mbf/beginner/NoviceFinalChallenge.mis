@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Overcome the Novice challenges to get the Diamonds!";
+         game = "Future";
          gameMode = "null";
          goldTime = "7000";
          level = "20";

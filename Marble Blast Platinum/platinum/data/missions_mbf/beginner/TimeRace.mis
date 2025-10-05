@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Don\'t let the clock beat you!";
+         game = "Future";
          gameMode = "null";
          goldTime = "1100";
          level = "10";

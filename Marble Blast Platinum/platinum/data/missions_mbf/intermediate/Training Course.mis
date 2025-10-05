@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "?";
          CustomRadarRule = "0";
          desc = "Pass the challeneges ahead and get the diamonds!";
+         game = "Future";
          gameMode = "null";
          level = "7";
          music = "trance02.ogg";

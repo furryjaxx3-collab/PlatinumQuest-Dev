@@ -76,7 +76,10 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Arnie Gape";
+         CustomRadarRule = "0";
          desc = "In a tribute to an amazing level by Matan Weisman the MBF staff present GyroCourse, a small level to test your flying abilities, have fun!";
+         game = "Future";
+         gameMode = "null";
          level = "10";
          music = "EuroPad I.ogg";
          name = "GyroCourse!";

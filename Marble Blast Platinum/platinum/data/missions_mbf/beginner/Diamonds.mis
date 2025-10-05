@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Christina";
          CustomRadarRule = "0";
          desc = "Collect all the gems before going to the End Pad!";
+         game = "Future";
          gameMode = "null";
          goldTime = "18000";
          level = "2";

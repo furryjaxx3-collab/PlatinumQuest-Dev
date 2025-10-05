@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Learn how to use the Tornado for cross big gaps and how they can throw you to everywhere!";
+         game = "Future";
          gameMode = "null";
          goldTime = "7000";
          level = "15";

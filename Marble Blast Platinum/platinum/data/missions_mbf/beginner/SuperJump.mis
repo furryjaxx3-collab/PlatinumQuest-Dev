@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Mario";
          CustomRadarRule = "0";
          desc = "Learn how to use the super jump and get unreachable places with this power up, this have many uses learn the basics here!";
+         game = "Future";
          gameMode = "null";
          goldTime = "13000";
          level = "7";

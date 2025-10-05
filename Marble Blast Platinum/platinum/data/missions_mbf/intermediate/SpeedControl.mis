@@ -54,13 +54,15 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
+         CustomRadarRule = "0";
          desc = "Constrol your speed and pass the trials ahead!";
+         game = "Future";
+         gameMode = "null";
          goldTime = "30000";
          level = "5";
-         music = "Europad I.ogg";
+         music = "EuroPad I.ogg";
          name = "Speed control!";
          startHelpText = "Speed control is the key here!";
-         Time = "0";
          type = "Intermediate";
    };
    new MissionArea(MissionArea) {

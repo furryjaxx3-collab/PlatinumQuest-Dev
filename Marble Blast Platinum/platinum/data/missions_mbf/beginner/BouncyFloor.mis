@@ -24,6 +24,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "There are 3 Bounce floor\'s forces, the blue fold is the lowest, the pink fold is the medium bounce force and the orange is the most force, learn every individual bouncy-force here!";
+         game = "Future";
          gameMode = "null";
          goldTime = "7000";
          level = "13";

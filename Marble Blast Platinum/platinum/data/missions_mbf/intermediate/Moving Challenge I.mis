@@ -56,6 +56,7 @@ new SimGroup(MissionGroup) {
          artist = "?";
          CustomRadarRule = "0";
          desc = "Moving Platforms are not always your \"frieds\"";
+         game = "Future";
          gameMode = "null";
          level = "3";
          music = "trance01.ogg";

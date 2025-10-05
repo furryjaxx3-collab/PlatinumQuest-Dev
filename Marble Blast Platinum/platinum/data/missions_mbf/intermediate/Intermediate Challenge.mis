@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "enderman0125";
          CustomRadarRule = "0";
          desc = "Pass this blend of challenges to reach the finnish!";
+         game = "Future";
          gameMode = "null";
          level = "10";
          music = "EuroPad I.ogg";

@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "A Grass Camp for test your skills!";
+         game = "Future";
          gameMode = "null";
          goldTime = "55000";
          level = "9";

@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Explore the different bump roads to get the Diamonds and don\'t fall trough!";
+         game = "Future";
          gameMode = "null";
          goldTime = "15000";
          level = "16";

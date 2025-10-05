@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Learn about the dangerous elements of marble blast, and learn how to pass them!";
+         game = "Future";
          gameMode = "null";
          goldTime = "30000";
          level = "19";

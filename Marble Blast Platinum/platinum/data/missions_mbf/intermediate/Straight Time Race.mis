@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Greg25";
          CustomRadarRule = "0";
          desc = "Don\'t go too slow, or ignore the Time Travels!";
+         game = "Future";
          gameMode = "null";
          goldTime = "5000";
          level = "4";

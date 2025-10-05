@@ -24,6 +24,7 @@ new SimGroup(MissionGroup) {
          artist = "?";
          CustomRadarRule = "0";
          desc = "A very bumpy level.";
+         game = "Future";
          gameMode = "null";
          level = "4";
          music = "trance02.ogg";

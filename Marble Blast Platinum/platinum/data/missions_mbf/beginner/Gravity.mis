@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Use the Gravity Modifiers to change the direction of the gravity to the direction of the arrow!";
+         game = "Future";
          gameMode = "null";
          goldTime = "2000";
          level = "17";

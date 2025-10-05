@@ -78,6 +78,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "The sand is a really weird surface, you need control your spins here!";
+         game = "Future";
          gameMode = "null";
          goldTime = "10000";
          level = "2";

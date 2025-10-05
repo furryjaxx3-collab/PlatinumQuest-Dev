@@ -24,6 +24,7 @@ new SimGroup(MissionGroup) {
          artist = "?";
          CustomRadarRule = "0";
          desc = "An advanced challenge, not for novice players";
+         game = "Future";
          gameMode = "null";
          level = "8";
          music = "trance02.ogg";

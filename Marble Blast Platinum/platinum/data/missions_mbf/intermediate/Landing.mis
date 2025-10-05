@@ -24,6 +24,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Surprices ahead!, are you ready?";
+         game = "Future";
          gameMode = "null";
          goldTime = "20000";
          level = "6";

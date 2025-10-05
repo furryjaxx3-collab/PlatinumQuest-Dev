@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Meet with the explosive things!";
+         game = "Future";
          gameMode = "null";
          goldTime = "12000";
          level = "14";

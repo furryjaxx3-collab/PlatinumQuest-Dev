@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Learn how to do wall hits on Marble Blast!";
+         game = "Future";
          gameMode = "null";
          goldTime = "25000";
          level = "11";
