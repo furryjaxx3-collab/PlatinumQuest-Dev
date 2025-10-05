@@ -305,6 +305,29 @@ function StatisticsDlg::display(%this) {
 	%right = %minibold @ %c @ "Times / Other (" @ $CurrentGame @ ")";
 
 	switch$ ($CurrentGame) {
+	case "Elite":
+		%right = %right NL
+		         %l @ %big @ "Platinum Times:" @ %r @ %small @ %comp["Platinum"]  @ "/" @ %total["Grand"]     @ " (" @ %perc["Platinum"]  @ ")" NL
+		         %l @ %big @ "Ultimate Times:" @ %r @ %small @ %comp["Ultimate"]  @ "/" @ %total["Grand"]     @ " (" @ %perc["Ultimate"]  @ ")" NL
+		         %l @ %big @ "Easter Eggs:"    @ %r @ %small @ %comp["EasterEgg"] @ "/" @ %total["EasterEgg"] @ " (" @ %perc["EasterEgg"] @ ")" NL
+		         %l @ %big @ " " NL
+		         %l @ %big @ " ";
+	case "Future":
+		%right = %right NL
+		         %l @ %big @ "Gold Times:" @ %r @ %small @ %comp["Platinum"]  @ "/" @ %total["Grand"]     @ " (" @ %perc["Platinum"]  @ ")" NL
+		         %l @ %big @ " " NL
+		         %l @ %big @ " ";
+	case "G3orge's Mini Mod":
+		%right = %right NL
+		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL
+		         %l @ %big @ " " NL
+		         %l @ %big @ " ";
+	case "Stop":
+		%right = %right NL
+		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL
+		         %l @ %big @ "Octagons:"    @ %r @ %small @ %comp["EasterEgg"] @ "/" @ %total["EasterEgg"] @ " (" @ %perc["EasterEgg"] @ ")" NL
+		         %l @ %big @ " " NL
+		         %l @ %big @ " ";
 	case "Gold":
 		%right = %right NL
 		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL
