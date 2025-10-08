@@ -1,76 +1,13 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
-};
-new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
-};
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+new MaterialProperty(grassFrictionMaterial) {
+	friction = 2.5;
+	restitution = 0.12;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("friction_high", grassFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
@@ -80,7 +17,9 @@ new SimGroup(MissionGroup) {
          desc = "Pass the challeneges ahead and get the diamonds!";
          game = "Future";
          gameMode = "null";
-         level = "7";
+         generalHint = "If you\'re struggling with the moving platform section, there is nothing stopping you from carrying over an extra Super Jump.";
+         goldTime = "70000";
+         level = "8";
          music = "trance02.ogg";
          name = "Training Course";
          type = "Intermediate";
@@ -478,14 +417,6 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2050";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Item() {
       position = "-11.5248 -10.2839 1.01968";
       rotation = "1 0 0 0";
@@ -547,14 +478,6 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1800";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Trigger() {
       position = "-14.3075 235.047 -4.27382";
@@ -674,14 +597,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/MBFPole_Green.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1741";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

@@ -4,7 +4,7 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Learn how to use the Tornado for cross big gaps and how they can throw you to everywhere!";
+         desc = "Learn how to use the Tornado to cross big gaps and how they can throw you to everywhere!";
          game = "Future";
          gameMode = "null";
          goldTime = "7000";
@@ -52,16 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.581654 -0.481653 -0.655506";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "4298";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new StaticShape() {
       position = "5.12697 73.704 13.2138";
@@ -76,14 +68,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/Tornado.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1492";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "5.17742 14.2796 7.22394";
@@ -165,7 +149,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Battle agains the Tornado to get the diamonds!";
+         text = "Battle against the Tornado to get the diamonds!";
    };
    new Trigger() {
       position = "2.12532 59.1318 13.2357";
@@ -176,14 +160,6 @@ new SimGroup(MissionGroup) {
          displayonce = "0";
          persistTime = "5000";
          text = "Roll fast, fall and the Tornado will do the rest!";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2165";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

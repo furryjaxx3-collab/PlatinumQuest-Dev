@@ -5,7 +5,7 @@ new SimGroup(MissionGroup) {
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Bumpers can be a help or a hazard, be careful in both ways to use them!";
-         game = "Elite";
+         game = "Future";
          gameMode = "null";
          goldTime = "19000";
          level = "12";
@@ -53,14 +53,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.459006 0.638261 -0.61801";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new InteriorInstance() {
       position = "-83.7599 -31.7936 490.997";
@@ -419,22 +417,6 @@ new SimGroup(MissionGroup) {
          displayonce = "0";
          persistTime = "5000";
          text = "Aim your marble to bounce on top of the bumper!";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1712";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "12305";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

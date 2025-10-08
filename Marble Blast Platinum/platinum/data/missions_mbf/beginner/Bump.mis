@@ -1,3 +1,8 @@
+new MaterialProperty(NoFrictionMaterial) {
+	friction = 0;
+	restitution = 0;
+};
+addMaterialMapping("friction_none", NoFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
@@ -11,7 +16,7 @@ new SimGroup(MissionGroup) {
          level = "16";
          music = "Devil Song.ogg";
          name = "Bump, Bump, Bump.";
-         startHelpText = "Beware to fall into the holes!";
+         startHelpText = "Beware to not fall into the holes!";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {
@@ -52,16 +57,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.488577 0.573201 -0.657825";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1500";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new Item() {
       position = "31.2679 17.2923 0.669758";
@@ -108,14 +105,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2141";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "39.3297 23.5126 -5.3261";
@@ -180,14 +169,6 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1720";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "16.7041 37.562 -6.74528";
       rotation = "1 0 0 0";
@@ -213,7 +194,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Pass the small slopes jumping and controlling you spins in the air!";
+         text = "Pass the small slopes by jumping and controlling your spin in the air!";
    };
    new Trigger() {
       position = "33.3598 28.5311 -2.80803";

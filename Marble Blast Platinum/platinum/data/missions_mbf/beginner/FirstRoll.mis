@@ -4,14 +4,14 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Mario";
          CustomRadarRule = "0";
-         desc = "A simple levels that show you how to roll in Marble Blast Future!";
+         desc = "A simple level that shows you how to roll in Marble Blast Future!";
          game = "Future";
          gameMode = "null";
          goldTime = "15000";
          level = "1";
          music = "trance01.ogg";
          name = "First Roll!";
-         startHelpText = "Welcome to Marble Blast Future!";
+         startHelpText = "Welcome to Marble Blast Future! Press <func:bind moveforward> to roll fowards!";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {
@@ -53,18 +53,16 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.544508 0.439467 -0.714409";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
    };
-   new SimGroup(CheckPoints) {
-   };
    new StaticShape(EndPoint) {
       position = "101.671 -30.5694 504.804";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
@@ -75,14 +73,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/Roll.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2024";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape(StartPoint) {
       position = "127.642 -39.5465 502.803";
@@ -115,7 +105,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Press A to roll left!";
+         text = "Press <func:bind moveleft> to roll to the left!";
    };
    new Trigger() {
       position = "80.6353 -8.5367 499.314";
@@ -125,7 +115,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Press W to roll foward!";
+         text = "Press <func:bind moveforward> to roll fowards! (again)";
    };
    new Trigger() {
       position = "68.6473 3.47178 499.306";
@@ -135,7 +125,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Go fast to climb the slope!";
+         text = "Go fast to climb up the slope!";
    };
    new Trigger() {
       position = "68.6267 30.4576 504.809";
@@ -145,7 +135,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Press D to roll right!";
+         text = "Press <func:bind moveright> to roll to the right!";
    };
    new Trigger() {
       position = "86.6267 42.4632 504.81";
@@ -155,7 +145,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Press S to roll backward!";
+         text = "Press <func:bind movebackward> to roll backwards!";
    };
    new Trigger() {
       position = "98.6321 30.4697 504.811";

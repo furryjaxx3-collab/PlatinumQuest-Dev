@@ -4,7 +4,7 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Learn how to do wall hits on Marble Blast!";
+         desc = "Learn how to do wall hits in Marble Blast!";
          game = "Future";
          gameMode = "null";
          goldTime = "25000";
@@ -52,8 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.433884 0.614021 -0.659336";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "-43.005 71.1392 30.6217";
@@ -63,17 +63,9 @@ new SimGroup(MissionGroup) {
       useGLLighting = "0";
       showTerrainInside = "0";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1501";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(EndPoint) {
       position = "-27.991 90.1249 51.1173";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
@@ -84,14 +76,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/WallHit.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1988";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape(StartPoint) {
       position = "-49.9943 64.1242 31.12";
@@ -108,14 +92,6 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1739";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "-53.0016 77.1227 31.1206";
       rotation = "1 0 0 0";
@@ -124,7 +100,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Remember jump before hit the wall and always go fast!";
+         text = "Remember, jump before hitting the wall and always go fast!";
    };
    new Item() {
       position = "-44.0041 86.1404 35.1193";
@@ -163,14 +139,6 @@ new SimGroup(MissionGroup) {
          displayonce = "0";
          persistTime = "5000";
          text = "Use the Super Speed power up to pass the last trial!";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3507";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Trigger() {
       position = "-81.5021 131.298 31.0603";

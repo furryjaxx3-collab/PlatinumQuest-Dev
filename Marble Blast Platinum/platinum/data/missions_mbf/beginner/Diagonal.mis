@@ -4,14 +4,14 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Learn how to roll in \"Diagonal\" and pass the trials ahead!";
+         desc = "Learn how to roll \"Diagonally\" and pass the trials ahead!";
          game = "Future";
          gameMode = "null";
-         goldTime = "5250";
+         goldTime = "28000";
          level = "18";
          music = "trance01.ogg";
-         name = "Diagonal roll!";
-         startHelpText = "Degress your camera 45 grades to use W and A key!";
+         name = "Diagonal Roll!";
+         startHelpText = "Turn your camera 45 degrees and use the <func:bind moveforward> and <func:bind moveleft> keys!";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {
@@ -52,16 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.481726 0.481726 -0.732038";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1524";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new StaticShape(StartPoint) {
       position = "31.1068 106.672 12.0567";
@@ -86,14 +78,6 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2310";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "46.1009 149.694 29.5551";
       rotation = "1 0 0 0";
@@ -102,7 +86,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Roll fast to the ramps using Diagonal Movement!";
+         text = "Roll fast up the ramps using Diagonal Movement!";
    };
    new Trigger() {
       position = "26.1275 129.668 12.0746";
@@ -112,7 +96,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Use Diagonal Movement to clib step slopes!";
+         text = "Use Diagonal Movement to climb step slopes!";
    };
    new Trigger() {
       position = "16.1166 -57.3109 40.0579";
@@ -191,14 +175,6 @@ new SimGroup(MissionGroup) {
       scale = "60 400 60";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3672";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

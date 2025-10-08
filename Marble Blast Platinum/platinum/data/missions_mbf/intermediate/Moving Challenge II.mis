@@ -7,9 +7,10 @@ new SimGroup(MissionGroup) {
          desc = "Pass the moving platform challenges ahead, and don\'t fall!";
          game = "Future";
          gameMode = "null";
-         level = "8";
+         goldTime = "15000";
+         level = "9";
          music = "trance01.ogg";
-         name = "Moving challenge II";
+         name = "Moving Challenge II";
          type = "Intermediate";
    };
    new MissionArea(MissionArea) {
@@ -725,15 +726,9 @@ new SimGroup(MissionGroup) {
    };
    new StaticShape(StartPoint) {
       position = "-17.9935 -18.0179 0.50314";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 90.0002";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
-   };
-   new StaticShape(EndPoint) {
-      position = "0 5 100";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      dataBlock = "EndPad_MBF";
    };
    new Trigger(Bounds) {
       position = "-41.5 15.5 0.200001";
@@ -741,14 +736,6 @@ new SimGroup(MissionGroup) {
       scale = "43 50.5 58.5";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1898";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "-26.7916 11.0027 13.4932";

@@ -4,7 +4,7 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Mario";
          CustomRadarRule = "0";
-         desc = "Learn how to use the super jump and get unreachable places with this power up, this have many uses learn the basics here!";
+         desc = "Learn how to use the Super Jump and get to unreachable places with this power up. This have many uses. Learn the basics here!";
          game = "Future";
          gameMode = "null";
          goldTime = "13000";
@@ -52,16 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.433884 0.614021 -0.659336";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1507";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new Item() {
       position = "19.9976 -0.278561 -11.3991";
@@ -81,25 +73,11 @@ new SimGroup(MissionGroup) {
       useGLLighting = "0";
       showTerrainInside = "0";
    };
-   new SimGroup(MustChange_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
    new StaticShape(StartPoint) {
       position = "19.9708 -12.2776 -11.6037";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2000";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "20.0077 12.7089 -3.39625";
@@ -129,7 +107,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "You can cross large gaps by activating the super jump!";
+         text = "You can cross large gaps by activating the Super Jump!";
    };
    new Item() {
       position = "19.984 42.7623 -3.40157";
@@ -200,7 +178,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Use the Super jump to pass through the hole!";
+         text = "Use the Super Jump to pass through the hole!";
    };
    new Trigger() {
       position = "17.9918 3.74192 -3.58688";
@@ -210,7 +188,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Collect the Diamonds in the four pillars!";
+         text = "Collect the Diamonds on the four pillars!";
    };
    new Trigger() {
       position = "17.9798 43.7311 -3.59645";
@@ -228,14 +206,6 @@ new SimGroup(MissionGroup) {
       scale = "30 90 80";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "8561";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

@@ -4,14 +4,14 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Meet with the explosive things!";
+         desc = "Meet the explosive objects!";
          game = "Future";
          gameMode = "null";
          goldTime = "12000";
          level = "14";
          music = "mbb2.ogg";
          name = "Mine Field!";
-         startHelpText = "Don\'t touch or they will explode!";
+         startHelpText = "Don\'t touch mines or they will explode!";
          type = "beginner";
    };
    new MissionArea(MissionArea) {
@@ -52,32 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.442343 0.475025 -0.760713";
-      color = "1 1 0.5 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1804";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1872";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1634";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "71.871 -12.8162 -3.31236";
@@ -86,14 +62,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/Mine.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2027";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape(EndPoint) {
       position = "43.8901 47.1734 1.18136";

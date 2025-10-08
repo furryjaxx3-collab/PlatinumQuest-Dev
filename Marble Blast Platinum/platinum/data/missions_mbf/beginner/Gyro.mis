@@ -52,16 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.481726 0.481726 -0.732038";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1493";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "11.4978 30.2398 90.5599";
@@ -157,14 +149,6 @@ new SimGroup(MissionGroup) {
       rotate = "1";
          showHelpOnPickup = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2041";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "7.47971 31.2278 91.057";
       rotation = "1 0 0 0";
@@ -219,7 +203,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "You can use Gyrocopter to cross large gaps!";
+         text = "You can use the Gyrocopter to cross large gaps!";
    };
    new SimGroup(PathNodeGroup) {
 

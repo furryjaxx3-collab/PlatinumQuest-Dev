@@ -1,83 +1,15 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
-};
-new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
 new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
+	friction = 2.5;
+	restitution = 0.12;
 };
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
-};
-new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
-};
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
-};
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("friction_high", grassFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Mario";
          CustomRadarRule = "0";
-         desc = "Use the Super Speed power up to  pass the trials ahead, be careful to don\'t get much speed!";
+         desc = "Use the Super Speed power up to pass the trials ahead. Be careful to not get much speed!";
          game = "Future";
          gameMode = "null";
          goldTime = "7000";
@@ -126,14 +58,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.481726 0.481726 -0.732038";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new InteriorInstance() {
       position = "89.9636 59.3525 498.379";
@@ -176,14 +106,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/RaceTrack_loop2.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "4281";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new InteriorInstance() {
       position = "-38.0881 54.2797 502.622";
@@ -369,28 +291,12 @@ new SimGroup(MissionGroup) {
       rotate = "1";
          showHelpOnPickup = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3525";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "-62.5851 112.962 503.111";
       rotation = "1 0 0 0";
       scale = "150 150 70";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1729";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

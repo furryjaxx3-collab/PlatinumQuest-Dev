@@ -1,86 +1,42 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
 new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+	friction = 1000;
+	restitution = 0;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("super_friction", SuperHighFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "enderman0125";
          CustomRadarRule = "0";
-         desc = "Pass this blend of challenges to reach the finnish!";
+         desc = "Pass this blend of challenges to reach the finish!";
          game = "Future";
          gameMode = "null";
-         level = "10";
+         goldTime = "55000";
+         level = "12";
          music = "EuroPad I.ogg";
          name = "Intermediate Challenge Course!";
          type = "Intermediate";
@@ -648,26 +604,12 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       dataBlock = "RoundBumper";
    };
-   new StaticShape(EndPoint) {
-      position = "0 5 100";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      dataBlock = "EndPad_MBF";
-   };
    new Trigger(Bounds) {
       position = "-17.9677 58.108 0.84";
       rotation = "1 0 0 0";
       scale = "42 83.5 44";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1774";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "-4.46353 42.865 13.408";

@@ -2,6 +2,7 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
+         alarmStartTime = "4";
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Don\'t let the clock beat you!";
@@ -54,36 +55,18 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.481726 0.481726 -0.732038";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new StaticShape(StartPoint) {
       position = "13.6711 31.422 410.809";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2204";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2151";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new InteriorInstance() {
       position = "16.6533 39.4204 410.315";
@@ -220,14 +203,6 @@ new SimGroup(MissionGroup) {
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2370";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
@@ -245,11 +220,18 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      position = "-200.773 333.721 409.809";
+      position = "14.7284 62.672 406.33";
       rotation = "1 0 0 0";
-      scale = "500 500 1";
+      scale = "5 5 1";
       shapeName = "~/data/shapes_mbf/water/water100x100.dts";
       computeConvexHulls = "0";
+   };
+   new Trigger(Bounds) {
+      position = "-10.2217 24.1704 409.69";
+      rotation = "1 0 0 0";
+      scale = "32 88 36";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
 };
 //--- OBJECT WRITE END ---

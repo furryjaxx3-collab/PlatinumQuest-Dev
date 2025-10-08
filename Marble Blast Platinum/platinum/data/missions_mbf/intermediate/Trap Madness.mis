@@ -1,90 +1,44 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+new MaterialProperty(grassFrictionMaterial) {
+	friction = 2.5;
+	restitution = 0.12;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("golf_grass", grassFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         artist = "enderman0125";
-         author = "Beack";
+         artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Can you survive the trials ahead without fall trough?";
+         desc = "Can you survive the trials ahead without falling trough?";
          game = "Future";
          gameMode = "null";
-         goldTime = "20000";
-         level = "11";
+         goldTime = "25000";
+         level = "13";
          music = "Devil Song.ogg";
-         name = "Trap madness!";
+         name = "Trap Madness!";
          type = "Intermediate";
    };
    new MissionArea(MissionArea) {
@@ -1690,7 +1644,7 @@ new SimGroup(MissionGroup) {
    };
    new StaticShape(EndPoint) {
       position = "-40.9835 -49.0005 9.9976";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 180";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
@@ -1700,22 +1654,6 @@ new SimGroup(MissionGroup) {
       scale = "68 148 98";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1825";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3059";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "-1.00064 50.9987 3.99946";
@@ -1745,14 +1683,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2268";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "-17.0502 79.043 2.90864";
@@ -1804,6 +1734,15 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "GemItemTurquoise_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-40.8202 -48.937 18.2818";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "easterEgg";
       collidable = "0";
       static = "1";
       rotate = "1";

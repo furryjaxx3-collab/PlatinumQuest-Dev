@@ -1,66 +1,26 @@
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
-};
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+new MaterialProperty(grassFrictionMaterial) {
+	friction = 2.5;
+	restitution = 0.12;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping( "friction_high", grassFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Arnie Gape";
          CustomRadarRule = "0";
-         desc = "Collect the planets quikly ro the time will beat you";
+         desc = "Collect the diamonds quickly or the time will beat you!";
          game = "Future";
          gameMode = "null";
-         level = "8";
+         goldTime = "50000";
+         level = "2";
          music = "trance01.ogg";
-         name = "Agility race";
+         name = "Agility Race";
          Time = "120000";
          type = "advanced";
    };
@@ -102,10 +62,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.57735 0.57735 -0.57735";
-      color = "1 1 0.4 1";
-      ambient = "0.4 0.4 0.3 1";
-   };
-   new SimGroup(CheckPoints) {
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new Trigger(Bounds) {
       position = "-35.098 43.1286 108.2";
@@ -122,70 +80,6 @@ new SimGroup(MissionGroup) {
       useGLLighting = "0";
       showTerrainInside = "0";
    };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform2_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform3_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform3_0_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform4_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform4_0_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform4_1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform4_2_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2087";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2281";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(StartPoint) {
       position = "6.47216 24.5407 119.547";
       rotation = "0 0 1 180";
@@ -194,7 +88,7 @@ new SimGroup(MissionGroup) {
    };
    new StaticShape(EndPoint) {
       position = "6.4675 -23.467 119.542";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 180";
       scale = "0.2 0.2 0.2";
       dataBlock = "EndPad_MBF";
    };
@@ -429,14 +323,6 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "7145";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
 };
 //--- OBJECT WRITE END ---

@@ -53,14 +53,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.560395 0.341545 -0.754522";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new Item() {
       position = "48.8979 -26.035 480.833";
@@ -70,14 +68,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2453";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new InteriorInstance() {
       position = "-50.1985 -133.563 480.467";
@@ -134,14 +124,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1912";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Trigger() {
       position = "37.8276 -10.0453 471.111";

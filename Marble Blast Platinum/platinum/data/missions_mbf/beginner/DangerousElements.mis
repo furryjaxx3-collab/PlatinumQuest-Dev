@@ -4,14 +4,14 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Learn about the dangerous elements of marble blast, and learn how to pass them!";
+         desc = "Learn about the dangerous elements of Marble Blast, and learn how to pass them!";
          game = "Future";
          gameMode = "null";
          goldTime = "30000";
          level = "19";
          music = "mbb2.ogg";
-         name = "Dangerous elements!";
-         startHelpText = "Ba careful with the winds!";
+         name = "Dangerous Elements!";
+         startHelpText = "Be careful with the winds!";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {
@@ -52,8 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.465861 0.62724 -0.624134";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new StaticShape() {
       position = "53.3904 -50.3944 46.3599";
@@ -99,14 +99,6 @@ new SimGroup(MissionGroup) {
          resetTime = "Default";
          skin = "skin1";
          timeout = "200";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1526";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "53.215 -40.3681 46.3705";
@@ -380,7 +372,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "The Oil have little low traction!";
+         text = "The Oil Slicks have little low traction!";
    };
    new Trigger() {
       position = "50.2081 -65.391 46.3856";
@@ -390,7 +382,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Don\'t stay much time on the trapdoors!";
+         text = "Don\'t stay on the trapdoors for too long!";
    };
    new Trigger() {
       position = "50.176 -9.39251 46.3586";
@@ -426,14 +418,6 @@ new SimGroup(MissionGroup) {
       scale = "60 250 60";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1707";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "28.6838 -98.3958 35.857";
@@ -482,14 +466,6 @@ new SimGroup(MissionGroup) {
       rotation = "0 -1 0 90";
       scale = "1 1 1";
       dataBlock = "DuctFan_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1707";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

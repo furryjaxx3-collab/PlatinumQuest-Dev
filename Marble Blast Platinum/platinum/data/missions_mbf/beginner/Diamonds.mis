@@ -53,14 +53,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "-0.473121 -0.225982 -0.851521";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new StaticShape(EndPoint) {
       position = "-23.7749 24.0534 508.637";
@@ -81,14 +79,6 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1932";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Trigger() {
       position = "-67.5465 34.5315 504.111";
@@ -186,14 +176,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3917";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

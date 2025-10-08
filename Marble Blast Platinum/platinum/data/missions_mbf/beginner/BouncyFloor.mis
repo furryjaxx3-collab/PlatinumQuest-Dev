@@ -1,35 +1,34 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "There are 3 Bounce floor\'s forces, the blue fold is the lowest, the pink fold is the medium bounce force and the orange is the most force, learn every individual bouncy-force here!";
+         desc = "There are 3 Bounce floor forces, the blue fold is the lowest, the pink fold is the medium bounce force and the orange fold is the highest. Learn every individual bouncy-force here!";
          game = "Future";
          gameMode = "null";
-         goldTime = "7000";
+         goldTime = "14000";
          level = "13";
          music = "trance01.ogg";
-         name = "Bouncy floor!";
+         name = "Bouncy Floor!";
          startHelpText = "Bounce, boucne, bounce!";
          type = "Beginner";
    };
@@ -72,14 +71,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.481726 0.481726 -0.732038";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new Trigger() {
       position = "-62.5851 112.962 503.111";
@@ -97,35 +94,11 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2374";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3525";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(EndPoint) {
       position = "33.2752 89.2787 520.4";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "4281";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new InteriorInstance() {
       position = "40.2581 59.2967 503.895";
@@ -206,14 +179,6 @@ new SimGroup(MissionGroup) {
          displayonce = "0";
          persistTime = "5000";
          text = "The Pink Fold has medium bounce-force!";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "3789";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

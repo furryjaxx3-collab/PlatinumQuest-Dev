@@ -1,67 +1,27 @@
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
-};
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
 new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+	friction = 1000;
+	restitution = 0;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("super_friction", SuperHighFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
+         alarmStartTime = "15";
          artist = "Beack";
          CustomRadarRule = "0";
          desc = "Go up before the guards reach you!";
          game = "Future";
          gameMode = "null";
          goldTime = "30000";
-         level = "13";
+         level = "15";
          music = "mbb2.ogg";
-         name = "Roof tops!";
+         name = "Roof Tops!";
          Time = "80000";
          type = "Intermediate";
    };
@@ -804,6 +764,15 @@ new SimGroup(MissionGroup) {
             initialTargetPosition = "-1";
       };
    };
+   new Item() {
+      position = "-2.96122 -17.9955 49.2433";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "easterEgg";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
    new StaticShape(StartPoint) {
       position = "-2.99436 -8.01034 0.50406";
       rotation = "1 0 0 0";
@@ -900,14 +869,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2065";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

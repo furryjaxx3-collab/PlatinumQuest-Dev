@@ -1,76 +1,33 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
-};
-new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
+new MaterialProperty(IceFrictionMaterial) {
+	friction = 0.14;
+	restitution = 0.75;
 };
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
 new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+	friction = 1000;
+	restitution = 0;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
+new MaterialProperty(mudFrictionMaterial) {
+	friction = 0.4;
+	restitution = 0.1;
 };
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+new MaterialProperty(rampFrictionMaterial) {
+	friction = 3;
+	restitution = 0.3;
+};
+new MaterialProperty(grassFrictionMaterial) {
+	friction = 2.5;
+	restitution = 0.12;
+};
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("super_friction", SuperHighFrictionMaterial);
+addMaterialMapping("friction_low2", IceFrictionMaterial);
+addMaterialMapping("friction_low", MudFrictionMaterial);
+addMaterialMapping("friction_high", grassFrictionMaterial);
+addMaterialMapping("friction_ramp_yellow", RampFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
@@ -81,7 +38,7 @@ new SimGroup(MissionGroup) {
          game = "Future";
          gameMode = "null";
          goldTime = "8000";
-         level = "3";
+         level = "4";
          music = "mbb2.ogg";
          name = "Frictions!";
          startHelpText = "Be careful with the traction variations!";
@@ -126,14 +83,12 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.512126 0.512126 -0.689532";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
          locked = "true";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
-   };
-   new SimGroup(CheckPoints) {
    };
    new InteriorInstance() {
       position = "34.2745 -70.1386 514.347";
@@ -142,24 +97,6 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/MBF/Friction.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2080";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1585";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new MessageVector(HudMessageVector) {
    };
    new Trigger() {
       position = "31.2682 -72.1354 514.849";
@@ -209,7 +146,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Beware! You don\'t have traction in Deep!";
+         text = "Beware! You don\'t have traction in Space!";
    };
    new Trigger() {
       position = "21.2759 -24.1318 519.354";
@@ -239,7 +176,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Grey Ramp is good for climb steep slopes!";
+         text = "Grey Ramp is good for climbing steep slopes!";
    };
    new Trigger() {
       position = "33.2757 26.8658 524.855";
@@ -263,28 +200,12 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       dataBlock = "StartPad_MBF";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2215";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "10.856 56.4337 514.862";
       rotation = "1 0 0 0";
       scale = "50 150 70";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "4271";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

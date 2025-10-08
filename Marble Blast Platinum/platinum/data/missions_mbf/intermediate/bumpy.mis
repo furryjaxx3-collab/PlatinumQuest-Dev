@@ -1,22 +1,26 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+new MaterialProperty(NoFrictionMaterial) {
+	friction = 0;
+	restitution = 0;
+};
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
@@ -26,7 +30,8 @@ new SimGroup(MissionGroup) {
          desc = "A very bumpy level.";
          game = "Future";
          gameMode = "null";
-         level = "4";
+         goldTime = "15000";
+         level = "6";
          music = "trance02.ogg";
          name = "The Bumpy Bumpy Road";
          type = "Advanced";
@@ -41,7 +46,7 @@ new SimGroup(MissionGroup) {
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      materialList = "~/data/skies/MBF Bonus/sky_day.dml";
+      materialList = "~/data/skies/MBF Normal/sky_day.dml";
       cloudHeightPer[0] = "0";
       cloudHeightPer[1] = "0";
       cloudHeightPer[2] = "0";
@@ -215,14 +220,6 @@ new SimGroup(MissionGroup) {
       dataBlock = "OutOfBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1565";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new InteriorInstance() {
       position = "20.0634 -14.0119 6.41799";
       rotation = "1 0 0 0";
@@ -278,14 +275,6 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "8561";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
 };
 //--- OBJECT WRITE END ---

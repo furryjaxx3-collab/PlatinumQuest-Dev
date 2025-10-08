@@ -1,32 +1,31 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+new MaterialProperty(SuperHighFrictionMaterial) {
+	friction = 1000;
+	restitution = 0;
+};
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("super_friction", SuperHighFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "?";
          CustomRadarRule = "0";
-         desc = "An advanced challenge, not for novice players";
+         desc = "An advanced challenge, not for novice players!";
          game = "Future";
          gameMode = "null";
-         level = "8";
+         goldTime = "30000";
+         level = "1";
          music = "trance02.ogg";
          name = "Pro Challenge";
          type = "Advanced";
@@ -163,22 +162,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1690";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1692";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

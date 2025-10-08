@@ -1,76 +1,51 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
-
 new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 10;
+};
+new MaterialProperty(IceFrictionMaterial) {
+	friction = 0.14;
+	restitution = 0.75;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
-new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
-};
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
 new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
+	friction = 0;
+	restitution = 0;
 };
-
 new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
+	friction = 1000;
+	restitution = 0;
 };
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
+new MaterialProperty(mudFrictionMaterial) {
+	friction = 0.4;
+	restitution = 0.1;
 };
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+new MaterialProperty(rampFrictionMaterial) {
+	friction = 3;
+	restitution = 0.3;
+};
+new MaterialProperty(grassFrictionMaterial) {
+	friction = 2.5;
+	restitution = 0.12;
+};
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce2", MedBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("friction_none", NoFrictionMaterial);
+addMaterialMapping("super_friction", SuperHighFrictionMaterial);
+addMaterialMapping("friction_low2", IceFrictionMaterial);
+addMaterialMapping("friction_low", MudFrictionMaterial);
+addMaterialMapping("friction_high", grassFrictionMaterial);
+addMaterialMapping("friction_ramp_yellow", RampFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
@@ -80,7 +55,7 @@ new SimGroup(MissionGroup) {
          desc = "Overcome the Novice challenges to get the Diamonds!";
          game = "Future";
          gameMode = "null";
-         goldTime = "7000";
+         goldTime = "60000";
          level = "20";
          music = "EuroPad I.ogg";
          name = "Novice Final Challenge";
@@ -125,8 +100,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.59124 0.265566 -0.761518";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "13.8075 -137.344 1.66994";
@@ -141,14 +116,6 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1917";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "10.7959 -130.35 2.67872";
@@ -584,7 +551,7 @@ new SimGroup(MissionGroup) {
    };
    new StaticShape(EndPoint) {
       position = "37.304 134.663 17.6529";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 90.0002";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };
@@ -632,14 +599,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1705";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new Item() {
       position = "6.82486 -53.3245 2.66802";
@@ -990,14 +949,6 @@ new SimGroup(MissionGroup) {
          persistTime = "5000";
          text = "Don\'t fall in the gaps!";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1705";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
       position = "-16.3123 188.88 -1.06138";
       rotation = "1 0 0 0";
@@ -1013,7 +964,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Bouce to diamonds!";
+         text = "Bouce to get the diamonds!";
    };
    new Trigger() {
       position = "15.7998 -50.3556 5.16879";
@@ -1043,7 +994,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Don\'t stay much time in the trapdoors!";
+         text = "Don\'t stay on the trapdoors for too long!";
    };
    new Trigger() {
       position = "-8.17845 -26.3968 -0.823442";
@@ -1063,7 +1014,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Use the Gyrocopter to do high jumps!";
+         text = "Use the Gyrocopter to do a high jump!";
    };
    new Trigger() {
       position = "-1.7021 53.6723 -0.825085";
@@ -1083,7 +1034,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Bouce to the platform there!";
+         text = "Bounce to the platform there!";
    };
    new Trigger() {
       position = "22.3049 79.6511 11.6718";
@@ -1113,7 +1064,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "SuperSpeed + Wallhit!";
+         text = "Super Speed + Wallhit!";
    };
    new SimGroup(PathNodeGroup) {
 

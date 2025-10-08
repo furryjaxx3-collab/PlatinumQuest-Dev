@@ -1,33 +1,20 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
-};
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "Surprices ahead!, are you ready?";
+         desc = "Surprises ahead! Are you ready?";
          game = "Future";
          gameMode = "null";
          goldTime = "20000";
-         level = "6";
+         level = "7";
          music = "Devil Song.ogg";
          name = "Landing";
          type = "Intermediate";
@@ -305,14 +292,6 @@ new SimGroup(MissionGroup) {
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1974";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(EndPoint) {
       position = "25.9893 -61.9943 0.495193";
       rotation = "0 0 1 90";
@@ -345,14 +324,6 @@ new SimGroup(MissionGroup) {
       collidable = "0";
       static = "1";
       rotate = "1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1712";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

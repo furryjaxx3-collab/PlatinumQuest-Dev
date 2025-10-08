@@ -115,6 +115,14 @@ function updateGameDiscordStatus() {
 				%line2 = "Leaderboards Custom";
 			} else if ((%missionDir $= "multiplayer") && (strstr($Client::MissionFile, "/custom/") == -1)) {
 				%line2 = "Performing Recon in Singleplayer";
+			} else if (%missionDir $= "missions_mbe")  {
+				%line2 = "Marble Blast Elite Campaign";
+			} else if (%missionDir $= "missions_mbf")  {
+				%line2 = "Marble Blast Future Campaign";
+			} else if (%missionDir $= "missions_gmbgmm")  {
+				%line2 = "G3orge\'s Mini Mod Campaign";
+			} else if (%missionDir $= "missions_mbs")  {
+				%line2 = "Marble Blast Stop Campaign";
 			} else {
 				//Is this fine language to use? It's *most* (but not all) of the reason to play local customs now that Marbleland exists...
 				%line2 = "Testing a Custom Level";

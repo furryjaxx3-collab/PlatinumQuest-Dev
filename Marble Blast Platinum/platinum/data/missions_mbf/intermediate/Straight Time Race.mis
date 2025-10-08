@@ -1,80 +1,30 @@
 new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
+	friction = 1;
+	restitution = 1;
+	force = 5;
 };
 new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
+	friction = 1;
+	restitution = 1;
+	force = 15;
 };
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
 new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
+	friction = 0.4;
+	restitution = 0.1;
 };
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
 new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
+	friction = 4;
+	restitution = 0;
 };
-
-new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
-};
-new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
-};
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
-};
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("Bounce1", LowBounceFloorMaterial);
+addMaterialMapping("Bounce3", HighBounceFloorMaterial);
+addMaterialMapping("friction_low", MudFrictionMaterial);
+addMaterialMapping("golf_sand", sandFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
+         alarmStartTime = "5";
          artist = "Greg25";
          CustomRadarRule = "0";
          desc = "Don\'t go too slow, or ignore the Time Travels!";
@@ -126,8 +76,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.57735 0.57735 -0.57735";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "0 0 0";
@@ -360,18 +310,7 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
          skin = "mbg";
-         timeBonus = "1000";
-   };
-   new Item() {
-      position = "37 3 1";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      dataBlock = "TimeTravelItem";
-      collidable = "0";
-      static = "1";
-      rotate = "1";
-         skin = "mbg";
-         timeBonus = "1000";
+         timeBonus = "2000";
    };
    new Item() {
       position = "45 1 1";
@@ -498,14 +437,6 @@ new SimGroup(MissionGroup) {
       scale = "198 11 24.5";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1805";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new StaticShape() {
       position = "185.777 1.85855 10.7574";

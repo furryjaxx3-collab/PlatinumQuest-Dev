@@ -666,6 +666,204 @@ function LandMineClass::onCollision(%this, %obj, %col) {
 }
 
 //-----------------------------------------------------------------------------
+// Sensor
+
+datablock AudioProfile(ExplodeSfx)
+{
+   filename    = "~/data/sound/explode1.wav";
+   description = AudioDefault3d;
+   preload = true;
+};
+
+datablock ParticleData(SensorParticle)
+{
+   textureName          = "~/data/particles/smoke";
+   dragCoefficient      = 2;
+   gravityCoefficient   = 0.2;
+   inheritedVelFactor   = 0.2;
+   constantAcceleration = 0.0;
+   lifetimeMS           = 1000;
+   lifetimeVarianceMS   = 150;
+
+   colors[0]     = "0.56 0.36 0.26 1.0";
+   colors[1]     = "0.56 0.36 0.26 0.0";
+
+   sizes[0]      = 0.5;
+   sizes[1]      = 1.0;
+};
+
+datablock ParticleEmitterData(SensorEmitter)
+{
+   ejectionPeriodMS = 7;
+   periodVarianceMS = 0;
+   ejectionVelocity = 2;
+   velocityVariance = 1.0;
+   ejectionOffset   = 0.0;
+   thetaMin         = 0;
+   thetaMax         = 60;
+   phiReferenceVel  = 0;
+   phiVariance      = 360;
+   overrideAdvances = false;
+   particles = "SensorParticle";
+};
+
+datablock ParticleData(SensorSmoke)
+{
+   textureName          = "~/data/particles/smoke";
+   dragCoeffiecient     = 100.0;
+   gravityCoefficient   = 0;
+   inheritedVelFactor   = 0.25;
+   constantAcceleration = -0.80;
+   lifetimeMS           = 1200;
+   lifetimeVarianceMS   = 300;
+   useInvAlpha =  true;
+   spinRandomMin = -80.0;
+   spinRandomMax =  80.0;
+
+   colors[0]     = "0.56 0.36 0.26 1.0";
+   colors[1]     = "0.2 0.2 0.2 1.0";
+   colors[2]     = "0.0 0.0 0.0 0.0";
+
+   sizes[0]      = 1.0;
+   sizes[1]      = 1.5;
+   sizes[2]      = 2.0;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock ParticleEmitterData(SensorSmokeEmitter)
+{
+   ejectionPeriodMS = 10;
+   periodVarianceMS = 0;
+   ejectionVelocity = 4;
+   velocityVariance = 0.5;
+   thetaMin         = 0.0;
+   thetaMax         = 180.0;
+   lifetimeMS       = 250;
+   particles = "SensorSmoke";
+};
+
+datablock ParticleData(SensorSparks)
+{
+   textureName          = "~/data/particles/spark";
+   dragCoefficient      = 1;
+   gravityCoefficient   = 0.0;
+   inheritedVelFactor   = 0.2;
+   constantAcceleration = 0.0;
+   lifetimeMS           = 500;
+   lifetimeVarianceMS   = 350;
+
+   colors[0]     = "0.60 0.40 0.30 1.0";
+   colors[1]     = "0.60 0.40 0.30 1.0";
+   colors[2]     = "1.0 0.40 0.30 0.0";
+
+   sizes[0]      = 0.5;
+   sizes[1]      = 0.25;
+   sizes[2]      = 0.25;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock ParticleEmitterData(SensorSparkEmitter)
+{
+   ejectionPeriodMS = 3;
+   periodVarianceMS = 0;
+   ejectionVelocity = 13;
+   velocityVariance = 6.75;
+   ejectionOffset   = 0.0;
+   thetaMin         = 0;
+   thetaMax         = 180;
+   phiReferenceVel  = 0;
+   phiVariance      = 360;
+   overrideAdvances = false;
+   orientParticles  = true;
+   lifetimeMS       = 100;
+   particles = "SensorSparks";
+};
+
+datablock ExplosionData(SensorSubExplosion1)
+{
+   offset = 1.0;
+   emitter[0] = SensorSmokeEmitter;
+   emitter[1] = SensorMineSparkEmitter;
+};
+
+datablock ExplosionData(SensorSubExplosion2)
+{
+   offset = 1.0;
+   emitter[0] = SensorSmokeEmitter;
+   emitter[1] = SensorSparkEmitter;
+};
+
+datablock ExplosionData(SensorExplosion)
+{
+   soundProfile = ExplodeSfx;
+   lifeTimeMS = 1200;
+
+   // Volume particles
+   particleEmitter = SensorEmitter;
+   particleDensity = 80;
+   particleRadius = 2;
+
+   // Point emission
+   emitter[0] = SensorSmokeEmitter;
+   emitter[1] = SensorSparkEmitter;
+
+   // Sub explosion objects
+   subExplosion[0] = SensorSubExplosion1;
+   subExplosion[1] = SensorSubExplosion2;
+   
+   // Camera Shaking
+   shakeCamera = true;
+   camShakeFreq = "10.0 11.0 10.0";
+   camShakeAmp = "1.0 1.0 1.0";
+   camShakeDuration = 0.5;
+   camShakeRadius = 10.0;
+
+   // Impulse
+   impulseRadius = 1000;
+   impulseForce = 700;
+
+   // Dynamic light
+   lightStartRadius = 8;
+   lightEndRadius = 4;
+   lightStartColor = "0.5 0.5 0";
+   lightEndColor = "0 0 0";
+};
+
+datablock StaticShapeData(Sensor)
+{
+   className = "Sensor";
+   category = "Hazards";
+   shapeFile = "~/data/shapes_mbf/hazards/sensor.dts";
+   explosion = SensorExplosion;
+   renderWhenDestroyed = false;
+   resetTime = 10000;
+};
+
+function Sensor::onAdd(%this, %obj)
+{
+   if (%obj.resetTime $= "")
+      %obj.resetTime = "Default";
+}
+
+function Sensor::onCollision(%this, %obj, %col)
+{
+   %obj.setDamageState("Destroyed");
+
+   %resetTime = (%obj.resetTime $= "Default")? %this.resetTime: %obj.resetTime;
+   if (%resetTime) {
+      %obj.startFade(0, 0, true);
+      %obj.schedule(%resetTime, setDamageState,"Enabled");
+      %obj.schedule(%resetTime, "startFade", 1000, 0, false);
+   }
+}
+
+//-----------------------------------------------------------------------------
 
 datablock AudioProfile(MagnetSfx) {
 	filename    = "~/data/sound/magnet.wav";

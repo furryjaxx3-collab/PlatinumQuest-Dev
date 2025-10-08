@@ -7,10 +7,10 @@ new SimGroup(MissionGroup) {
          desc = "Look for Diamonds and visit the castle in the sky?";
          game = "Future";
          gameMode = "null";
-         goldTime = "30000";
-         level = "1";
+         goldTime = "55000";
+         level = "11";
          music = "EuroPad I.ogg";
-         name = "Castle diamond Hunt";
+         name = "Castle Diamond Hunt";
          startHelpText = "The hunt begins now!";
          type = "bonus";
    };
@@ -24,7 +24,7 @@ new SimGroup(MissionGroup) {
       position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      materialList = "~/data/skies/MBF Bonus/sky_day.dml";
+      materialList = "~/data/skies/MBF Normal/sky_day.dml";
       cloudHeightPer[0] = "0";
       cloudHeightPer[1] = "0";
       cloudHeightPer[2] = "0";
@@ -52,66 +52,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.433884 0.614021 -0.659336";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1863";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new SimGroup(Platform1_g) {
-
-      new Path() {
-         isLooping = "0";
-      };
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2137";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "708.054 -114.99 106.484";
@@ -457,13 +399,33 @@ new SimGroup(MissionGroup) {
       dataBlock = "LandMine_MBF";
          resetTime = "Default";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2009";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+   new StaticShape() {
+      position = "701.053 -110.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -110.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -112.995 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -112.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
    };
    new SimGroup(PathNodeGroup) {
 
@@ -480,6 +442,295 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
+   };
+   new Trigger(Bounds) {
+      position = "662.054 -161.99 97.234";
+      rotation = "1 0 0 0";
+      scale = "76 132 96";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape(EndPoint) {
+      position = "700.024 -58.989 106.989";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "EndPad_MBF";
+   };
+   new StaticShape() {
+      position = "699.053 -98.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -100.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -98.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -100.995 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -88.995 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -86.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -88.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -86.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -76.995 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "701.053 -74.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -76.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "699.053 -74.985 112.484";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sensor";
+         resetTime = "Default";
+   };
+   new Item() {
+      position = "700 -112 113";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -100 113";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -88 113";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -76 113";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -136 103.375";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -56 103.375";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -106 103.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -94 103.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -82 103.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "716 -132 106";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "684 -132 106";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "684 -60 106";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "716 -60 106";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -118 98.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "700 -72 98.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "691 -92 101.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem_MBF";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "688.054 -100 101";
+      rotation = "0 -1 0 90.0002";
+      scale = "1 1 1";
+      dataBlock = "DuctFan_MBF";
+   };
+   new StaticShape() {
+      position = "692.5 -92 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "689.5 -92 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "690.5 -93 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "691.5 -93 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "691.5 -91 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "690.5 -91 101";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "LandMine_MBF";
+         resetTime = "Default";
    };
 };
 //--- OBJECT WRITE END ---

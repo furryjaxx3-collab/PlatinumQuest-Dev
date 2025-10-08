@@ -1,90 +1,28 @@
-new MaterialProperty(LowBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 5;
-};
-
-new MaterialProperty(MedBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 10;
-};
-new MaterialProperty(HighBounceFloorMaterial) {
-   friction = 1;
-   restitution = 1;
-   force = 15;
-};
-addMaterialMapping( "Bounce1" , LowBounceFloorMaterial);
-addMaterialMapping( "Bounce2" , MedBounceFloorMaterial);
-addMaterialMapping( "Bounce3" , HighBounceFloorMaterial);
-
-
-
-new MaterialProperty(mudFrictionMaterial) {
-    friction = 0.4;
-    restitution = 0.1;
-};
-
-new MaterialProperty(rampFrictionMaterial) {
-    friction = 3;
-    restitution = 0.3;
-};
-
-new MaterialProperty(grassFrictionMaterial) {
-    friction = 2.5;
-    restitution = 0.12;
-};
-
 new MaterialProperty(sandFrictionMaterial) {
-    friction = 4;
-    restitution = 0;
+	friction = 4;
+	restitution = 0;
 };
-
 new MaterialProperty(waterFrictionMaterial) {
-    friction = 5;
-    restitution = 0;
+	friction = 5;
+	restitution = 0;
 };
-new MaterialProperty(NoFrictionMaterial) {
-    friction = 0;
-    restitution = 0;
-};
-
-new MaterialProperty(SuperHighFrictionMaterial) {
-    friction = 1000;
-    restitution = 0;
-};
-new MaterialProperty(IceMaterial) {
-    friction = 0.2;
-    restitution = 1;
-};
-addMaterialMapping("friction_none" , NoFrictionMaterial);
-addMaterialMapping("super_friction" , SuperHighFrictionMaterial);
-addMaterialMapping( "friction_low2" ,    IceFrictionMaterial);
-addMaterialMapping( "friction_low" ,    MudFrictionMaterial);
-addMaterialMapping( "friction_high" ,    grassFrictionMaterial);
-addMaterialMapping( "friction_ramp_yellow" ,    RampFrictionMaterial);
-addMaterialMapping( "golf_grass" ,    grassFrictionMaterial);
-addMaterialMapping( "golf_sand" ,    sandFrictionMaterial);
-addMaterialMapping( "golf_water" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_blueescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_cyanescent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_greenscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_pinkscent" ,    waterFrictionMaterial);
-addMaterialMapping( "Water_redscent" ,    waterFrictionMaterial);
+addMaterialMapping("golf_sand", sandFrictionMaterial);
+addMaterialMapping("golf_water", waterFrictionMaterial);
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
+         alarmStartTime = "8";
          artist = "Beack";
          CustomRadarRule = "0";
-         desc = "The sand is a really weird surface, you need control your spins here!";
+         desc = "Sand is a really weird surface, you need to control your spins here!";
          game = "Future";
          gameMode = "null";
-         goldTime = "10000";
+         goldTime = "13500";
          level = "2";
          music = "trance02.ogg";
-         name = "Sand sprint";
-         startHelpText = "Do the things well, or you won\'t pass under par!";
+         name = "Sand Sprint";
+         startHelpText = "Do things well, or you won\'t pass under par!";
          Time = "22000";
          type = "Intermediate";
    };
@@ -126,8 +64,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.442343 0.475025 -0.760713";
-      color = "1 1 0.5 1";
-      ambient = "0.3 0.3 0.4 1";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new InteriorInstance() {
       position = "-18.9587 -48.3786 94.7837";
@@ -137,38 +75,22 @@ new SimGroup(MissionGroup) {
       useGLLighting = "0";
       showTerrainInside = "0";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1612";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(StartPoint) {
       position = "3.49302 -69.909 95.2795";
       rotation = "1 0 0 0";
       scale = "0.5 0.5 0.5";
       dataBlock = "StartPad_MBF";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "2010";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new Trigger() {
-      position = "-10.4881 -28.9344 95.5426";
+      position = "-10.4881 -26.9344 95.5426";
       rotation = "1 0 0 0";
-      scale = "46 60 40";
+      scale = "46 62 40";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new StaticShape(EndPoint) {
       position = "14.289 -69.4658 113.279";
-      rotation = "1 0 0 0";
+      rotation = "0 0 1 90.0002";
       scale = "0.5 0.5 0.5";
       dataBlock = "EndPad_MBF";
    };

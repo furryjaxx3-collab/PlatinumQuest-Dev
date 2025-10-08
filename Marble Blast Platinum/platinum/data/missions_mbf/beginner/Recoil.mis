@@ -10,7 +10,7 @@ new SimGroup(MissionGroup) {
          goldTime = "16500";
          level = "9";
          music = "mbb2.ogg";
-         name = "Recoil course!";
+         name = "Recoil Course!";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {
@@ -51,16 +51,8 @@ new SimGroup(MissionGroup) {
    };
    new Sun() {
       direction = "0.701976 -0.52137 -0.485184";
-      color = "1 1 0.4 1";
-      ambient = "0.3 0.3 0.4 1";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1802";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
    };
    new Item() {
       position = "53.6724 42.5303 33.9772";
@@ -85,6 +77,14 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       scale = "1 1 1";
       interiorFile = "~/data/interiors/MBF/Recoil.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "39.7054 49.56 46.633";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/MBF/Recoil_fix0.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
    };
@@ -157,14 +157,6 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "1";
    };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "1991";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
-   };
    new StaticShape(EndPoint) {
       position = "45.7001 -9.41786 -2.86008";
       rotation = "0 0 1 180";
@@ -217,14 +209,6 @@ new SimGroup(MissionGroup) {
       scale = "50 100 150";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new ScriptObject() {
-         bonusTime = "0";
-         gemCount = "0";
-         pad = "4661";
-         penaltyTime = "0";
-         powerup = "0";
-         Time = "0";
    };
    new SimGroup(PathNodeGroup) {
 

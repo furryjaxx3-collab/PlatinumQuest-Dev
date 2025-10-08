@@ -314,7 +314,8 @@ function StatisticsDlg::display(%this) {
 		         %l @ %big @ " ";
 	case "Future":
 		%right = %right NL
-		         %l @ %big @ "Gold Times:" @ %r @ %small @ %comp["Platinum"]  @ "/" @ %total["Grand"]     @ " (" @ %perc["Platinum"]  @ ")" NL
+		         %l @ %big @ "Gold Times:" @ %r @ %small @ %comp["Gold"]  @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]  @ ")" NL
+		         %l @ %big @ "Easter Eggs:"    @ %r @ %small @ %comp["EasterEgg"] @ "/" @ %total["EasterEgg"] @ " (" @ %perc["EasterEgg"] @ ")" NL
 		         %l @ %big @ " " NL
 		         %l @ %big @ " ";
 	case "G3orge's Mini Mod":
