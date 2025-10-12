@@ -3215,5 +3215,14 @@ new SimGroup(MissionGroup) {
             useScale = "0";
       };
    };
+   new Item() {
+      position = "0 -32.5 1.375";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Octagon";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
 };
 //--- OBJECT WRITE END ---
