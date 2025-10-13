@@ -400,6 +400,9 @@ function radarShouldShow(%object) {
 		%name = strReplace(%name, "_MBU", "");
 		%name = strReplace(%name, "_MBM", "");
 		%name = strReplace(%name, "_MBXP", "");
+		%name = strReplace(%name, "_MBE", "");
+		%name = strReplace(%name, "_MBF", "");
+		%name = strReplace(%name, "_MBS", "");
 		%skin = %object.getSkinName();
 	}
 	%bitmap = $userMods @ "/client/ui/mp/radar/" @ %name @ ".png";
@@ -488,6 +491,9 @@ function Radar::AddDot(%object, %bitmap) {
 			%name = strReplace(%name, "_MBU", "");
 			%name = strReplace(%name, "_MBM", "");
 			%name = strReplace(%name, "_MBXP", "");
+			%name = strReplace(%name, "_MBE", "");
+			%name = strReplace(%name, "_MBF", "");
+			%name = strReplace(%name, "_MBS", "");
 			%skin = %object.getSkinName();
 			%bitmap = $userMods @ "/client/ui/mp/radar/" @ %name @ ".png";
 
