@@ -3,21 +3,27 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
    new ScriptObject(MissionInfo) {
-         artist = "Kevin Ryan";
-         CustomRadarRule = "5";
-         difficulty = "5";
+         artist = "Alex Swanson";
+         blast = "1";
+         bronzeTime = "270000";
+         CustomRadarRule = "0";
+         difficulty = "6";
+         endPadSameAsStartPad = "1";
          game = "Ultra";
          gameMode = "null";
-         goldTime = "80000";
+         gameplayType = "GemHunt";
+         goldTime = "75000";
          include = "1";
-         level = "14";
+         level = "7";
          music = "Tim Trance.ogg";
-         name = "Gem Crossroads";
+         name = "Epicenter";
          radar = "1";
+         silverTime = "195000";
          Sky = "purple";
-         startHelpText = "See how quickly you can find all the gems!";
-         Time = "120000";
-         ultimateTime = "40000";
+         startHelpText = "Find all the gems!";
+         Time = "180000";
+         type = "Single";
+         ultimateTime = "45000";
          useUltraMarble = "1";
    };
    new MissionArea(MissionArea) {
@@ -28,7 +34,7 @@ new SimGroup(MissionGroup) {
          locked = "true";
    };
    new Sky(Sky) {
-      position = "0 0 0";
+      position = "336 136 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       materialList = "~/data/skies_mbu/intermediate/sky_intermediate.dml";
@@ -56,8 +62,11 @@ new SimGroup(MissionGroup) {
       useSkyTextures = "1";
       renderBottomTexture = "1";
       noRenderBans = "1";
-         sphereBack = "platinum/data/shapes/skies/dusk/back.png";
-         sphereFront = "platinum/data/shapes/skies/dusk/front.png";
+         canSaveDynamicFields = "1";
+         hidden = "0";
+         nearPlaneDistance = "0.1";
+         verticalOffset = "0";
+         VerticalScale = "1";
    };
    new Sun() {
       direction = "0.573201 0.275357 -0.771764";
@@ -69,7 +78,7 @@ new SimGroup(MissionGroup) {
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors_mbu/bonus/gemsinroad.dif";
+      interiorFile = "~/data/interiors_mbu/bonus/epicenter.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
          canSaveDynamicFields = "1";
@@ -77,8 +86,8 @@ new SimGroup(MissionGroup) {
          useFastRender = "1";
    };
    new StaticShape(StartPoint) {
-      position = "53 30 8";
-      rotation = "0 0 -1 90.0002";
+      position = "-56 -21 0";
+      rotation = "0 0 1 90.0002";
       scale = "1 1 1";
       dataBlock = "StartPad_MBM";
          canSaveDynamicFields = "1";
@@ -87,14 +96,14 @@ new SimGroup(MissionGroup) {
          hidden = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
-         skin = "mbm";
+         skin = "base";
          useAdaptiveSelfIllumination = "0";
          useCustomAmbientLighting = "0";
          useLightingOcclusion = "1";
    };
    new StaticShape(EndPoint) {
-      position = "59 30 8";
-      rotation = "0 0 1 180";
+      position = "-56 -15 0";
+      rotation = "1 0 0 0";
       scale = "1 1 1";
       dataBlock = "EndPad_MBM";
          canSaveDynamicFields = "1";
@@ -103,7 +112,7 @@ new SimGroup(MissionGroup) {
          hidden = "1";
          receiveLMLighting = "1";
          receiveSunLight = "1";
-         skin = "mbm";
+         skin = "base";
          useAdaptiveSelfIllumination = "0";
          useCustomAmbientLighting = "0";
          useLightingOcclusion = "1";
@@ -112,7 +121,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
       new Item(Gem1) {
-         position = "23 1.5 4.05";
+         position = "-28 -48 7.5";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -132,7 +141,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem2) {
-         position = "19 37.75 -3.95";
+         position = "-8 -48 11";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -152,7 +161,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem3) {
-         position = "-3 30 8.05";
+         position = "36 -31 4";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -172,7 +181,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem4) {
-         position = "-25 2 5.05";
+         position = "28 48 7.5";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -183,7 +192,6 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "1 1 1 1";
             customAmbientSelfIllumination = "1";
             hidden = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "0";
             receiveSunLight = "0";
@@ -193,7 +201,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem5) {
-         position = "-49 35.5 0.0500001";
+         position = "8 48 11";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -213,7 +221,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem6) {
-         position = "2.5 60 -7.95";
+         position = "-36 31 4";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -233,7 +241,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem7) {
-         position = "77 70 -2.2";
+         position = "0 0 5.5";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -253,7 +261,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem8) {
-         position = "-30 39.5 4.05";
+         position = "-34 -2 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -264,7 +272,6 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "1 1 1 1";
             customAmbientSelfIllumination = "1";
             hidden = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "0";
             receiveSunLight = "0";
@@ -274,7 +281,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem9) {
-         position = "2.5 107.5 2.8";
+         position = "0 -21 2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -285,7 +292,6 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "1 1 1 1";
             customAmbientSelfIllumination = "1";
             hidden = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "0";
             receiveSunLight = "0";
@@ -295,7 +301,47 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "0";
       };
       new Item(Gem10) {
-         position = "-13 68.5 5.05";
+         position = "34 1 -2";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "GemItemRed_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "1 1 1 1";
+            customAmbientSelfIllumination = "1";
+            hidden = "0";
+            permanent = "0";
+            receiveLMLighting = "0";
+            receiveSunLight = "0";
+            rotate2 = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "0";
+      };
+      new Item(gem11) {
+         position = "0 21 2";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "GemItemRed_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "1 1 1 1";
+            customAmbientSelfIllumination = "1";
+            hidden = "0";
+            permanent = "0";
+            receiveLMLighting = "0";
+            receiveSunLight = "0";
+            rotate2 = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "0";
+      };
+      new Item(gem12) {
+         position = "-26 57 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "GemItemRed_MBU";
@@ -319,7 +365,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
       new Item() {
-         position = "13 3 0.2";
+         position = "46 -21 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "SuperJumpItem_MBU";
@@ -327,6 +373,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "1";
             canSaveDynamicFields = "1";
+            className = "SuperJumpItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
@@ -339,7 +386,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
       new Item() {
-         position = "19 58 -1.8";
+         position = "-26 41 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "SuperJumpItem_MBU";
@@ -347,6 +394,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "1";
             canSaveDynamicFields = "1";
+            className = "SuperJumpItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
@@ -359,7 +407,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
       new Item() {
-         position = "7 23 -2.5";
+         position = "16 48 2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "SuperJumpItem_MBU";
@@ -367,6 +415,28 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "1";
             canSaveDynamicFields = "1";
+            className = "SuperJumpItem_MBU";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "-16 -48 2";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperJumpItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            className = "SuperJumpItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
@@ -381,101 +451,12 @@ new SimGroup(MissionGroup) {
    };
    new SimGroup(SuperSpeedItems) {
          canSaveDynamicFields = "1";
-
-      new Item() {
-         position = "3 126.75 0.75";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "SuperSpeedItem_MBU";
-         collidable = "0";
-         static = "1";
-         rotate = "1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            noRespawn = "0";
-            permanent = "0";
-            receiveLMLighting = "1";
-            receiveSunLight = "1";
-            rotate2 = "0";
-            showHelpOnPickup = "0";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
-      new Item() {
-         position = "-69 70.5 -5.75";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "SuperSpeedItem_MBU";
-         collidable = "0";
-         static = "1";
-         rotate = "1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            noRespawn = "0";
-            permanent = "0";
-            receiveLMLighting = "1";
-            receiveSunLight = "1";
-            rotate2 = "0";
-            showHelpOnPickup = "0";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
-      new Item() {
-         position = "43 30 8.25";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "SuperSpeedItem_MBU";
-         collidable = "0";
-         static = "1";
-         rotate = "1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            noRespawn = "0";
-            permanent = "0";
-            receiveLMLighting = "1";
-            receiveSunLight = "1";
-            rotate2 = "0";
-            showHelpOnPickup = "0";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
-      new Item() {
-         position = "79 60 -3.25";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "SuperSpeedItem_MBU";
-         collidable = "0";
-         static = "1";
-         rotate = "1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            noRespawn = "0";
-            permanent = "0";
-            receiveLMLighting = "1";
-            receiveSunLight = "1";
-            rotate2 = "0";
-            showHelpOnPickup = "0";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
    };
    new SimGroup(GyrocopterItems) {
          canSaveDynamicFields = "1";
 
       new Item() {
-         position = "-13 36.5 7.75";
+         position = "-40 -57 3.75";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "HelicopterItem_MBU";
@@ -483,21 +464,20 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "1";
             canSaveDynamicFields = "1";
+            className = "HelicopterItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             rotate2 = "0";
-            showHelpOnPickup = "0";
             useAdaptiveSelfIllumination = "0";
             useCustomAmbientLighting = "0";
             useLightingOcclusion = "1";
       };
       new Item() {
-         position = "3 67.5 4.75";
+         position = "40 57 3.75";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "HelicopterItem_MBU";
@@ -505,15 +485,56 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "1";
             canSaveDynamicFields = "1";
+            className = "HelicopterItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             rotate2 = "0";
-            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "46 -41 -2.25";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "HelicopterItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            className = "HelicopterItem_MBU";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "-46 41 -2.25";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "HelicopterItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            className = "HelicopterItem_MBU";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
             useAdaptiveSelfIllumination = "0";
             useCustomAmbientLighting = "0";
             useLightingOcclusion = "1";
@@ -523,49 +544,45 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
       new Item() {
-         position = "2.5 100.5 4.2505";
+         position = "-20 5 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "MegaMarbleItem_MBU";
          collidable = "0";
          static = "1";
-         rotate = "1";
+         rotate = "0";
             canSaveDynamicFields = "1";
+            className = "MegaMarbleItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
             noParticles = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             rotate2 = "0";
-            showHelpOnPickup = "0";
-            timeout = "10000";
             useAdaptiveSelfIllumination = "0";
             useCustomAmbientLighting = "0";
             useLightingOcclusion = "1";
       };
       new Item() {
-         position = "2.5 14 4.25";
+         position = "20 -5 -2";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "MegaMarbleItem_MBU";
          collidable = "0";
          static = "1";
-         rotate = "1";
+         rotate = "0";
             canSaveDynamicFields = "1";
+            className = "MegaMarbleItem_MBU";
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
             noParticles = "0";
-            noRespawn = "0";
             permanent = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             rotate2 = "0";
-            showHelpOnPickup = "0";
-            timeout = "10000";
             useAdaptiveSelfIllumination = "0";
             useCustomAmbientLighting = "0";
             useLightingOcclusion = "1";
@@ -574,30 +591,8 @@ new SimGroup(MissionGroup) {
    new SimGroup(TimeTravelItems) {
          canSaveDynamicFields = "1";
 
-      new Item(TimeTravel_1) {
-         position = "11 -4.5 3.5";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "TimeTravelItem_MBU";
-         collidable = "0";
-         static = "1";
-         rotate = "1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            permanent = "0";
-            receiveLMLighting = "1";
-            receiveSunLight = "1";
-            rotate2 = "0";
-            skin = "base";
-            timeBonus = "5000";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
-      new Item(TimeTravel_2) {
-         position = "-57 35.5 2.5";
+      new Item() {
+         position = "0 0 3.125";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "TimeTravelItem_MBU";
@@ -623,9 +618,9 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
    };
    new Trigger(Bounds) {
-      position = "-76.1 134.05 -11.5575";
+      position = "-62.5 63.5 -7.56266";
       rotation = "1 0 0 0";
-      scale = "165 160 120.292";
+      scale = "125 127 121.223";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          canSaveDynamicFields = "1";
@@ -634,8 +629,8 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         position = "18.9378 -0.21384 21.4186";
-         rotation = "0.716404 0.209355 -0.665534 47.4117";
+         position = "30.5476 -17.6032 8.73918";
+         rotation = "0.302344 0.164431 -0.938909 60.1623";
          scale = "1 1 1";
          dataBlock = "PathNode";
             nextNode = "CameraPath1";
@@ -655,4 +650,3 @@ new SimGroup(MissionGroup) {
    };
 };
 //--- OBJECT WRITE END ---
-

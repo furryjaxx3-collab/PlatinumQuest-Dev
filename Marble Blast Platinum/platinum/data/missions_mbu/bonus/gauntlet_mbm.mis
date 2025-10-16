@@ -3,20 +3,24 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
    new ScriptObject(MissionInfo) {
-         artist = "Kevin Ryan";
-         CustomRadarRule = "5";
+         artist = "Alex Swanson";
+         blast = "1";
+         bronzeTime = "90000";
+         CustomRadarRule = "0";
          game = "Ultra";
          gameMode = "null";
          gameplayType = "Race";
-         goldTime = "30000";
-         level = "18";
+         goldTime = "45000";
+         level = "5";
          music = "Tim Trance.ogg";
-         name = "Thrill Ride";
+         name = "Gauntlet";
          radar = "1";
+         silverTime = "65000";
          Sky = "green";
-         Time = "80000";
+         startHelpText = "Don\'t get clobbered!";
+         Time = "90000";
          type = "Single";
-         ultimateTime = "10000";
+         ultimateTime = "11000";
          useUltraMarble = "1";
    };
    new MissionArea(MissionArea) {
@@ -27,9 +31,9 @@ new SimGroup(MissionGroup) {
          locked = "true";
    };
    new Sky(Sky) {
-      position = "0 0 0";
+      position = "224 90.6667 0";
       rotation = "1 0 0 0";
-      scale = "1 1 1";
+      scale = "0.666667 0.666667 0.666667";
       materialList = "~/data/skies_mbu/advanced/sky_advanced.dml";
       cloudHeightPer[0] = "0";
       cloudHeightPer[1] = "0";
@@ -43,20 +47,23 @@ new SimGroup(MissionGroup) {
       fogStorm1 = "0";
       fogStorm2 = "0";
       fogStorm3 = "0";
-      fogVolume1 = "-1 -1.73483e+09 -1.73483e+09";
-      fogVolume2 = "-1 -1.73483e+09 -1.73483e+09";
-      fogVolume3 = "-1 -1.73483e+09 -1.73483e+09";
-      fogVolumeColor1 = "128 128 128 -1.73483e+09";
-      fogVolumeColor2 = "128 128 128 -1.73483e+09";
-      fogVolumeColor3 = "128 128 128 -1.73483e+09";
+      fogVolume1 = "-1 -1 5.3766e+08";
+      fogVolume2 = "-1 -1 939076";
+      fogVolume3 = "-1 -1 0.000699252";
+      fogVolumeColor1 = "128 128 128 -1";
+      fogVolumeColor2 = "128 128 128 -1";
+      fogVolumeColor3 = "128 128 128 -1";
       windVelocity = "1 0 0";
       windEffectPrecipitation = "0";
       SkySolidColor = "0.6 0.6 0.6 1";
       useSkyTextures = "1";
       renderBottomTexture = "1";
       noRenderBans = "1";
-         sphereBack = "platinum/data/shapes/skies/wintry/back.png";
-         sphereFront = "platinum/data/shapes/skies/wintry/front.png";
+         canSaveDynamicFields = "1";
+         hidden = "0";
+         nearPlaneDistance = "0.1";
+         verticalOffset = "0";
+         VerticalScale = "1";
    };
    new Sun() {
       direction = "0.573201 0.275357 -0.771764";
@@ -68,7 +75,7 @@ new SimGroup(MissionGroup) {
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+      interiorFile = "~/data/interiors_mbu/bonus/gauntlet.dif";
       useGLLighting = "0";
       showTerrainInside = "0";
          canSaveDynamicFields = "1";
@@ -76,8 +83,8 @@ new SimGroup(MissionGroup) {
          useFastRender = "1";
    };
    new StaticShape(StartPoint) {
-      position = "-4.5 -47 -32";
-      rotation = "1 0 0 0";
+      position = "-98 34 0";
+      rotation = "0 0 1 90.0002";
       scale = "1 1 1";
       dataBlock = "StartPad_MBM";
          canSaveDynamicFields = "1";
@@ -92,8 +99,8 @@ new SimGroup(MissionGroup) {
          useLightingOcclusion = "1";
    };
    new StaticShape(EndPoint) {
-      position = "-29.5 -29.25 -46.7477";
-      rotation = "0 0 1 135";
+      position = "87 -62 42";
+      rotation = "0 0 1 89.9544";
       scale = "1 1 1";
       dataBlock = "EndPad_MBM";
          canSaveDynamicFields = "1";
@@ -107,7 +114,7 @@ new SimGroup(MissionGroup) {
          useCustomAmbientLighting = "0";
          useLightingOcclusion = "1";
    };
-   new SimGroup(inclineLift_g) {
+   new SimGroup(MustChange_g) {
          canSaveDynamicFields = "1";
 
       new Path() {
@@ -115,67 +122,45 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
          new Marker() {
-            position = "76.5 -44.25 -23.25";
+            position = "97 -11 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "1";
             type = "Normal";
-            msToNext = "3800";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -27.75 -11.75";
+            position = "75 -11 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "2";
             type = "Normal";
-            msToNext = "200";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -25.875 -11.75";
+            position = "97 -11 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "3";
             type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
+            msToNext = "0";
+            smoothingType = "Accelerate";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
       };
-      new PathedInterior(inclineLift) {
+      new PathedInterior(MustChange) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
          interiorIndex = "0";
          basePosition = "0 0 0";
          baseRotation = "1 0 0 0";
@@ -184,7 +169,6 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            initialPosition = "0";
             initialTargetPosition = "-1";
             receiveLMLighting = "0";
             receiveSunLight = "1";
@@ -193,7 +177,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
    };
-   new SimGroup(inclineLift_g) {
+   new SimGroup(MustChange_g) {
          canSaveDynamicFields = "1";
 
       new Path() {
@@ -201,68 +185,110 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
          new Marker() {
-            position = "76.5 -44.25 -23.25";
+            position = "97 -15 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "1";
             type = "Normal";
-            msToNext = "3800";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -27.75 -11.75";
+            position = "75 -15 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "2";
             type = "Normal";
-            msToNext = "200";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -25.875 -11.75";
+            position = "97 -15 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "3";
             type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
+            msToNext = "0";
+            smoothingType = "Accelerate";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
       };
-      new PathedInterior(inclineLift) {
+      new PathedInterior(MustChange) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
          interiorIndex = "1";
+         basePosition = "0 0 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            initialPosition = "2000";
+            initialTargetPosition = "-2";
+            receiveLMLighting = "0";
+            receiveSunLight = "1";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+   };
+   new SimGroup(MustChange_g) {
+         canSaveDynamicFields = "1";
+
+      new Path() {
+         isLooping = "0";
+            canSaveDynamicFields = "1";
+
+         new Marker() {
+            position = "97 -19 13";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "2000";
+            smoothingType = "Linear";
+               canSaveDynamicFields = "1";
+               hidden = "0";
+         };
+         new Marker() {
+            position = "75 -19 13";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "2000";
+            smoothingType = "Linear";
+               canSaveDynamicFields = "1";
+               hidden = "0";
+         };
+         new Marker() {
+            position = "97 -19 13";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "0";
+            smoothingType = "Accelerate";
+               canSaveDynamicFields = "1";
+               hidden = "0";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
+         interiorIndex = "2";
          basePosition = "0 0 0";
          baseRotation = "1 0 0 0";
          baseScale = "1 1 1";
@@ -279,7 +305,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
    };
-   new SimGroup(inclineLift_g) {
+   new SimGroup(MustChange_g) {
          canSaveDynamicFields = "1";
 
       new Path() {
@@ -287,153 +313,45 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
          new Marker() {
-            position = "76.5 -44.25 -23.25";
+            position = "97 -27 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "1";
             type = "Normal";
-            msToNext = "3800";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -27.75 -11.75";
+            position = "75 -27 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "2";
             type = "Normal";
-            msToNext = "200";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -25.875 -11.75";
+            position = "97 -27 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "3";
             type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
+            msToNext = "0";
+            smoothingType = "Accelerate";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
       };
-      new PathedInterior(inclineLift) {
+      new PathedInterior(MustChange) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
-         interiorIndex = "2";
-         basePosition = "0 0 0";
-         baseRotation = "1 0 0 0";
-         baseScale = "1 1 1";
-            canSaveDynamicFields = "1";
-            customAmbientLighting = "0 0 0 1";
-            customAmbientSelfIllumination = "0";
-            hidden = "0";
-            initialPosition = "2000";
-            initialTargetPosition = "-1";
-            receiveLMLighting = "0";
-            receiveSunLight = "1";
-            useAdaptiveSelfIllumination = "0";
-            useCustomAmbientLighting = "0";
-            useLightingOcclusion = "1";
-      };
-   };
-   new SimGroup(inclineLift_g) {
-         canSaveDynamicFields = "1";
-
-      new Path() {
-         isLooping = "0";
-            canSaveDynamicFields = "1";
-
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "1";
-            type = "Normal";
-            msToNext = "3800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -27.75 -11.75";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "2";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -25.875 -11.75";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "3";
-            type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-      };
-      new PathedInterior(inclineLift) {
-         position = "0 0 0";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
          interiorIndex = "3";
          basePosition = "0 0 0";
          baseRotation = "1 0 0 0";
@@ -442,8 +360,8 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            initialPosition = "3000";
-            initialTargetPosition = "-1";
+            initialPosition = "2000";
+            initialTargetPosition = "-2";
             receiveLMLighting = "0";
             receiveSunLight = "1";
             useAdaptiveSelfIllumination = "0";
@@ -451,7 +369,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
    };
-   new SimGroup(inclineLift_g) {
+   new SimGroup(MustChange_g) {
          canSaveDynamicFields = "1";
 
       new Path() {
@@ -459,67 +377,45 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
          new Marker() {
-            position = "76.5 -44.25 -23.25";
+            position = "97 -31 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "1";
             type = "Normal";
-            msToNext = "3800";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -27.75 -11.75";
+            position = "75 -31 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "2";
             type = "Normal";
-            msToNext = "200";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -25.875 -11.75";
+            position = "97 -31 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "3";
             type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
+            msToNext = "0";
+            smoothingType = "Accelerate";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
       };
-      new PathedInterior(inclineLift) {
+      new PathedInterior(MustChange) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
          interiorIndex = "4";
          basePosition = "0 0 0";
          baseRotation = "1 0 0 0";
@@ -528,7 +424,6 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            initialPosition = "4000";
             initialTargetPosition = "-1";
             receiveLMLighting = "0";
             receiveSunLight = "1";
@@ -537,7 +432,7 @@ new SimGroup(MissionGroup) {
             useLightingOcclusion = "1";
       };
    };
-   new SimGroup(inclineLift_g) {
+   new SimGroup(MustChange_g) {
          canSaveDynamicFields = "1";
 
       new Path() {
@@ -545,67 +440,45 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
          new Marker() {
-            position = "76.5 -44.25 -23.25";
+            position = "97 -35 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "1";
             type = "Normal";
-            msToNext = "3800";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -27.75 -11.75";
+            position = "75 -35 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "2";
             type = "Normal";
-            msToNext = "200";
+            msToNext = "2000";
             smoothingType = "Linear";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
          new Marker() {
-            position = "76.5 -25.875 -11.75";
+            position = "97 -35 13";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             seqNum = "3";
             type = "Normal";
-            msToNext = "1800";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.125 -42.375 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "4";
-            type = "Normal";
-            msToNext = "200";
-            smoothingType = "Linear";
-               canSaveDynamicFields = "1";
-               hidden = "0";
-         };
-         new Marker() {
-            position = "76.5 -44.25 -23.25";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            seqNum = "5";
-            type = "Normal";
-            msToNext = "1000";
-            smoothingType = "Linear";
+            msToNext = "0";
+            smoothingType = "Accelerate";
                canSaveDynamicFields = "1";
                hidden = "0";
          };
       };
-      new PathedInterior(inclineLift) {
+      new PathedInterior(MustChange) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "PathedDefault";
-         interiorResource = "~/data/interiors_mbu/bonus/thrillridefixed.dif";
+         interiorResource = "~/data/interiors_mbu/bonus/gauntlet.dif";
          interiorIndex = "5";
          basePosition = "0 0 0";
          baseRotation = "1 0 0 0";
@@ -614,8 +487,8 @@ new SimGroup(MissionGroup) {
             customAmbientLighting = "0 0 0 1";
             customAmbientSelfIllumination = "0";
             hidden = "0";
-            initialPosition = "5000";
-            initialTargetPosition = "-1";
+            initialPosition = "1000";
+            initialTargetPosition = "-2";
             receiveLMLighting = "0";
             receiveSunLight = "1";
             useAdaptiveSelfIllumination = "0";
@@ -628,9 +501,121 @@ new SimGroup(MissionGroup) {
    };
    new SimGroup(SuperJumpItems) {
          canSaveDynamicFields = "1";
+
+      new Item() {
+         position = "78 -62 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperJumpItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            noRespawn = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "87 -62 20";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperJumpItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            noRespawn = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "78 -62 28";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperJumpItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            noRespawn = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
+      new Item() {
+         position = "71 -62 36";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperJumpItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            noRespawn = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
    };
    new SimGroup(SuperSpeedItems) {
          canSaveDynamicFields = "1";
+
+      new Item() {
+         position = "-104 34 0.125";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SuperSpeedItem_MBU";
+         collidable = "0";
+         static = "1";
+         rotate = "1";
+            canSaveDynamicFields = "1";
+            customAmbientLighting = "0 0 0 1";
+            customAmbientSelfIllumination = "0";
+            hidden = "0";
+            noRespawn = "0";
+            permanent = "0";
+            receiveLMLighting = "1";
+            receiveSunLight = "1";
+            rotate2 = "0";
+            showHelpOnPickup = "0";
+            useAdaptiveSelfIllumination = "0";
+            useCustomAmbientLighting = "0";
+            useLightingOcclusion = "1";
+      };
    };
    new SimGroup(GyrocopterItems) {
          canSaveDynamicFields = "1";
@@ -642,7 +627,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
       new Item() {
-         position = "-47.5 3 -2.5";
+         position = "90.9994 -29.0051 12.5";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          dataBlock = "TimeTravelItem_MBU";
@@ -669,9 +654,9 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
    };
    new Trigger(Bounds) {
-      position = "-78 36.75 -85.5";
+      position = "-109.5 124 -6.31252";
       rotation = "1 0 0 0";
-      scale = "161.25 116.25 112.5";
+      scale = "220.5 247 130.313";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          canSaveDynamicFields = "1";
@@ -680,8 +665,8 @@ new SimGroup(MissionGroup) {
    new SimGroup(PathNodeGroup) {
 
       new StaticShape(CameraPath1) {
-         position = "11.3434 -27.1235 -22.42";
-         rotation = "0.190338 0.256103 -0.947725 109.681";
+         position = "92.8641 -65.311 48.9998";
+         rotation = "0.596288 0.209977 -0.774823 48.8816";
          scale = "1 1 1";
          dataBlock = "PathNode";
             nextNode = "CameraPath1";

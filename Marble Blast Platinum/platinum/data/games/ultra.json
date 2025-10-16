@@ -27,7 +27,7 @@
 		},
 		{
 			"name": "Bonus",
-			"display": "Bonus",
+			"display": "Mobile",
 			"missionDirectory": "platinum/data/missions_mbu/bonus",
 			"bitmapDirectory": "platinum/data/missions_mbu/bonus",
 			"previewDirectory": "platinum/data/previews_mbu/bonus"
