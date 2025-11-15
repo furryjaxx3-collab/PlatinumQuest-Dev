@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          startHelpText = "Don\'t sit still on the trapdoors, or you\'ll fall!";
          type = "Beginner";
          desc = "Don\'t fall through!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -480,6 +481,32 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new InteriorInstance() {
+      position = "3.09432 -2.13455 29.9536";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      interiorFile = "~/data/interiors_mbg/addon/smallplatform.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "3 -1.25 30.25";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1 5 30.5625";
+      rotation = "1 0 0 180";
+      scale = "0.5 0.5 0.5";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

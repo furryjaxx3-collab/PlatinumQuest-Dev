@@ -11,6 +11,7 @@ new SimGroup(MissionGroup) {
          name = "Skate to the Top";
          number = "4";
          type = "Intermediate";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -194,6 +195,31 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
+   };
+   new Item() {
+      position = "92 24.125 25.25";
+      rotation = "1 0 0 0";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new StaticShape() {
+      position = "-68 -12 12";
+      rotation = "1 0 0 180";
+      scale = "0.2 0.2 0.02";
+      dataBlock = "RoundBumper";
+   };
+   new Item() {
+      position = "-92 -48 -0.375";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

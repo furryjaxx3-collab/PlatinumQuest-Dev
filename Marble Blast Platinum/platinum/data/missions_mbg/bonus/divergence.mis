@@ -12,6 +12,7 @@ new SimGroup(MissionGroup) {
          number = "4";
          startHelpText = "Choose your path... or your shortcut.";
          type = "PowerPack";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -434,6 +435,37 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
+   };
+   new Item() {
+      position = "-57.625 7.375 7.25";
+      rotation = "1 0 0 0";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-57.625 7.375 7.25";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "ShockAbsorberItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+         showHelpOnPickup = "0";
+   };
+   new Item() {
+      position = "93.0123 11.9194 -4.05128";
+      rotation = "1 0 0 180";
+      scale = "0.05 0.05 0.05";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

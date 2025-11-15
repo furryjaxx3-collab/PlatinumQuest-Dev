@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          artist = "Alex Swanson";
          desc = "Can you master this half-pipe?";
          name = "Half-Pipe";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -67,7 +68,7 @@ new SimGroup(MissionGroup) {
    new Trigger(Bounds) {
       position = "-33.4041 31.3353 -11.6336";
       rotation = "1 0 0 0";
-      scale = "75.0503 81.3078 87.4617";
+      scale = "75.0503 81.3078 337.4617";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -263,6 +264,25 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item(SnapXY) {
+      position = "0 0 250";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+         particles = "2249";
+   };
+   new InteriorInstance() {
+      position = "0 0 250";
+      rotation = "1 0 0 0";
+      scale = "0.25 0.25 0.25";
+      interiorFile = "~/data/interiors_mbg/addon/smallplatform.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
    };
 };
 //--- OBJECT WRITE END ---

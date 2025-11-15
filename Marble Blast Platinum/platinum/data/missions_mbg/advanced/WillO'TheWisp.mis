@@ -12,6 +12,7 @@ new SimGroup(MissionGroup) {
          level = "22";
          music = "Beach Party.ogg";
          startHelpText = "Find buttons to lower and raise the platforms!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -707,11 +708,77 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             timeToNext = "0";
       };
+      new StaticShape(hiddenegg) {
+         position = "-112 0 -10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            bezier = "0";
+            branchNodes = " ";
+            delay = "8000";
+            FinalRotOffset = "0 0 0";
+            nextNode = "eggreveal";
+            placed = "1";
+            reverseRotation = "0";
+            RotationMultiplier = "1";
+            smooth = "0";
+            SmoothEnd = "0";
+            SmoothStart = "0";
+            speed = "0";
+            Spline = "0";
+            timeToNext = "0";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "1";
+      };
+      new StaticShape(eggreveal) {
+         position = "-112 0 -0.125";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathNode";
+            bezier = "0";
+            branchNodes = " ";
+            delay = "0";
+            FinalRotOffset = "0 0 0";
+            nextNode = "null";
+            placed = "1";
+            reverseRotation = "0";
+            RotationMultiplier = "1";
+            smooth = "0";
+            SmoothEnd = "0";
+            SmoothStart = "0";
+            speed = "0";
+            Spline = "0";
+            timeToNext = "5000";
+            usePosition = "1";
+            useRotation = "1";
+            useScale = "1";
+      };
    };
    new AudioProfile(MusicProfile) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item(egg) {
+      position = "-112 0 -10";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Trigger() {
+      position = "-65 -27 -0.6";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "PathTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         object1 = "egg";
+         Path1 = "hiddenegg";
+         TriggerOnce = "1";
    };
 };
 //--- OBJECT WRITE END ---

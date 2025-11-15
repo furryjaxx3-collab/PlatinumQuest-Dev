@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          startHelpText = "Roll to the finish!";
          type = "Beginner";
          desc = "Avoid the mines!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -430,6 +431,15 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "5.25 7.75 4.5";
+      rotation = "1 0 0 0";
+      scale = "0.05 0.05 0.05";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

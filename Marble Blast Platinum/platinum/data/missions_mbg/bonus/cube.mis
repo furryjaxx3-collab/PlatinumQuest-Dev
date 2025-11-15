@@ -11,6 +11,7 @@ new SimGroup(MissionGroup) {
          name = "Cube Root";
          number = "5";
          type = "PowerPack";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -884,6 +885,16 @@ new SimGroup(MissionGroup) {
       collideable = "0";
       static = "1";
       rotate = "1";
+   };
+   new Item() {
+      position = "0 -3 -7";
+      rotation = "0 1 0 90.0002";
+      scale = "0.4 0.4 0.4";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

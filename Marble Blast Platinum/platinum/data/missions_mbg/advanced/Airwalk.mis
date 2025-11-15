@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          name = "Airwalk";
          artist = "Alex Swanson";
          music = "Groove Police.ogg";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -655,6 +656,16 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-12 -17.875 5.875";
+      rotation = "0 -1 0 90.0002";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

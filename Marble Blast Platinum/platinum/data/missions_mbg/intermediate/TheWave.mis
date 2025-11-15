@@ -12,6 +12,7 @@ new SimGroup(MissionGroup) {
          artist = "Kevin Ryan";
          alarmStartTime = "15";
          goldTime = "28000";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -4088,6 +4089,16 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "0 0 5000";
+      rotation = "1 0 0 0";
+      scale = "999 999 999";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

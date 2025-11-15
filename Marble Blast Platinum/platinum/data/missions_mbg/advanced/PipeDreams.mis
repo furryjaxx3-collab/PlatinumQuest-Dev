@@ -12,6 +12,7 @@ new SimGroup(MissionGroup) {
          artist = "Alex Swanson";
          music = "Classic Vibe.ogg";
          time = "45000";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -310,6 +311,26 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "227.125 94.375 -53";
+      rotation = "1 0 0 0";
+      scale = "0.125 0.125 0.125";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-0.25 -92.5 50.625";
+      rotation = "1 0 0 180";
+      scale = "0.8 0.8 0.8";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

@@ -12,6 +12,7 @@ new SimGroup(MissionGroup) {
          level = "10";
          startHelpText = "Grab the Time Travel Bonus on your way to the finish to qualify!";
          alarmStartTime = "2";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -72,9 +73,9 @@ new SimGroup(MissionGroup) {
       };
    };
    new Trigger(Bounds) {
-      position = "-8.28287 82.2954 488.288";
+      position = "-8.28287 82.2954 486.288";
       rotation = "1 0 0 0";
-      scale = "20 137.995 20";
+      scale = "20 137.995 22";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -200,6 +201,31 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "1.25 81.25 488";
+      rotation = "-1 0 0 90.0002";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger() {
+      position = "-8.28287 80.2954 487.788";
+      rotation = "1 0 0 0";
+      scale = "20 135.995 0.5";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item(Bounds) {
+      position = "0 -50.875 487.375";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

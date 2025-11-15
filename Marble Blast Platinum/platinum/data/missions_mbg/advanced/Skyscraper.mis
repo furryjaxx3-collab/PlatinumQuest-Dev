@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          desc = "Deliver all the gems to the top of the skyscraper.";
          music = "Beach Party.ogg";
          artist = "Kevin Ryan";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -953,6 +954,16 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "0.25 9.875 183.875";
+      rotation = "0 1 0 90.0002";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

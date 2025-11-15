@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          startHelpText = "See how quickly you can find all the gems!";
          level = "19";
          goldTime = "36000";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -319,6 +320,16 @@ new SimGroup(MissionGroup) {
             usePosition = "1";
             placed = "1";
       };
+   };
+   new Item() {
+      position = "14 35 -4.25";
+      rotation = "1 0 0 180";
+      scale = "0.8 0.8 0.8";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

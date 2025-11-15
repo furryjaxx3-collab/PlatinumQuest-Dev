@@ -11,6 +11,7 @@ new SimGroup(MissionGroup) {
 		 artist = "Alex Swanson (?)";
          name = "Hypercube";
 	 music = "Classic Vibe.ogg";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -828,6 +829,16 @@ new SimGroup(MissionGroup) {
             useRotation = "1";
             useScale = "0";
       };
+   };
+   new Item() {
+      position = "15 -15 -29.875";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

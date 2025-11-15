@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          music = "Classic Vibe.ogg";
          level = "1";
          startHelpText = "Press <func:bind moveforward> to roll the marble forward!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -501,6 +502,15 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Shell.ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-0.625 28.5 500.375";
+      rotation = "1 0 0 0";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

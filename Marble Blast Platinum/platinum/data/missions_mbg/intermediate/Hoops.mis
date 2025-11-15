@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          goldTime = "30000";
          level = "5";
          name = "Hoops";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -497,6 +498,16 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-55 -55 3";
+      rotation = "1 0 0 0";
+      scale = "0.025 0.025 0.025";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

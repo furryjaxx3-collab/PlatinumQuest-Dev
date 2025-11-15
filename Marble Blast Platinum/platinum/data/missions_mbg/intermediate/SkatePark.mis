@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          level = "3";
          artist = "Kevin Ryan";
          goldTime = 47000;
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -380,6 +381,15 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/Beach Party.ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-22 46.875 99.875";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

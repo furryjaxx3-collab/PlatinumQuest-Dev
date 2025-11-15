@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          desc = "Grab the gems between the sections of half-pipe!";
          music = "Beach Party.ogg";
          artist = "Alex Swanson";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -126,7 +127,7 @@ new SimGroup(MissionGroup) {
    new Trigger(Bounds) {
       position = "-38.9014 27.5 -11";
       rotation = "1 0 0 0";
-      scale = "75.0031 56.969 86.9952";
+      scale = "75.0031 56.969 386.9952";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -323,6 +324,23 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 250";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      interiorFile = "~/data/interiors_mbg/addon/smallplatform.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "-0 0 250";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

@@ -11,6 +11,7 @@ new SimGroup(MissionGroup) {
          time = "60000";
          level = "20";
          music = "Beach Party.ogg";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -914,6 +915,75 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "0 5.25 46.875";
+      rotation = "1 0 0 45";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "0 -4.75 57.375";
+      rotation = "1 0 0 90.0002";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-7.375 -4.5 64";
+      rotation = "0.862856 -0.357408 0.357406 98.4215";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-17.25 5.75 64";
+      rotation = "0 -1 0 90.0002";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-16.875 12.5 71.5";
+      rotation = "0 1 0 225";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "-6.75 12.5 81.25";
+      rotation = "1 0 0 180";
+      scale = "0.25 0.25 0.25";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "0 12.5 80.875";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

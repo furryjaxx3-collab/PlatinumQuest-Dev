@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          type = "Beginner";
          level = "9";
          startHelpText = "Use the Gyrocopter PowerUp to fly to the finish!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -79,9 +80,9 @@ new SimGroup(MissionGroup) {
          showHelpOnPickup = "1";
    };
    new Trigger(Bounds) {
-      position = "-52.5444 38.0152 57.871";
+      position = "-52.5444 38.0152 -88.129";
       rotation = "1 0 0 0";
-      scale = "107.509 73.1917 86.7494";
+      scale = "107.509 73.1917 232.7494";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -165,6 +166,31 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Trigger() {
+      position = "-52.5444 38.0152 56.871";
+      rotation = "1 0 0 0";
+      scale = "82.509 73.1917 1";
+      dataBlock = "OutOfBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "32.125 0 44.75";
+      rotation = "0 1 0 90.0002";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "AntiGravityItem";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-24 0 -80.875";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          startHelpText = "Practice your rolling skills by avoiding the gaps in the floor!";
          type = "Beginner";
          desc = "Be careful crossing these bridges.";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -152,6 +153,15 @@ new SimGroup(MissionGroup) {
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "11.875 12.125 27";
+      rotation = "1 0 0 180";
+      scale = "0.4 0.4 0.4";
+      dataBlock = "EasterEgg_MBG";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---
