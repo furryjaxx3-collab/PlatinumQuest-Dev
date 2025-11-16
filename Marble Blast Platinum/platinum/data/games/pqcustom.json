@@ -1,0 +1,26 @@
+{
+	"name": "PQ Custom",
+	"display": "PQ Custom",
+	"order": 1001,
+	"difficulties":
+	[
+		{
+			"name": "custom",
+			"display": "custom",
+			"missionDirectory": "platinum/data/missions_pq/custom",
+			"bitmapDirectory": "platinum/data/missions_pq/custom"
+		},
+		{
+			"name": "competition",
+			"display": "competition",
+			"missionDirectory": "platinum/data/missions_pq/custom/competition",
+			"bitmapDirectory": "platinum/data/missions_pq/custom/competition"
+		},
+		{
+			"name": "oldCustom",
+			"display": "oldCustom",
+			"missionDirectory": "platinum/data/missions_pq/custom/oldCustom",
+			"bitmapDirectory": "platinum/data/missions_pq/custom/oldCustom"
+		}
+	]
+}
