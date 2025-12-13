@@ -128,9 +128,9 @@ new SimGroup(MissionGroup) {
       };
    };
    new Trigger(Bounds) {
-      position = "-41 11 12.9105";
+      position = "-41 11 2.9105";
       rotation = "1 0 0 0";
-      scale = "82 22 42.5192";
+      scale = "82 22 52.5192";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -338,9 +338,9 @@ new SimGroup(MissionGroup) {
       rotate = "1";
    };
    new Trigger() {
-      position = "-13 11 26.9105";
+      position = "23 11 26.9105";
       rotation = "1 0 0 0";
-      scale = "54 22 1";
+      scale = "18 22 1";
       dataBlock = "OutOfBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -354,14 +354,14 @@ new SimGroup(MissionGroup) {
    new Trigger() {
       position = "-23 11 26.9105";
       rotation = "1 0 0 0";
-      scale = "10 3.5 1";
+      scale = "46 3.5 1";
       dataBlock = "OutOfBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new Trigger() {
       position = "-23 -7.5 26.9105";
       rotation = "1 0 0 0";
-      scale = "10 3.5 1";
+      scale = "46 3.5 1";
       dataBlock = "OutOfBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
