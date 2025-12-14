@@ -132,8 +132,11 @@ function onPhase3Complete() {
 			$mbguiauto = true;
 			$mbpuiauto = false;
 			$mbuuiauto = false;
+			$mbeuiauto = false;
+			$mbfuiauto = false;
+			$mbsuiauto = false;
 			$defaultuiauto = false;
-			deactivateTexturePack("mbpui", "mbuui");
+			deactivateTexturePack("mbpui", "mbuui", "mbeui", "mbfui", "mbsui");
 			activateTexturePack("mbgui");
 			reloadTexturePacks(); 
 		} else if 
@@ -141,8 +144,11 @@ function onPhase3Complete() {
 			$mbuuiauto = true;
 			$mbguiauto = false;
 			$mbpuiauto = false;
+			$mbeuiauto = false;
+			$mbfuiauto = false;
+			$mbsuiauto = false;
 			$defaultuiauto = false;
-			deactivateTexturePack("mbgui", "mbpui");
+			deactivateTexturePack("mbgui", "mbpui", "mbeui", "mbfui", "mbsui");
 			activateTexturePack("mbuui");
 			reloadTexturePacks();
 		} else if 
@@ -150,9 +156,48 @@ function onPhase3Complete() {
 			$mbpuiauto = true;
 			$mbguiauto = false;
 			$mbuuiauto = false;
+			$mbeuiauto = false;
+			$mbfuiauto = false;
+			$mbsuiauto = false;
 			$defaultuiauto = false;
-			deactivateTexturePack("mbgui", "mbuui");
+			deactivateTexturePack("mbgui", "mbuui", "mbeui", "mbfui", "mbsui");
 			activateTexturePack("mbpui");
+			reloadTexturePacks();
+		} else if 
+			(!$mbuuiauto && ((MissionInfo.game $= "Elite") || (MissionInfo.modification $= "Elite"))) {
+			$mbeuiauto = true;
+			$mbguiauto = false;
+			$mbpuiauto = false;
+			$mbuuiauto = false;
+			$mbfuiauto = false;
+			$mbsuiauto = false;
+			$defaultuiauto = false;
+			deactivateTexturePack("mbgui", "mbpui", "mbuui", "mbfui", "mbsui");
+			activateTexturePack("mbeui");
+			reloadTexturePacks();
+		} else if 
+			(!$mbuuiauto && ((MissionInfo.game $= "Future") || (MissionInfo.modification $= "Future"))) {
+			$mbfuiauto = true;
+			$mbguiauto = false;
+			$mbpuiauto = false;
+			$mbuuiauto = false;
+			$mbeuiauto = false;
+			$mbsuiauto = false;
+			$defaultuiauto = false;
+			deactivateTexturePack("mbgui", "mbpui", "mbuui", "mbeui", "mbsui");
+			activateTexturePack("mbfui");
+			reloadTexturePacks();
+		} else if 
+			(!$mbuuiauto && ((MissionInfo.game $= "Stop") || (MissionInfo.modification $= "Stop"))) {
+			$mbsuiauto = true;
+			$mbguiauto = false;
+			$mbpuiauto = false;
+			$mbuuiauto = false;
+			$mbeuiauto = false;
+			$mbfuiauto = false;
+			$defaultuiauto = false;
+			deactivateTexturePack("mbgui", "mbpui", "mbuui", "mbeui", "mbfui");
+			activateTexturePack("mbsui");
 			reloadTexturePacks();
 		} else if
 			(!$defaultuiauto && ($CurentGame $= "PlatinumQuest" || (MissionInfo.game $= "PlatinumQuest"))) {
@@ -160,7 +205,10 @@ function onPhase3Complete() {
 			$mbguiauto = false;
 			$mbpuiauto = false;
 			$mbuuiauto = false;
-			deactivateTexturePack("mbgui", "mbpui", "mbuui");
+			$mbeuiauto = false;
+			$mbfuiauto = false;
+			$mbsuiauto = false;
+			deactivateTexturePack("mbgui", "mbpui", "mbuui", "mbeui", "mbfui", "mbsui");
 			activateTexturePack("default");
 			reloadShaders();
 			reloadPostFX();

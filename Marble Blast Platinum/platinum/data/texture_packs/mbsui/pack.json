@@ -1,6 +1,6 @@
 {
   "identifier": "mbsui",
-  "name": "MBStop Timer",
+  "name": "MBStop UI",
   "author": "Jiquor",
   "description": "The HUD from Marble Blast Stop.",
   "timer_color": {
