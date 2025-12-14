@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "20000";
       ultimateTime = "13000";
       startHelpText = "Practice your rolling skills by avoiding the gaps in the floor!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -331,6 +332,15 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "5000";
       };
+   };
+   new Item() {
+      position = "-14.25 17.375 9.875";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

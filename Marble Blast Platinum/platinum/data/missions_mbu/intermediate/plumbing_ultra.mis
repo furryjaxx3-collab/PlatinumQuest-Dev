@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "35000";
       ultimateTime = "17500";
       startHelpText = "Collect the gems, then speed to the finish!";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/dusk/front.png";
@@ -553,6 +554,16 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "5000";
       };
+   };
+   new Item() {
+      position = "-18 -46 -10.25";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

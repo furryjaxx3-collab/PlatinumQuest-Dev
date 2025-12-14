@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "85000";
       ultimateTime = "30000";
       startHelpText = "Pay careful attention to the pattern of the bumpers.";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -1281,6 +1282,16 @@ chkcollide = "0";
             timeToNext = "3000";
             usePosition = "1";
       };
+   };
+   new Item() {
+      position = "18 -8.375 0.425";
+      rotation = "1 0 0 0";
+      scale = "0.1 0.1 0.1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

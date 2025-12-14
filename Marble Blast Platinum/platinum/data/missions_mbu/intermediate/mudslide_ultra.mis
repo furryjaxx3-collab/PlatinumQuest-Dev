@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "30000";
       ultimateTime = "12500";
       startHelpText = "Jumping in slippery areas can help your navigation.";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -306,6 +307,15 @@ chkcollide = "0";
             placed = "1";
             useRotation = "1";
       };
+   };
+   new Item() {
+      position = "12.125 25.5 -30.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

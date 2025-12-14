@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "30000";
       ultimateTime = "13500";
       startHelpText = "Ride the moving platforms to reach the finish!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -494,6 +495,25 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "3000";
       };
+   };
+   new Item() {
+      position = "3.125 -28.625 11.5";
+      rotation = "1 0 0 0";
+      scale = "0.2 0.2 0.2";
+      dataBlock = "AntiGravityItem_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
+   };
+   new Item() {
+      position = "4.625 -37.75 11.875";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

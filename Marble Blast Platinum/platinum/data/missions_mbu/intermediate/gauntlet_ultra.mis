@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "35000";
       ultimateTime = "17500";
       startHelpText = "Don't get clobbered!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -686,6 +687,15 @@ chkcollide = "0";
             usePosition = "1";
             placed = "1";
       };
+   };
+   new Item() {
+      position = "86.25 -23 23";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

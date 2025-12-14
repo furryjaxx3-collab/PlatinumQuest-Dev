@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "18000";
       ultimateTime = "4000";
       startHelpText = "Beginning skiers are advised to use caution.";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -166,6 +167,24 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "4000";
       };
+   };
+   new Item() {
+      position = "-144 -288 -113";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 8 0.25";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

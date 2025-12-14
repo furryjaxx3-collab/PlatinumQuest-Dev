@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "37000";
       ultimateTime = "25000";
       startHelpText = "Stay on the platform to survive!";
+         easterEgg = "1";
    };
    new Sky(GlobalSky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -432,6 +433,24 @@ useUltraMarble = "1";
             useRotation = "1";
             timeToNext = "3000";
       };
+   };
+   new Item() {
+      position = "140 0 -0.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "68 -5.25 15.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

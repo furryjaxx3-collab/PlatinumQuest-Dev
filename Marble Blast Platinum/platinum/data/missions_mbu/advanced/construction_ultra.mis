@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "12000";
       ultimateTime = "5000";
       startHelpText = "Be very cautious on this framework.";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -160,6 +161,16 @@ chkcollide = "0";
             timeToNext = "4000";
             usePosition = "1";
       };
+   };
+   new Item() {
+      position = "1.375 21 20.5";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

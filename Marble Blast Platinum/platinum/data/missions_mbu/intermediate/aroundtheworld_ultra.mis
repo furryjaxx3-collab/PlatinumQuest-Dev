@@ -12,6 +12,7 @@ useUltraMarble = "1";
 	  music = "Tim Trance.ogg";
 	  goldTime = "13500";
       ultimateTime = "11150";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -253,6 +254,15 @@ useUltraMarble = "1";
             useRotation = "1";
             timeToNext = "3000";
       };
+   };
+   new Item() {
+      position = "-4.625 -0.125 -92.625";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

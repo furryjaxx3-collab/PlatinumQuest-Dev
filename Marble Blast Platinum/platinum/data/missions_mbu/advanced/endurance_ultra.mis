@@ -14,6 +14,7 @@ new SimGroup(MissionGroup) {
 useUltraMarble = "1";
          level = "10";
 	 startHelpText = "Don\'t fall behind the platform - there\'s no going back!";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       position = "336 136 0";
@@ -382,6 +383,16 @@ useUltraMarble = "1";
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-129 0.25 -0.9375";
+      rotation = "1 0 0 0";
+      scale = "0.6 0.6 0.6";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

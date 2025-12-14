@@ -51,6 +51,7 @@ chkcollide = "0";
          game = "Ultra";
 useUltraMarble = "1";
          level = "9";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -442,6 +443,15 @@ chkcollide = "0";
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "-56.75 -1.5 11.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "25000";
       ultimateTime = "18000";
       startHelpText = "Be careful when crossing between platforms.";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -355,6 +356,15 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "3000";
       };
+   };
+   new Item() {
+      position = "-12.5 6.625 4";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

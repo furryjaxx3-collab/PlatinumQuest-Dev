@@ -13,6 +13,7 @@ new SimGroup(MissionGroup) {
          game = "Ultra";
 useUltraMarble = "1";
          level = "7";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       position = "336 136 0";
@@ -760,6 +761,15 @@ chkcollide = "0";
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "0.75 -3 -9";
+      rotation = "0 1 0 90.0002";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

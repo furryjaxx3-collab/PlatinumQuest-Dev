@@ -12,6 +12,7 @@ useUltraMarble = "1";
 	  music = "Tim Trance.ogg";
 	  goldTime = "48000";
       ultimateTime = "32000";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -519,6 +520,15 @@ chkcollide = "0";
             timeToNext = "6000";
             usePosition = "1";
       };
+   };
+   new Item() {
+      position = "-60 22 35.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---

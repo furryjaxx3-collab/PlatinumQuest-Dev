@@ -13,6 +13,7 @@ useUltraMarble = "1";
 	  goldTime = "25000";
       ultimateTime = "14000";
       startHelpText = "Control your spin when you are about to land.";
+         easterEgg = "1";
    };
    new Sky(Sky) {
       sphereFront = "platinum/data/shapes/skies/wintry/front.png";
@@ -268,6 +269,16 @@ chkcollide = "0";
             useRotation = "1";
             timeToNext = "2000";
       };
+   };
+   new Item() {
+      position = "-27.5 0 54.25";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
+         noRespawn = "0";
    };
 };
 //--- OBJECT WRITE END ---

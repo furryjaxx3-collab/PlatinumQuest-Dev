@@ -14,6 +14,7 @@ new SimGroup(MissionGroup) {
 useUltraMarble = "1";
          level = "12";
 	 startHelpText = "Pick up the Gravity Modifiers to roll to the finish!";
+         easterEgg = "1";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -331,6 +332,15 @@ useUltraMarble = "1";
       fileName = "~/data/sound/music/Pianoforte (Guitar Remix).ogg";
       description = "AudioMusic";
       preload = "0";
+   };
+   new Item() {
+      position = "83 -1 -1.75";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EasterEgg_MBU";
+      collidable = "0";
+      static = "1";
+      rotate = "1";
    };
 };
 //--- OBJECT WRITE END ---
