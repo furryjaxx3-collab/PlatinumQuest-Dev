@@ -1,6 +1,6 @@
 {
   "identifier": "Casual",
-  "name": "Casual Style",
+  "name": "Casual Style UI",
   "author": "Platinum Team / eNetro",
   "description": "Casual HUD style to go with the MBG help triggers in Dom Casual.",
 "timer_color": {
@@ -33,11 +33,19 @@
     "platinum/client/ui/game/state/tagger": "./state/tagger",
     "platinum/client/ui/game/state/waiting": "./state/waiting",
     "platinum/client/ui/game/laps/laps_label": "./laps/laps_label",
-"platinum/client/ui/game/transparency": "./transparency",
+    "platinum/client/ui/game/transparency": "./transparency",
     "platinum/client/ui/game/laps/transparency_laps": "./transparency_laps"
+  },
+  "color_swaps": {
+    "GuiRoundBorderProfile": {
+      "fillColor": "174 143 133"
+    },
+    "GuiRoundBorderThinProfile": {
+      "fillColor": "174 143 133"
+    }
   },
   "fonts": {
     "pointPopups": "DomCasualD"
   },
-	"mbg_help_ui": true
+    "mbg_help_ui": true
 }

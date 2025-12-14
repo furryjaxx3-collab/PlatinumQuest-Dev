@@ -1,8 +1,8 @@
 {
   "identifier": "darker darkness",
-  "name": "Darker Darkness",
-  "author": "Platinum Team",
-  "description": "No parents",
+  "name": "Darker Dark Mode UI",
+  "author": "Platinum Team / Jaxx",
+  "description": "A fully black UI for those who love black stuff lol",
   "timer_color": {
     "normal": "255 255 255 255",
     "stopped": "50 255 50 255",
@@ -421,6 +421,12 @@
       "fontColorHL": "255 255 255 255",
       "fontColorSEL": "255 255 255 255",
       "fontColorNA": "160 160 160 255"
+    },
+    "GuiRoundBorderProfile": {
+      "fillColor": "0 0 0"
+    },
+    "GuiRoundBorderThinProfile": {
+      "fillColor": "0 0 0"
     }
   }
 }

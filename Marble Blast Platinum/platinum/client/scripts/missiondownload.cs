@@ -133,7 +133,7 @@ function onPhase3Complete() {
 			$mbpuiauto = false;
 			$mbuuiauto = false;
 			$defaultuiauto = false;
-			deactivateTexturePack("mbpui");
+			deactivateTexturePack("mbpui", "mbuui");
 			activateTexturePack("mbgui");
 			reloadTexturePacks(); 
 		} else if 
@@ -143,6 +143,7 @@ function onPhase3Complete() {
 			$mbpuiauto = false;
 			$defaultuiauto = false;
 			deactivateTexturePack("mbgui", "mbpui");
+			activateTexturePack("mbuui");
 			reloadTexturePacks();
 		} else if 
 			(!$mbpuiauto && ((Sky.materialList $= "platinum/data/skies/Beginner/Beginner_Sky.dml") || (Sky.materialList $= "platinum/data/skies/Intermediate/Intermediate_Sky.dml") || (Sky.materialList $= "platinum/data/skies/Advanced/Advanced_Sky.dml") || (Sky.materialList $= "platinum/data/skies/Expert/Expert_Sky.dml") || (Sky.materialList $= "platinum/data/skies/Bonus/Bonus_Sky.dml"))) {
@@ -150,7 +151,7 @@ function onPhase3Complete() {
 			$mbguiauto = false;
 			$mbuuiauto = false;
 			$defaultuiauto = false;
-			deactivateTexturePack("mbgui");
+			deactivateTexturePack("mbgui", "mbuui");
 			activateTexturePack("mbpui");
 			reloadTexturePacks();
 		} else if
@@ -159,7 +160,8 @@ function onPhase3Complete() {
 			$mbguiauto = false;
 			$mbpuiauto = false;
 			$mbuuiauto = false;
-			deactivateTexturePack("mbgui", "mbpui");
+			deactivateTexturePack("mbgui", "mbpui", "mbuui");
+			activateTexturePack("default");
 			reloadShaders();
 			reloadPostFX();
 			clearTextureHolds();
