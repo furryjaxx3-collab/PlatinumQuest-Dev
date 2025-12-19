@@ -157,7 +157,7 @@ new SimGroup(MissionGroup) {
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          displayonce = "0";
          persistTime = "5000";
-         text = "Now for some fun... 100-48 = ? LEFT=62; UP=64; RIGHT=NaN";
+         text = "Now for some fun... 100-48 = ? LEFT=52; UP=64; RIGHT=NaN";
    };
    new Trigger(WRONG) {
       position = "84.0932 -98.3774 0.494915";
