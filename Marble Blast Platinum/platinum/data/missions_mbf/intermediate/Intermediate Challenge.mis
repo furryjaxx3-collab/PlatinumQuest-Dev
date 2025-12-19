@@ -30,7 +30,7 @@ addMaterialMapping("super_friction", SuperHighFrictionMaterial);
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         artist = "enderman0125";
+         artist = "Beack (?)";
          CustomRadarRule = "0";
          desc = "Pass this blend of challenges to reach the finish!";
          game = "Future";
