@@ -204,16 +204,6 @@ new SimGroup(MissionGroup) {
          mbuanim = "0";
          open = "0";
          resetTime = "Default";
-         timeout = "200";
-   };
-   new StaticShape() {
-      position = "-13.6462 63.5021 10.0004";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      dataBlock = "TrapDoor";
-         mbuanim = "0";
-         open = "0";
-         resetTime = "Default";
          skin = "stop";
          timeout = "200";
    };
