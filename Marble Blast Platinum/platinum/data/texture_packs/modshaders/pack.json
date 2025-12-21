@@ -277,6 +277,16 @@
       "normal": "platinum/data/texture_packs/mbgxbox/interiors_mbg/plate.bump",
       "specular": "platinum/data/shaders/tex/pq_tile/tile.spec",
       "reflectivity": 0.075
+    },
+    "MBS1IceMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBS1/MBGIce_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBS1/MBGIce_specular",
+      "shader": "SkysphereIce",
+      "reflectivity": 0.25
+    },
+    "MBS1SandMaterial": {
+      "normal": "platinum/data/texture_packs/modshaders/MBS1/custom_sand_normal",
+      "specular": "platinum/data/texture_packs/modshaders/MBS1/custom_sand_specular"
     }
   },
   "texture_materials": {
@@ -548,6 +558,7 @@
     "platinum/data/interiors/MBS1/chevron_warm":             "MBGChevronMaterial",
     "platinum/data/interiors/MBS1/chevron_warm2":            "MBGChevronMaterial",
     "platinum/data/interiors/MBS1/custom_logend":            "MBGWoodTopMaterial",
+    "platinum/data/interiors/MBS1/custom_sand":              "MBS1SandMaterial",
     "platinum/data/interiors/MBS1/custom_skyscrape2":        "MBGGlassMaterial",
     "platinum/data/interiors/MBS1/custom_woodblockside":     "MBGWoodSideMaterial",
     "platinum/data/interiors/MBS1/custom_woodblocktop":      "MBGWoodTopMaterial",
@@ -580,6 +591,8 @@
     "platinum/data/interiors/MBS1/grid_warm4":               "MBGSquareTileMaterial",
     "platinum/data/interiors/MBS1/grid_warm5":               "MBGSquareTileMaterial",
     "platinum/data/interiors/MBS1/mazewood":                 "MBGWoodMaterial",
+    "platinum/data/interiors/MBS1/MBGIce":                   "MBS1IceMaterial",
+    "platinum/data/interiors/MBS1/MBGSand":                  "MBS1SandMaterial",
     "platinum/data/interiors/MBS1/mbs_black":                "MBGCircleTileMaterial",
     "platinum/data/interiors/MBS1/mbs_white":                "MBGCircleTileMaterial",
     "platinum/data/interiors/MBS1/pattern_cool1":            "MBGPattern1Material",
