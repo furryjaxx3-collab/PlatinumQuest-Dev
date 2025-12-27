@@ -121,6 +121,8 @@ function updateGameDiscordStatus() {
 				%line2 = "Marble Blast Future Campaign";
 			} else if (%missionDir $= "missions_gmbgmm")  {
 				%line2 = "G3orge\'s Mini Mod Campaign";
+			} else if (%missionDir $= "missions_rmm")  {
+				%line2 = "Rozi\'s Mini Mod Campaign";
 			} else if (%missionDir $= "missions_mbs")  {
 				%line2 = "Marble Blast Stop Campaign";
 			} else {

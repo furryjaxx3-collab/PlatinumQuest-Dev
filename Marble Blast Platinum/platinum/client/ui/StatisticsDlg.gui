@@ -323,6 +323,11 @@ function StatisticsDlg::display(%this) {
 		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL
 		         %l @ %big @ " " NL
 		         %l @ %big @ " ";
+	case "Rozi's Mini Mod":
+		%right = %right NL
+		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL
+		         %l @ %big @ " " NL
+		         %l @ %big @ " ";
 	case "Stop":
 		%right = %right NL
 		         %l @ %big @ "Gold Times:"     @ %r @ %small @ %comp["Gold"]      @ "/" @ %total["Grand"]     @ " (" @ %perc["Gold"]      @ ")" NL

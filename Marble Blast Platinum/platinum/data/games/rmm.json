@@ -1,0 +1,32 @@
+{
+	"name": "Rozi's Mini Mod",
+	"display": "Rozi's Mini Mod",
+	"order": 14,
+	"difficulties":
+	[
+		{
+			"name": "Beginner",
+			"display": "Beginner",
+			"missionDirectory": "platinum/data/missions_rmm/beginner",
+			"bitmapDirectory": "platinum/data/missions_rmm/beginner"
+		},
+		{
+			"name": "Intermediate",
+			"display": "Intermediate",
+			"missionDirectory": "platinum/data/missions_rmm/intermediate",
+			"bitmapDirectory": "platinum/data/missions_rmm/intermediate"
+		},
+		{
+			"name": "Advanced",
+			"display": "Advanced",
+			"missionDirectory": "platinum/data/missions_rmm/advanced",
+			"bitmapDirectory": "platinum/data/missions_rmm/advanced"
+		},
+		{
+			"name": "Bonus",
+			"display": "Bonus",
+			"missionDirectory": "platinum/data/missions_rmm/custom",
+			"bitmapDirectory": "platinum/data/missions_rmm/custom"
+		}
+	]
+}
