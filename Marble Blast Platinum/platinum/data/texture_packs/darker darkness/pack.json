@@ -10,8 +10,6 @@
   },
   "invert_text_colors": true,
   "bitmap_swaps": {
-    "platinum/client/ui/game/help/round_border": "./help/round_border",
-    "platinum/client/ui/game/help/round_border_thin": "./help/round_border_thin",
     "platinum/client/ui/lb/core/transparency/pqwindow/transparency-TL": "./pqwindow/transparency-TL",
     "platinum/client/ui/lb/core/transparency/pqwindow/transparency-TR": "./pqwindow/transparency-TR",
     "platinum/client/ui/lb/core/transparency/pqwindow/transparency-BL": "./pqwindow/transparency-BL",
@@ -423,10 +421,10 @@
       "fontColorNA": "160 160 160 255"
     },
     "GuiRoundBorderProfile": {
-      "fillColor": "0 0 0"
+      "fillColor": "79 61 56"
     },
     "GuiRoundBorderThinProfile": {
-      "fillColor": "0 0 0"
+      "fillColor": "79 61 56"
     }
   }
 }
