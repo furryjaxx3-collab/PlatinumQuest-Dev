@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "45000";
          CustomRadarRule = "0";
          desc = "It\'s like a playground designed for adults only! \n\nRozi\'s Best Time: 45.00";
          game = "Gold";

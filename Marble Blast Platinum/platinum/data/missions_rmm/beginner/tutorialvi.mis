@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "11860";
          CustomRadarRule = "0";
          desc = "Learn what is used to change the direction of gravity. \n\nRozi\'s Best Time: 11.86";
          game = "Gold";

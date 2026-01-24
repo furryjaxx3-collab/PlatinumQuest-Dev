@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "69080";
          CustomRadarRule = "0";
          desc = "How good are your skills in marble control when it comes to low frictions? Test your skills on this slippery playground! \n\nRozi\'s Best Time: 1:09.08";
          game = "Gold";

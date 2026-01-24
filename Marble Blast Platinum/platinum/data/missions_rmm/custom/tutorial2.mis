@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "20800";
          CustomRadarRule = "0";
          desc = "This tutorial introduces the Super Bounce, the Shock Absorber, the Gravity Modifier, and bumpers! \n\nRozi\'s Best Time: 20.80";
          game = "Gold";

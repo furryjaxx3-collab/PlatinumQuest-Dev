@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "10890";
          CustomRadarRule = "0";
          desc = "Walk into the building and start causing chaos! \n\nRozi\'s Best Time: 10.89";
          game = "Gold";

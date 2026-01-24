@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "11870";
          CustomRadarRule = "0";
          desc = "Learn the basics of frictions! \n\nRozi\'s Best Time: 11.87";
          game = "Gold";

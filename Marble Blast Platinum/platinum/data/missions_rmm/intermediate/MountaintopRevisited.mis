@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "7790";
          CustomRadarRule = "0";
          desc = "Mountaintop Retreat has had a makeover! \n\nRozi\'s Best Time: 7.79";
          game = "Gold";

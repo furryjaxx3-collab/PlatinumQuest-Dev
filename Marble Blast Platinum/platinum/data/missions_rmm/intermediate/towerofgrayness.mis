@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Lee Zi Xian and Rozi";
+         awesomeTime = "14540";
          CustomRadarRule = "0";
          desc = "How long will it take you to get to the top? \n\nRozi\'s Best Time: 14.54";
          game = "Gold";

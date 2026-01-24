@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Lee Zi Xian and Rozi";
+         awesomeTime = "21410";
          CustomRadarRule = "0";
          desc = "Get though this level with all your powerup knowledge! \n\nRozi\'s Best Time: 21.41";
          game = "Gold";

@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "41120";
          CustomRadarRule = "0";
          desc = "Travel along this long and winding road facing the challenged ahead of you. Can you get the Time Travels along the way? \n\nRozi\'s Best Time: 41.12";
          game = "Gold";

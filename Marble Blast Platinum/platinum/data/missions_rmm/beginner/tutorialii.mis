@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "18250";
          CustomRadarRule = "0";
          desc = "Go around the loop learning the different PowerUps in the game! \n\nRozi\'s Best Time: 18.25";
          game = "Gold";

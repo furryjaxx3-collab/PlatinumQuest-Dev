@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "24090";
          CustomRadarRule = "0";
          desc = "Marble Blast introduces plenty of hazards as well, so learn them now before they get harder to maneuver through! \n\nRozi\'s Best Time: 24.09";
          game = "Gold";

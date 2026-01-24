@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "105690";
          CustomRadarRule = "0";
          desc = "Weave up and down, in and out, and even upsidedown through this circuital level! \n\nRozi\'s Best Time: 1:45.69";
          game = "Gold";

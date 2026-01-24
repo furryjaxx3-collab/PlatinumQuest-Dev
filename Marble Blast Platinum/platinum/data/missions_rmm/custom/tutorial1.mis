@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "19310";
          CustomRadarRule = "0";
          desc = "Learn the first few basics of Marble Blast in this first of three tutorial levels! \n\nRozi\'s Best Time: 19.31";
          game = "Gold";

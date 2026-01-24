@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "62130";
          CustomRadarRule = "0";
          desc = "It\'s a long way up. Can you make it to the top? \n\nRozi\'s Best Time: 1:02:13";
          game = "Gold";

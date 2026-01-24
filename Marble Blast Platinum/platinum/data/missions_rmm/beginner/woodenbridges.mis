@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "14660";
          CustomRadarRule = "0";
          desc = "Search for the gems, but watch your step! \n\nRozi\'s Best Time: 14.66";
          game = "Gold";

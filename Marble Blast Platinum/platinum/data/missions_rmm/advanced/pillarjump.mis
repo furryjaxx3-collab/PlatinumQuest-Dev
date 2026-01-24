@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "7500";
          CustomRadarRule = "0";
          desc = "Jump from pillar to pillar using the PowerUps to collect the gems! \n\nRozi\'s Best Time: 7.50";
          game = "Gold";

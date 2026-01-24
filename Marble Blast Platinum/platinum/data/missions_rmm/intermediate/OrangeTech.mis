@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "19530";
          CustomRadarRule = "0";
          desc = "Find your way through this NeonTech styled level! \n\nRozi\'s Best Time: 19.53";
          game = "Gold";

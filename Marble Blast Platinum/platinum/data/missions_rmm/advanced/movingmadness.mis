@@ -3,6 +3,7 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          artist = "Rozi";
+         awesomeTime = "44970";
          CustomRadarRule = "0";
          desc = "Moving platforms are everywhere! Test your skills on this constantly active course! \n\nRozi\'s Best Time: 44.97";
          game = "Gold";
