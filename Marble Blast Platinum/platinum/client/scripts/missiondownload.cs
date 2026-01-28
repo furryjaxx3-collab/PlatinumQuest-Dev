@@ -247,6 +247,8 @@ function onPhase3Complete() {
 			loadAudioPack(mbf);
 		} else if ((MissionInfo.game $= "Stop") || (MissionInfo.modification $= "Stop")) {
 			loadAudioPack(mbs);
+		} else if ((MissionInfo.game $= "PlatinumQuest") || (MissionInfo.modification $= "PlatinumQuest")) {
+			loadAudioPack();
 		}
 	} else if (!$optimizedaudio) {
 		$optimizedaudio = true;
