@@ -132,20 +132,16 @@ function updateGameDiscordStatus() {
 				}
 			} else if ((%missionDir $= "multiplayer") && (strstr($Client::MissionFile, "/custom/") == -1))
 				%line2 = "Performing Recon in Singleplayer";
-			} else if (%missionDir $= "missions_mbe")  {
+			else if (%missionDir $= "missions_mbe")
 				%line2 = "Marble Blast Elite Singleplayer";
-			} else if (%missionDir $= "missions_mbf")  {
+			else if (%missionDir $= "missions_mbf")
 				%line2 = "Marble Blast Future Singleplayer";
-			} else if (%missionDir $= "missions_gmbgmm")  {
+			else if (%missionDir $= "missions_gmbgmm")
 				%line2 = "G3orge\'s Mini Mod Singleplayer";
-			} else if (%missionDir $= "missions_rmm")  {
+			else if (%missionDir $= "missions_rmm")
 				%line2 = "Rozi\'s Mini Mod Singleplayer";
-			} else if (%missionDir $= "missions_mbs")  {
+			else if (%missionDir $= "missions_mbs")
 				%line2 = "Marble Blast Stop Singleplayer";
-			} else {
-				//Is this fine language to use? It's *most* (but not all) of the reason to play local customs now that Marbleland exists...
-				%line2 = "Testing a Custom Level";
-			}
 			else
 				%line2 = "Custom Level by " @ getMissionInfo($Client::MissionFile).artist;
 		}
