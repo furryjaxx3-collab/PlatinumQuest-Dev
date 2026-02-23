@@ -249,6 +249,7 @@ datablock StaticShapeData(DuctFan_MBU : DuctFan) {
 
 	compile = "pls";
 	shapeFile = "~/data/shapes_mbu/hazards/mbu-hitboxes/ductfan.dts";
+	useShaders = true;
 };
 datablock StaticShapeData(SmallDuctFan_MBU : SmallDuctFan) {
 	superCategory = "Hazards";
@@ -256,6 +257,7 @@ datablock StaticShapeData(SmallDuctFan_MBU : SmallDuctFan) {
 
 	compile = "pls";
 	shapeFile = "~/data/shapes_mbu/mbu-hitboxes/hazards/ductfan.dts";
+	useShaders = true;
 };
 datablock StaticShapeData(DuctFan_MBF : DuctFan) {
 	superCategory = "Hazards";

@@ -94,6 +94,7 @@ datablock StaticShapeData(StartPad_MBU : StartPad) {
 
 	//The MBU startpad does not have an ambient animation. ~ Connie
 	playAnimation = false;
+	useShaders = true;
 };
 
 function StartPad_MBU::onMissionReset(%this, %obj) {
@@ -210,11 +211,14 @@ datablock StaticShapeData(EndPad_MBU : EndPad) {
 	shapeFile = "~/data/shapes_mbu/pads/mbu/endarea.dts";
 
 	playAnimation = true;
+	useShaders = true;
+	mbuAnimation = true;
 };
 
 datablock StaticShapeData(MBU_LightBeam : EndPad) {
 	className = "";
 	shapefile = "~/data/shapes_mbu/pads/mbu/lightbeam.dts";
+	useShaders = true;
 };
 
 function EndPad_MBU::onAdd(%this, %obj) {
@@ -282,6 +286,7 @@ if (!$pref::LegacyItems) {
 		customField[0, "desc"   ] = "Which skin to use (see skin selector).";
 		customField[0, "default"] = "base";
 
+		useShaders = true;
 		playAnimation = true;
 	};
 
@@ -296,6 +301,7 @@ if (!$pref::LegacyItems) {
 		customField[0, "desc"   ] = "Which skin to use (see skin selector).";
 		customField[0, "default"] = "base";
 
+		useShaders = true;
 		playAnimation = true;
 	};
 } else {

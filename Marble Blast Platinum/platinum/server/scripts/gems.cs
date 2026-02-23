@@ -963,6 +963,8 @@ if (!$pref::LegacyItems) {
 		customField[0, "name"   ] = "Skin Name";
 		customField[0, "desc"   ] = "Which skin to use (see skin selector).";
 		customField[0, "default"] = "";
+
+		useShaders = true;
 	};
 	datablock ItemData(GemItemRed_MBU : GemItem_MBU) {
 		superCategory = "gems";
@@ -973,6 +975,7 @@ if (!$pref::LegacyItems) {
 		spawnChance = 0.90;
 		messageColor = "ff9999";
 		customField[0, "field"] = "";
+		useShaders = true;
 	};
 	datablock ItemData(GemItemYellow_MBU : GemItem_MBU) {
 		superCategory = "gems";
@@ -983,6 +986,8 @@ if (!$pref::LegacyItems) {
 		spawnChance = 0.65;
 		messageColor = "ffff99";
 		customField[0, "field"] = "";
+
+		useShaders = true;
 	};
 	datablock ItemData(GemItemBlue_MBU : GemItem_MBU) {
 		superCategory = "gems";
@@ -993,6 +998,8 @@ if (!$pref::LegacyItems) {
 		spawnChance = 0.35;
 		messageColor = "9999ff";
 		customField[0, "field"] = "";
+
+		useShaders = true;
 	};
 	datablock ItemData(GemItemPlatinum_MBU : GemItem_MBU) {
 		superCategory = "gems";
